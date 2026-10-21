@@ -1,0 +1,22 @@
+# N-Ways Addressing for Gabon: the registry server.
+#   cd server && docker compose up -d
+# The first start imports the bundled registry into the volume, then serves
+# http://localhost:8080/v1. Read-only unless ISSUE_KEYS is set (server/README.md).
+services:
+  addresses:
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    image: nways-addresses-ga
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8080}:8080"
+    environment:
+      ISSUE_KEYS: "${ISSUE_KEYS:-}"
+      ISSUE_PER_DAY: "${ISSUE_PER_DAY:-5}"
+      CORS_ORIGINS: "${CORS_ORIGINS:-*}"
+    volumes:
+      - addresses-data:/data
+
+volumes:
+  addresses-data:

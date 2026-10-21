@@ -1,0 +1,33 @@
+% The 10 m spot grid of Libreville (1LV) around Louis 12 01 (Eqs. 12-13): every registry compound
+% within 55 m, the cell E0794 N0757 and its centre, which a decoder returns.
+% Data: spot-cells.dat, written by tools/paper-figures.py.
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{LibertinusSans}[Extension=.otf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic]
+\usepackage{unicode-math}
+\setmathfont{LibertinusMath-Regular.otf}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+% English by default; the French paper compiles <name>-fr.tex, which sets \fr to 1 and inputs this file.
+\providecommand{\fr}{0}
+\newcommand{\T}[2]{\ifnum\fr=1 #2\else #1\fi}
+\ifnum\fr=1 \pgfkeys{/pgf/number format/.cd, use comma, 1000 sep={\,}}\fi
+\definecolor{ink}{HTML}{1F5FA8}\definecolor{flaggreen}{HTML}{009E60}\definecolor{yellow}{HTML}{FCD116}
+\definecolor{flagblue}{HTML}{3A75C4}\definecolor{amber}{HTML}{D9A400}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[axis equal image, width=10.5cm, xmin=789, xmax=801, ymin=752, ymax=763,
+  xtick={789,...,801}, ytick={752,...,763}, grid=major, grid style={gray!35},
+  xticklabel={\pgfmathtruncatemacro{\v}{\tick}E0\v}, yticklabel={\pgfmathtruncatemacro{\v}{\tick}N0\v},
+  x tick label style={font=\tiny, rotate=90, anchor=east}, y tick label style={font=\tiny},
+  xlabel={\T{$E$, 10 m east of the frame origin (9.36° E)}{$E$, pas de 10 m à l’est de l’origine du cadre (9,36° E)}}, ylabel={\T{$N$, 10 m north of the frame origin (0.34° N)}{$N$, pas de 10 m au nord de l’origine (0,34° N)}},
+  label style={font=\small}, axis line style={gray}, clip=false]
+\fill[yellow!45] (axis cs:794,757) rectangle (axis cs:795,758);
+\addplot[only marks, mark=*, mark size=1.6pt, flagblue] table[x=x, y=y] {spot-cells.dat};
+\addplot[only marks, mark=*, mark size=2.4pt, red!80!black] coordinates {(794.85,757.43)};
+\addplot[only marks, mark=+, mark size=3pt, black, thick] coordinates {(794.5,757.5)};
+\draw[red!80!black] (axis cs:794.9,757.5) -- (axis cs:797.6,760.4) node[above right=-1pt, font=\scriptsize, fill=white, inner sep=1pt, text=black, align=left] {Louis 12 01\\GA-1LV E0794 N0757};
+\draw[black] (axis cs:794.45,757.45) -- (axis cs:796.3,754.4) node[below right=-1pt, font=\scriptsize, fill=white, inner sep=1pt, align=left] {\T{cell centre (decoded point),\\3.5 m from the entrance point}{centre de la cellule (point décodé),\\à 3,5 m du point d’entrée}};
+\end{axis}
+\end{tikzpicture}
+\end{document}

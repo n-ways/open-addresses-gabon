@@ -1,0 +1,48 @@
+% The 49 départements of Gabon, shaded by compounds per km² (registry/MANIFEST.json, model/zones.json).
+% Data: zones-map-<class>.dat and zones-labels.dat, written by tools/paper-figures.py.
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{LibertinusSans}[Extension=.otf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic]
+\usepackage{unicode-math}
+\setmathfont{LibertinusMath-Regular.otf}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+% English by default; the French paper compiles <name>-fr.tex, which sets \fr to 1 and inputs this file.
+\providecommand{\fr}{0}
+\newcommand{\T}[2]{\ifnum\fr=1 #2\else #1\fi}
+\ifnum\fr=1 \pgfkeys{/pgf/number format/.cd, use comma, 1000 sep={\,}}\fi
+\definecolor{c0}{HTML}{EEF6F0}\definecolor{c1}{HTML}{C6E5D0}\definecolor{c2}{HTML}{7FC79B}
+\definecolor{c3}{HTML}{2E9E64}\definecolor{c4}{HTML}{0B5E3A}\definecolor{ink}{HTML}{1F5FA8}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[axis equal image, width=11cm, xmin=8.55, xmax=14.65, ymin=-4.05, ymax=2.45,
+  xlabel={Longitude (°\T{E}{E})}, ylabel={Latitude (°N)}, tick label style={font=\footnotesize},
+  label style={font=\small}, xtick={9,10,...,14}, ytick={-4,-3,...,2}, axis line style={gray}, clip=false,
+  legend style={at={(1.03,1)}, anchor=north west, font=\footnotesize, draw=gray!50, cells={anchor=west}},
+  legend cell align=left, unbounded coords=jump]
+\addplot[fill=c0, draw=white, line width=0.35pt, area legend] table[x=x, y=y] {zones-map-0.dat};
+\addlegendentry{\T{< 0.5}{< 0,5}}
+\addplot[fill=c1, draw=white, line width=0.35pt, area legend] table[x=x, y=y] {zones-map-1.dat};
+\addlegendentry{\T{0.5–1}{0,5–1}}
+\addplot[fill=c2, draw=white, line width=0.35pt, area legend] table[x=x, y=y] {zones-map-2.dat};
+\addlegendentry{1–5}
+\addplot[fill=c3, draw=white, line width=0.35pt, area legend] table[x=x, y=y] {zones-map-3.dat};
+\addlegendentry{5–50}
+\addplot[fill=c4, draw=white, line width=0.35pt, area legend] table[x=x, y=y] {zones-map-4.dat};
+\addlegendentry{≥ 50}
+\addlegendimage{empty legend}\addlegendentry{\hspace{-1.1em}\T{compounds per km²}{concessions par km²}}
+\addplot[only marks, mark=none, nodes near coords={\tiny\textsf{\pgfplotspointmeta}},
+  point meta=explicit symbolic, nodes near coords style={anchor=center, text=black!80, inner sep=0pt},
+  x filter/.expression={\thisrow{c}>2 ? nan : x}] table[x=x, y=y, meta=key] {zones-labels.dat};
+% the dense départements of the Estuaire and Port-Gentil, labelled outside the map
+\draw[gray!70] (axis cs:9.42,0.45) -- (axis cs:9.05,1.05) node[above, font=\scriptsize, text=black, align=right] {1LV\\Libreville};
+\draw[gray!70] (axis cs:9.65,0.75) -- (axis cs:9.75,1.8) node[above, font=\scriptsize, text=black] {1KM Komo-Mondah};
+\draw[gray!70] (axis cs:8.95,-0.85) -- (axis cs:8.7,-1.25) node[below, font=\scriptsize, text=black] {8PG};
+\draw[gray!70] (axis cs:13.15,-1.55) -- (axis cs:12.75,-0.6) node[above, font=\scriptsize, text=black] {2MD};
+\draw[gray!70] (axis cs:13.72,-1.95) -- (axis cs:14.2,-2.85) node[below, font=\scriptsize, text=black] {2FV};
+\draw[gray!70] (axis cs:11.05,-1.65) -- (axis cs:10.45,-1.15) node[above, font=\scriptsize, text=black] {4MU};
+\draw[gray!70] (axis cs:11.52,-2.18) -- (axis cs:12.0,-2.9) node[below, font=\scriptsize, text=black] {4LE};
+\draw[gray!70] (axis cs:11.45,2.2) -- (axis cs:11.0,2.25) node[left, font=\scriptsize, text=black] {9BT};
+\end{axis}
+\end{tikzpicture}
+\end{document}

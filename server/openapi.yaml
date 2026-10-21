@@ -1,0 +1,2714 @@
+# OpenAPI 3.1 description of the registry API of N-Ways Addressing for Gabon (server/).
+# Every example is a real response of the server on the published registry (docs/api.md).
+openapi: "3.1.0"
+info:
+  title: "N-Ways Addressing for Gabon: registry API"
+  version: "1.0.0"
+  description: "The API of the registry server in server/: every published code of Gabon, look-ups by remembered form, machine form, official address, spot code and point, and on-demand issue by the rules of engine/SPEC.md. Every response is JSON; every error is {\"error\": {\"code\", \"message\"}}. Data: ODbL 1.0; credit \"N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)\"."
+  license:
+    name: "Apache-2.0"
+    identifier: "Apache-2.0"
+  contact:
+    name: "N-WAYS LIMITED"
+    url: "https://nways.ng"
+    email: "hello@nways.ng"
+servers:
+  - url: "http://localhost:8080"
+    description: "A local deployment (docker compose up)"
+paths:
+  "/v1/health":
+    get:
+      summary: "Liveness and the registry served"
+      operationId: "health"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Health"
+              example:
+                status: "ok"
+                country: "GA"
+                codes: 665089
+                registryExported: "2026-10-21T07:46:20Z"
+                issuing: true
+        "404":
+          description: "Not an endpoint"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "not_found"
+                  message: "There is no endpoint /v1/codez; see /v1/info and docs/api.md."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/info":
+    get:
+      summary: "Country, zones, counts, licences, credit, engine"
+      operationId: "info"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Info"
+              example:
+                country: "GA"
+                name: "Gabon"
+                codes: 665089
+                byStatus:
+                  provisional: 665089
+                byIssue:
+                  bulk: 665089
+                zones:
+                  - key: "1KG"
+                    name: "Komo"
+                    region: "GA-1"
+                    codes: 8527
+                    areas: 205
+                  - key: "1KM"
+                    name: "Komo-Mondah"
+                    region: "GA-1"
+                    codes: 123489
+                    areas: 109
+                  - key: "1KO"
+                    name: "Komo-Ocèan"
+                    region: "GA-1"
+                    codes: 1452
+                    areas: 51
+                areas: 4922
+                areasWithCodes: 2932
+                names: 3737
+                registryExported: "2026-10-21T07:46:20Z"
+                importedAt: "2026-10-21T13:57:15Z"
+                engine: "internal/addressing/ga (SPEC v1.0)"
+                spec: "engine/SPEC.md"
+                licences:
+                  data: "ODbL 1.0 (LICENSE-DATA)"
+                  code: "Apache-2.0 (LICENSE)"
+                  documents: "CC BY 4.0 (LICENSE-DOCS)"
+                credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                creditUrl: "https://github.com/n-ways/open-addresses-gabon"
+                issuing: true
+                issuePerDay: 50
+                example:
+                  remembered: "Louis 12 01"
+                  machine: "GA-1LV-070-1201-1"
+                  spot: "GA-1LV E0794 N0757"
+        "404":
+          description: "Not an endpoint"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "not_found"
+                  message: "There is no endpoint /v1/codez; see /v1/info and docs/api.md."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/codes/{machine}":
+    get:
+      summary: "The full card of an issued code"
+      operationId: "getCode"
+      parameters:
+        - name: "machine"
+          in: "path"
+          required: true
+          description: "Machine form with its check digit."
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Card"
+              example:
+                country: "GA"
+                machine: "GA-1LV-070-1201-1"
+                home: "Louis 1201"
+                written: "Louis 12 01"
+                spoken: "Louis, 12 01"
+                number: 1201
+                check: 1
+                status: "provisional"
+                issued: "bulk"
+                issuedAt: "2026-10-21T07:32:20Z"
+                area:
+                  key: "1LV-070"
+                  id: 435
+                  plateName: "Louis"
+                  officialName: "Louis"
+                  provisionalName: false
+                  zone: "1LV"
+                  zoneName: "Libreville"
+                zone:
+                  key: "1LV"
+                  name: "Libreville"
+                  region: "GA-1"
+                  index: 3
+                officialAddress: "Avenue Joseph Deemin, Libreville"
+                entrance:
+                  lat: 0.4085002
+                  lng: 9.4314043
+                  kind: "centre"
+                spotCode: "GA-1LV E0794 N0757"
+                plusCode: "6FGFCC5J+CH2"
+                profile:
+                  class: "residential"
+                  use: "residential"
+                  kind: "building"
+                  structures: 1
+                  floorAreaM2: 122.2
+                  rule: "single"
+                  estate: null
+                record:
+                  machine: "GA-1LV-070-1201-1"
+                  home: "Louis 1201"
+                  written: "Louis 12 01"
+                  zone: "1LV-070"
+                  official_name: "Louis"
+                  number: "1201"
+                  check: "1"
+                  status: "provisional"
+                  issued: "bulk"
+                  issued_at: "2026-10-21T07:32:20Z"
+                  entrance_lat: "0.4085002"
+                  entrance_lng: "9.4314043"
+                  entrance_kind: "centre"
+                  spot_code: "GA-1LV E0794 N0757"
+                  official_address: "Avenue Joseph Deemin, Libreville"
+                  class: "residential"
+                  use: "residential"
+                  kind: "building"
+                  structures: "1"
+                  floor_area_m2: "122.2"
+                  rule: "single"
+                  estate: ""
+                credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+        "400":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "bad_code"
+                  message: "A machine code ends with its check digit; use /v1/find to look up a code without it."
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "not_issued"
+                  message: "GA-1LV-070-2690-5 is a valid code but no compound has it."
+        "422":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "check_digit"
+                  message: "The check digit does not match: a digit is wrong or two are swapped."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+    patch:
+      summary: "Set a status or move the entrance (issuing deployments)"
+      operationId: "changeCode"
+      security:
+        - issuingKey: []
+      parameters:
+        - name: "machine"
+          in: "path"
+          required: true
+          description: "Machine form with its check digit."
+          schema:
+            type: "string"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/ChangeRequest"
+            example:
+              status: "confirmed"
+      responses:
+        "200":
+          description: "The card after the change"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Card"
+              examples:
+                patch_status:
+                  value:
+                    country: "GA"
+                    machine: "GA-1LV-095-4300-4"
+                    home: "Plaine Orety 4300"
+                    written: "Plaine Orety 43 00"
+                    spoken: "Plaine Orety, 43 00"
+                    number: 4300
+                    check: 4
+                    status: "confirmed"
+                    issued: "on-demand"
+                    issuedAt: "2026-10-21T13:57:17Z"
+                    area:
+                      key: "1LV-095"
+                      id: 460
+                      plateName: "Plaine Orety"
+                      officialName: "Plaine Orety"
+                      provisionalName: false
+                      zone: "1LV"
+                      zoneName: "Libreville"
+                    zone:
+                      key: "1LV"
+                      name: "Libreville"
+                      region: "GA-1"
+                      index: 3
+                    officialAddress: null
+                    entrance:
+                      lat: 0.4153
+                      lng: 9.4363
+                      kind: "centre"
+                    spotCode: "GA-1LV E0849 N0832"
+                    plusCode: "6FGFCC8P+4GF"
+                    profile:
+                      class: "residential"
+                      use: "residential"
+                      kind: "building"
+                      structures: 1
+                      floorAreaM2: 123.1
+                      rule: null
+                      estate: null
+                    record:
+                      machine: "GA-1LV-095-4300-4"
+                      home: "Plaine Orety 4300"
+                      written: "Plaine Orety 43 00"
+                      zone: "1LV-095"
+                      official_name: "Plaine Orety"
+                      number: "4300"
+                      check: "4"
+                      status: "confirmed"
+                      issued: "on-demand"
+                      issued_at: "2026-10-21T13:57:17Z"
+                      entrance_lat: "0.4153000"
+                      entrance_lng: "9.4363000"
+                      entrance_kind: "centre"
+                      spot_code: "GA-1LV E0849 N0832"
+                      official_address: ""
+                      class: "residential"
+                      use: "residential"
+                      kind: "building"
+                      structures: "1"
+                      floor_area_m2: "123.1"
+                      rule: ""
+                      estate: ""
+                    credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                patch_entrance:
+                  value:
+                    country: "GA"
+                    machine: "GA-1LV-095-4300-4"
+                    home: "Plaine Orety 4300"
+                    written: "Plaine Orety 43 00"
+                    spoken: "Plaine Orety, 43 00"
+                    number: 4300
+                    check: 4
+                    status: "confirmed"
+                    issued: "on-demand"
+                    issuedAt: "2026-10-21T13:57:17Z"
+                    area:
+                      key: "1LV-095"
+                      id: 460
+                      plateName: "Plaine Orety"
+                      officialName: "Plaine Orety"
+                      provisionalName: false
+                      zone: "1LV"
+                      zoneName: "Libreville"
+                    zone:
+                      key: "1LV"
+                      name: "Libreville"
+                      region: "GA-1"
+                      index: 3
+                    officialAddress: null
+                    entrance:
+                      lat: 0.4152
+                      lng: 9.4363
+                      kind: "gate"
+                    spotCode: "GA-1LV E0849 N0831"
+                    plusCode: "6FGFCC8P+3GM"
+                    profile:
+                      class: "residential"
+                      use: "residential"
+                      kind: "building"
+                      structures: 1
+                      floorAreaM2: 123.1
+                      rule: null
+                      estate: null
+                    record:
+                      machine: "GA-1LV-095-4300-4"
+                      home: "Plaine Orety 4300"
+                      written: "Plaine Orety 43 00"
+                      zone: "1LV-095"
+                      official_name: "Plaine Orety"
+                      number: "4300"
+                      check: "4"
+                      status: "confirmed"
+                      issued: "on-demand"
+                      issued_at: "2026-10-21T13:57:17Z"
+                      entrance_lat: "0.4152000"
+                      entrance_lng: "9.4363000"
+                      entrance_kind: "gate"
+                      spot_code: "GA-1LV E0849 N0831"
+                      official_address: ""
+                      class: "residential"
+                      use: "residential"
+                      kind: "building"
+                      structures: "1"
+                      floor_area_m2: "123.1"
+                      rule: ""
+                      estate: ""
+                    credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                patch_retire:
+                  value:
+                    country: "GA"
+                    machine: "GA-1LV-095-4300-4"
+                    home: "Plaine Orety 4300"
+                    written: "Plaine Orety 43 00"
+                    spoken: "Plaine Orety, 43 00"
+                    number: 4300
+                    check: 4
+                    status: "retired"
+                    issued: "on-demand"
+                    issuedAt: "2026-10-21T13:57:17Z"
+                    area:
+                      key: "1LV-095"
+                      id: 460
+                      plateName: "Plaine Orety"
+                      officialName: "Plaine Orety"
+                      provisionalName: false
+                      zone: "1LV"
+                      zoneName: "Libreville"
+                    zone:
+                      key: "1LV"
+                      name: "Libreville"
+                      region: "GA-1"
+                      index: 3
+                    officialAddress: null
+                    entrance:
+                      lat: 0.4152
+                      lng: 9.4363
+                      kind: "gate"
+                    spotCode: "GA-1LV E0849 N0831"
+                    plusCode: "6FGFCC8P+3GM"
+                    profile:
+                      class: "residential"
+                      use: "residential"
+                      kind: "building"
+                      structures: 1
+                      floorAreaM2: 123.1
+                      rule: null
+                      estate: null
+                    record:
+                      machine: "GA-1LV-095-4300-4"
+                      home: "Plaine Orety 4300"
+                      written: "Plaine Orety 43 00"
+                      zone: "1LV-095"
+                      official_name: "Plaine Orety"
+                      number: "4300"
+                      check: "4"
+                      status: "retired"
+                      issued: "on-demand"
+                      issued_at: "2026-10-21T13:57:17Z"
+                      entrance_lat: "0.4152000"
+                      entrance_lng: "9.4363000"
+                      entrance_kind: "gate"
+                      spot_code: "GA-1LV E0849 N0831"
+                      official_address: ""
+                      class: "residential"
+                      use: "residential"
+                      kind: "building"
+                      structures: "1"
+                      floor_area_m2: "123.1"
+                      rule: ""
+                      estate: ""
+                    credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+        "401":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "unauthorised"
+                  message: "Send the issuing key as \"Authorization: Bearer <key>\"."
+        "409":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "retired"
+                  message: "Plaine Orety 4300 is retired; a retired code never comes back and its number is never reused."
+        "400":
+          description: "Not a complete machine code"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "bad_code"
+                  message: "A machine code ends with its check digit; use /v1/find to look up a code without it."
+        "403":
+          description: "This deployment does not issue"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "read_only"
+                  message: "This deployment is read-only: it is not designated to issue codes."
+        "404":
+          description: "No compound has this code"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "unknown_code"
+                  message: "There is no code GA-1LV-070-2690-5."
+        "422":
+          description: "Wrong check digit, or an entrance moved too far"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              examples:
+                check_digit:
+                  value:
+                    error:
+                      code: "check_digit"
+                      message: "The check digit does not match: a digit is wrong or two are swapped."
+                too_far:
+                  value:
+                    error:
+                      code: "too_far"
+                      message: "The new entrance is 200 m from the old one; it may move at most 80 m."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+  "/v1/codes":
+    post:
+      summary: "Issue a code for a new compound or another door (issuing deployments)"
+      description: "A point is in Gabon when a département outline holds it, or, in a gap between outlines (a sliver, the shoreline, an island), when it has a spot code (engine/SPEC.md §5); its area then follows the usual rule. Any other point is refused (422 outside). The border decides: a point more than 300 m outside Gabon's national border (OpenStreetMap admin_level 2, engine/data/border.json) is refused (422 outside) even when a zone outline or a spot zone reaches it (engine/SPEC.md §6.1)."
+      operationId: "issueCode"
+      security:
+        - issuingKey: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              "$ref": "#/components/schemas/IssueRequest"
+            example:
+              lat: 0.4153
+              lng: 9.4363
+              outline:
+                - [9.43625, 0.41525]
+                - [9.43635, 0.41525]
+                - [9.43635, 0.41535]
+                - [9.43625, 0.41535]
+      responses:
+        "201":
+          description: "The new code"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Card"
+              examples:
+                issue:
+                  value:
+                    country: "GA"
+                    machine: "GA-1LV-095-4300-4"
+                    home: "Plaine Orety 4300"
+                    written: "Plaine Orety 43 00"
+                    spoken: "Plaine Orety, 43 00"
+                    number: 4300
+                    check: 4
+                    status: "provisional"
+                    issued: "on-demand"
+                    issuedAt: "2026-10-21T13:57:17Z"
+                    area:
+                      key: "1LV-095"
+                      id: 460
+                      plateName: "Plaine Orety"
+                      officialName: "Plaine Orety"
+                      provisionalName: false
+                      zone: "1LV"
+                      zoneName: "Libreville"
+                    zone:
+                      key: "1LV"
+                      name: "Libreville"
+                      region: "GA-1"
+                      index: 3
+                    officialAddress: null
+                    entrance:
+                      lat: 0.4153
+                      lng: 9.4363
+                      kind: "centre"
+                    spotCode: "GA-1LV E0849 N0832"
+                    plusCode: "6FGFCC8P+4GF"
+                    profile:
+                      class: "residential"
+                      use: "residential"
+                      kind: "building"
+                      structures: 1
+                      floorAreaM2: 123.1
+                      rule: null
+                      estate: null
+                    record:
+                      machine: "GA-1LV-095-4300-4"
+                      home: "Plaine Orety 4300"
+                      written: "Plaine Orety 43 00"
+                      zone: "1LV-095"
+                      official_name: "Plaine Orety"
+                      number: "4300"
+                      check: "4"
+                      status: "provisional"
+                      issued: "on-demand"
+                      issued_at: "2026-10-21T13:57:17Z"
+                      entrance_lat: "0.4153000"
+                      entrance_lng: "9.4363000"
+                      entrance_kind: "centre"
+                      spot_code: "GA-1LV E0849 N0832"
+                      official_address: ""
+                      class: "residential"
+                      use: "residential"
+                      kind: "building"
+                      structures: "1"
+                      floor_area_m2: "123.1"
+                      rule: ""
+                      estate: ""
+                    credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                issue_door:
+                  value:
+                    country: "GA"
+                    machine: "GA-1LV-095-4301-2"
+                    home: "Plaine Orety 4301"
+                    written: "Plaine Orety 43 01"
+                    spoken: "Plaine Orety, 43 01"
+                    number: 4301
+                    check: 2
+                    status: "provisional"
+                    issued: "on-demand"
+                    issuedAt: "2026-10-21T13:57:17Z"
+                    area:
+                      key: "1LV-095"
+                      id: 460
+                      plateName: "Plaine Orety"
+                      officialName: "Plaine Orety"
+                      provisionalName: false
+                      zone: "1LV"
+                      zoneName: "Libreville"
+                    zone:
+                      key: "1LV"
+                      name: "Libreville"
+                      region: "GA-1"
+                      index: 3
+                    officialAddress: null
+                    entrance:
+                      lat: 0.41555
+                      lng: 9.4363
+                      kind: "door"
+                    spotCode: "GA-1LV E0849 N0835"
+                    plusCode: "6FGFCC8P+6GF"
+                    profile:
+                      class: ""
+                      use: "residential"
+                      kind: "door"
+                      structures: 0
+                      floorAreaM2: 0.0
+                      rule: null
+                      estate: null
+                    record:
+                      machine: "GA-1LV-095-4301-2"
+                      home: "Plaine Orety 4301"
+                      written: "Plaine Orety 43 01"
+                      zone: "1LV-095"
+                      official_name: "Plaine Orety"
+                      number: "4301"
+                      check: "2"
+                      status: "provisional"
+                      issued: "on-demand"
+                      issued_at: "2026-10-21T13:57:17Z"
+                      entrance_lat: "0.4155500"
+                      entrance_lng: "9.4363000"
+                      entrance_kind: "door"
+                      spot_code: "GA-1LV E0849 N0835"
+                      official_address: ""
+                      class: ""
+                      use: "residential"
+                      kind: "door"
+                      structures: "0"
+                      floor_area_m2: "0.0"
+                      rule: ""
+                      estate: ""
+                    credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+        "401":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "unauthorised"
+                  message: "Send the issuing key as \"Authorization: Bearer <key>\"."
+        "409":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "exists"
+                  message: "This building already has its code: Louis 1201."
+                existing:
+                  country: "GA"
+                  machine: "GA-1LV-070-1201-1"
+                  home: "Louis 1201"
+                  written: "Louis 12 01"
+                  spoken: "Louis, 12 01"
+                  number: 1201
+                  check: 1
+                  status: "provisional"
+                  issued: "bulk"
+                  issuedAt: "2026-10-21T07:32:20Z"
+                  area:
+                    key: "1LV-070"
+                    id: 435
+                    plateName: "Louis"
+                    officialName: "Louis"
+                    provisionalName: false
+                    zone: "1LV"
+                    zoneName: "Libreville"
+                  zone:
+                    key: "1LV"
+                    name: "Libreville"
+                    region: "GA-1"
+                    index: 3
+                  officialAddress: "Avenue Joseph Deemin, Libreville"
+                  entrance:
+                    lat: 0.4085002
+                    lng: 9.4314043
+                    kind: "centre"
+                  spotCode: "GA-1LV E0794 N0757"
+                  plusCode: "6FGFCC5J+CH2"
+                  profile:
+                    class: "residential"
+                    use: "residential"
+                    kind: "building"
+                    structures: 1
+                    floorAreaM2: 122.2
+                    rule: "single"
+                    estate: null
+                  record:
+                    machine: "GA-1LV-070-1201-1"
+                    home: "Louis 1201"
+                    written: "Louis 12 01"
+                    zone: "1LV-070"
+                    official_name: "Louis"
+                    number: "1201"
+                    check: "1"
+                    status: "provisional"
+                    issued: "bulk"
+                    issued_at: "2026-10-21T07:32:20Z"
+                    entrance_lat: "0.4085002"
+                    entrance_lng: "9.4314043"
+                    entrance_kind: "centre"
+                    spot_code: "GA-1LV E0794 N0757"
+                    official_address: "Avenue Joseph Deemin, Libreville"
+                    class: "residential"
+                    use: "residential"
+                    kind: "building"
+                    structures: "1"
+                    floor_area_m2: "122.2"
+                    rule: "single"
+                    estate: ""
+                  credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+        "422":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "bad_outline"
+                  message: "That outline is 1 m², but a home's is between 6 m² and 2 ha."
+        "403":
+          description: "Read-only deployment (no ISSUE_KEYS)."
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "read_only"
+                  message: "This deployment is read-only: it is not designated to issue codes."
+        "429":
+          description: "The key has reached ISSUE_PER_DAY codes in 24 hours."
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "limit"
+                  message: "This key has issued 5 codes in the last 24 hours, its limit. Try again later."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+  "/v1/find":
+    get:
+      summary: "Find a code from a remembered form, machine form, official address or spot code"
+      operationId: "find"
+      parameters:
+        - name: "q"
+          in: "query"
+          required: true
+          description: "What was typed or said."
+          schema:
+            type: "string"
+        - name: "limit"
+          in: "query"
+          required: false
+          description: "Official addresses: matches per answer (1-100, default 20)."
+          schema:
+            type: "integer"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Find"
+              examples:
+                find_remembered:
+                  value:
+                    query: "louis1201"
+                    kind: "remembered"
+                    matches:
+                      - country: "GA"
+                        machine: "GA-1LV-070-1201-1"
+                        home: "Louis 1201"
+                        written: "Louis 12 01"
+                        spoken: "Louis, 12 01"
+                        number: 1201
+                        check: 1
+                        status: "provisional"
+                        issued: "bulk"
+                        issuedAt: "2026-10-21T07:32:20Z"
+                        area:
+                          key: "1LV-070"
+                          id: 435
+                          plateName: "Louis"
+                          officialName: "Louis"
+                          provisionalName: false
+                          zone: "1LV"
+                          zoneName: "Libreville"
+                        zone:
+                          key: "1LV"
+                          name: "Libreville"
+                          region: "GA-1"
+                          index: 3
+                        officialAddress: "Avenue Joseph Deemin, Libreville"
+                        entrance:
+                          lat: 0.4085002
+                          lng: 9.4314043
+                          kind: "centre"
+                        spotCode: "GA-1LV E0794 N0757"
+                        plusCode: "6FGFCC5J+CH2"
+                        profile:
+                          class: "residential"
+                          use: "residential"
+                          kind: "building"
+                          structures: 1
+                          floorAreaM2: 122.2
+                          rule: "single"
+                          estate: null
+                        record:
+                          machine: "GA-1LV-070-1201-1"
+                          home: "Louis 1201"
+                          written: "Louis 12 01"
+                          zone: "1LV-070"
+                          official_name: "Louis"
+                          number: "1201"
+                          check: "1"
+                          status: "provisional"
+                          issued: "bulk"
+                          issued_at: "2026-10-21T07:32:20Z"
+                          entrance_lat: "0.4085002"
+                          entrance_lng: "9.4314043"
+                          entrance_kind: "centre"
+                          spot_code: "GA-1LV E0794 N0757"
+                          official_address: "Avenue Joseph Deemin, Libreville"
+                          class: "residential"
+                          use: "residential"
+                          kind: "building"
+                          structures: "1"
+                          floor_area_m2: "122.2"
+                          rule: "single"
+                          estate: ""
+                        credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                    total: 1
+                find_five:
+                  value:
+                    query: "Port-Gentil 12 181"
+                    kind: "remembered"
+                    matches:
+                      - country: "GA"
+                        machine: "GA-8PG-042-12181-2"
+                        home: "Port-Gentil 12181"
+                        written: "Port-Gentil 12 181"
+                        spoken: "Port-Gentil, 12 181"
+                        number: 12181
+                        check: 2
+                        status: "provisional"
+                        issued: "bulk"
+                        issuedAt: "2026-10-21T07:32:46Z"
+                        area:
+                          key: "8PG-042"
+                          id: 3900
+                          plateName: "Port-Gentil"
+                          officialName: "Grand Village"
+                          provisionalName: true
+                          zone: "8PG"
+                          zoneName: "Bendje"
+                        zone:
+                          key: "8PG"
+                          name: "Bendje"
+                          region: "GA-8"
+                          index: 43
+                        officialAddress: null
+                        entrance:
+                          lat: -0.7228848
+                          lng: 8.7862647
+                          kind: "centre"
+                        spotCode: "GA-8PG E01071 N07265"
+                        plusCode: "6FFC7QGP+RGR"
+                        profile:
+                          class: "religious"
+                          use: "religious"
+                          kind: "building"
+                          structures: 1
+                          floorAreaM2: 519.7
+                          rule: "single"
+                          estate: null
+                        record:
+                          machine: "GA-8PG-042-12181-2"
+                          home: "Port-Gentil 12181"
+                          written: "Port-Gentil 12 181"
+                          zone: "8PG-042"
+                          official_name: "Grand Village"
+                          number: "12181"
+                          check: "2"
+                          status: "provisional"
+                          issued: "bulk"
+                          issued_at: "2026-10-21T07:32:46Z"
+                          entrance_lat: "-0.7228848"
+                          entrance_lng: "8.7862647"
+                          entrance_kind: "centre"
+                          spot_code: "GA-8PG E01071 N07265"
+                          official_address: ""
+                          class: "religious"
+                          use: "religious"
+                          kind: "building"
+                          structures: "1"
+                          floor_area_m2: "519.7"
+                          rule: "single"
+                          estate: ""
+                        credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                    total: 1
+                find_address:
+                  value:
+                    query: "avenue joseph deemin, libreville"
+                    kind: "officialAddress"
+                    matches:
+                      - country: "GA"
+                        machine: "GA-1LV-029-135-6"
+                        home: "Rois 135"
+                        written: "Rois 135"
+                        spoken: "Rois, 135"
+                        number: 135
+                        check: 6
+                        status: "provisional"
+                        issued: "bulk"
+                        issuedAt: "2026-10-21T07:32:18Z"
+                        area:
+                          key: "1LV-029"
+                          id: 394
+                          plateName: "Rois"
+                          officialName: "Baie des Rois"
+                          provisionalName: false
+                          zone: "1LV"
+                          zoneName: "Libreville"
+                        zone:
+                          key: "1LV"
+                          name: "Libreville"
+                          region: "GA-1"
+                          index: 3
+                        officialAddress: "Avenue Joseph Deemin, Libreville"
+                        entrance:
+                          lat: 0.4071128
+                          lng: 9.4315681
+                          kind: "centre"
+                        spotCode: "GA-1LV E0796 N0742"
+                        plusCode: "6FGFCC4J+RJW"
+                        profile:
+                          class: "commercial"
+                          use: "commercial"
+                          kind: "building"
+                          structures: 1
+                          floorAreaM2: 472.4
+                          rule: "single"
+                          estate: null
+                        record:
+                          machine: "GA-1LV-029-135-6"
+                          home: "Rois 135"
+                          written: "Rois 135"
+                          zone: "1LV-029"
+                          official_name: "Baie des Rois"
+                          number: "135"
+                          check: "6"
+                          status: "provisional"
+                          issued: "bulk"
+                          issued_at: "2026-10-21T07:32:18Z"
+                          entrance_lat: "0.4071128"
+                          entrance_lng: "9.4315681"
+                          entrance_kind: "centre"
+                          spot_code: "GA-1LV E0796 N0742"
+                          official_address: "Avenue Joseph Deemin, Libreville"
+                          class: "commercial"
+                          use: "commercial"
+                          kind: "building"
+                          structures: "1"
+                          floor_area_m2: "472.4"
+                          rule: "single"
+                          estate: ""
+                        credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                    total: 98
+                find_spot:
+                  value:
+                    query: "GA-1LV E0794 N0757"
+                    kind: "spot"
+                    matches:
+                      - country: "GA"
+                        machine: "GA-1LV-070-1201-1"
+                        home: "Louis 1201"
+                        written: "Louis 12 01"
+                        spoken: "Louis, 12 01"
+                        number: 1201
+                        check: 1
+                        status: "provisional"
+                        issued: "bulk"
+                        issuedAt: "2026-10-21T07:32:20Z"
+                        area:
+                          key: "1LV-070"
+                          id: 435
+                          plateName: "Louis"
+                          officialName: "Louis"
+                          provisionalName: false
+                          zone: "1LV"
+                          zoneName: "Libreville"
+                        zone:
+                          key: "1LV"
+                          name: "Libreville"
+                          region: "GA-1"
+                          index: 3
+                        officialAddress: "Avenue Joseph Deemin, Libreville"
+                        entrance:
+                          lat: 0.4085002
+                          lng: 9.4314043
+                          kind: "centre"
+                        spotCode: "GA-1LV E0794 N0757"
+                        plusCode: "6FGFCC5J+CH2"
+                        profile:
+                          class: "residential"
+                          use: "residential"
+                          kind: "building"
+                          structures: 1
+                          floorAreaM2: 122.2
+                          rule: "single"
+                          estate: null
+                        record:
+                          machine: "GA-1LV-070-1201-1"
+                          home: "Louis 1201"
+                          written: "Louis 12 01"
+                          zone: "1LV-070"
+                          official_name: "Louis"
+                          number: "1201"
+                          check: "1"
+                          status: "provisional"
+                          issued: "bulk"
+                          issued_at: "2026-10-21T07:32:20Z"
+                          entrance_lat: "0.4085002"
+                          entrance_lng: "9.4314043"
+                          entrance_kind: "centre"
+                          spot_code: "GA-1LV E0794 N0757"
+                          official_address: "Avenue Joseph Deemin, Libreville"
+                          class: "residential"
+                          use: "residential"
+                          kind: "building"
+                          structures: "1"
+                          floor_area_m2: "122.2"
+                          rule: "single"
+                          estate: ""
+                        credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                    total: 1
+        "400":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "missing_q"
+                  message: "The query parameter q is required."
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              examples:
+                find_length:
+                  value:
+                    error:
+                      code: "wrong_length"
+                      message: "Numbers of Louis have 4 digits."
+                find_not_issued:
+                  value:
+                    error:
+                      code: "not_issued"
+                      message: "No compound has Louis 26 90 yet (the number is in the block of Louis, Libreville)."
+                find_unknown:
+                  value:
+                    error:
+                      code: "unknown_name"
+                      message: "No area of Gabon is called “Atlantide”."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/at":
+    get:
+      summary: "The code of the compound at a point"
+      description: "The nearest entrance within 12 m. A point is in Gabon when a département outline holds it, or, in a gap between outlines (a sliver, the shoreline, an island), when it has a spot code (engine/SPEC.md §5); its area then follows the usual rule. Any other point is outside Gabon (404)."
+      operationId: "at"
+      parameters:
+        - name: "lat"
+          in: "query"
+          required: true
+          description: "Latitude, WGS 84 degrees."
+          schema:
+            type: "number"
+        - name: "lng"
+          in: "query"
+          required: true
+          description: "Longitude, WGS 84 degrees."
+          schema:
+            type: "number"
+      responses:
+        "200":
+          description: "found or none"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/At"
+              examples:
+                at_found:
+                  value:
+                    status: "found"
+                    code:
+                      country: "GA"
+                      machine: "GA-1LV-070-1201-1"
+                      home: "Louis 1201"
+                      written: "Louis 12 01"
+                      spoken: "Louis, 12 01"
+                      number: 1201
+                      check: 1
+                      status: "provisional"
+                      issued: "bulk"
+                      issuedAt: "2026-10-21T07:32:20Z"
+                      area:
+                        key: "1LV-070"
+                        id: 435
+                        plateName: "Louis"
+                        officialName: "Louis"
+                        provisionalName: false
+                        zone: "1LV"
+                        zoneName: "Libreville"
+                      zone:
+                        key: "1LV"
+                        name: "Libreville"
+                        region: "GA-1"
+                        index: 3
+                      officialAddress: "Avenue Joseph Deemin, Libreville"
+                      entrance:
+                        lat: 0.4085002
+                        lng: 9.4314043
+                        kind: "centre"
+                      spotCode: "GA-1LV E0794 N0757"
+                      plusCode: "6FGFCC5J+CH2"
+                      profile:
+                        class: "residential"
+                        use: "residential"
+                        kind: "building"
+                        structures: 1
+                        floorAreaM2: 122.2
+                        rule: "single"
+                        estate: null
+                      record:
+                        machine: "GA-1LV-070-1201-1"
+                        home: "Louis 1201"
+                        written: "Louis 12 01"
+                        zone: "1LV-070"
+                        official_name: "Louis"
+                        number: "1201"
+                        check: "1"
+                        status: "provisional"
+                        issued: "bulk"
+                        issued_at: "2026-10-21T07:32:20Z"
+                        entrance_lat: "0.4085002"
+                        entrance_lng: "9.4314043"
+                        entrance_kind: "centre"
+                        spot_code: "GA-1LV E0794 N0757"
+                        official_address: "Avenue Joseph Deemin, Libreville"
+                        class: "residential"
+                        use: "residential"
+                        kind: "building"
+                        structures: "1"
+                        floor_area_m2: "122.2"
+                        rule: "single"
+                        estate: ""
+                      credit: "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)"
+                    distanceM: 2
+                    area:
+                      key: "1LV-070"
+                      id: 435
+                      plateName: "Louis"
+                      officialName: "Louis"
+                      provisionalName: false
+                      zone: "1LV"
+                      zoneName: "Libreville"
+                at_none:
+                  value:
+                    status: "none"
+                    canIssue: true
+                    area:
+                      key: "1LV-035"
+                      id: 400
+                      plateName: "Batterie"
+                      officialName: "Batterie 4"
+                      provisionalName: true
+                      zone: "1LV"
+                      zoneName: "Libreville"
+                    nearest:
+                      machine: "GA-1LV-035-1753-8"
+                      home: "Batterie 1753"
+                      written: "Batterie 17 53"
+                      status: "provisional"
+                      area: "1LV-035"
+                      entrance:
+                        lat: 0.4179793
+                        lng: 9.4325531
+                      officialAddress: "Rue Ogombomono, Libreville"
+                      distanceM: 32.9
+        "400":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "bad_lat"
+                  message: "lat is a number."
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "outside"
+                  message: "The point is outside Gabon."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/near":
+    get:
+      summary: "Codes within a radius"
+      description: "Nearest first. A point outside Gabon (as for /v1/at) is 404."
+      operationId: "near"
+      parameters:
+        - name: "lat"
+          in: "query"
+          required: true
+          description: "Latitude, WGS 84 degrees."
+          schema:
+            type: "number"
+        - name: "lng"
+          in: "query"
+          required: true
+          description: "Longitude, WGS 84 degrees."
+          schema:
+            type: "number"
+        - name: "radius"
+          in: "query"
+          required: false
+          description: "Metres, at most 500 (default 100)."
+          schema:
+            type: "number"
+        - name: "limit"
+          in: "query"
+          required: false
+          description: "At most 100 (default 100)."
+          schema:
+            type: "integer"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Near"
+              example:
+                point:
+                  lat: 0.4085
+                  lng: 9.4314
+                radiusM: 25.0
+                total: 6
+                codes:
+                  - machine: "GA-1LV-070-1201-1"
+                    home: "Louis 1201"
+                    written: "Louis 12 01"
+                    status: "provisional"
+                    area: "1LV-070"
+                    entrance:
+                      lat: 0.4085002
+                      lng: 9.4314043
+                    officialAddress: "Avenue Joseph Deemin, Libreville"
+                    distanceM: 0.5
+                  - machine: "GA-1LV-070-1200-6"
+                    home: "Louis 1200"
+                    written: "Louis 12 00"
+                    status: "provisional"
+                    area: "1LV-070"
+                    entrance:
+                      lat: 0.4084777
+                      lng: 9.4314806
+                    officialAddress: "Avenue Joseph Deemin, Libreville"
+                    distanceM: 9.3
+                  - machine: "GA-1LV-070-1202-2"
+                    home: "Louis 1202"
+                    written: "Louis 12 02"
+                    status: "provisional"
+                    area: "1LV-070"
+                    entrance:
+                      lat: 0.4086074
+                      lng: 9.4314007
+                    officialAddress: "Avenue Joseph Deemin, Libreville"
+                    distanceM: 11.9
+        "400":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              examples:
+                near_radius:
+                  value:
+                    error:
+                      code: "bad_radius"
+                      message: "radius is in metres, more than 0 and at most 500."
+                at_bad:
+                  value:
+                    error:
+                      code: "bad_lat"
+                      message: "lat is a number."
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "outside"
+                  message: "The point is outside Gabon."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/verify":
+    get:
+      summary: "Validate a machine code: syntax, check digit, issued"
+      operationId: "verify"
+      parameters:
+        - name: "code"
+          in: "query"
+          required: true
+          description: "A machine code."
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "OK (valid or not)"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Verify"
+              examples:
+                verify_ok:
+                  value:
+                    code: "GA-1LV-070-1201-1"
+                    syntax: true
+                    checkDigit: "ok"
+                    inBlocks: true
+                    valid: true
+                    issued: true
+                    area: "1LV-070"
+                    status: "provisional"
+                    machine: "GA-1LV-070-1201-1"
+                    home: "Louis 1201"
+                verify_swap:
+                  value:
+                    code: "GA-1LV-070-2101-1"
+                    syntax: true
+                    checkDigit: "wrong"
+                    inBlocks: true
+                    valid: false
+                    issued: false
+                    area: "1LV-070"
+                    reason: "the check digit does not match: a digit is wrong or two are swapped"
+                verify_absent:
+                  value:
+                    code: "GA-1LV-070-1201"
+                    syntax: true
+                    checkDigit: "absent"
+                    inBlocks: true
+                    valid: false
+                    issued: true
+                    area: "1LV-070"
+                    reason: "no check digit: the code cannot be validated"
+                    status: "provisional"
+                    machine: "GA-1LV-070-1201-1"
+                    home: "Louis 1201"
+        "400":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "missing_code"
+                  message: "The query parameter code is required."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/spot":
+    get:
+      summary: "The spot code of a point"
+      description: "Its 10 m cell in the frame of the département whose outline holds it. A point in no outline takes the département with the nearest outline within 20 km whose frame holds it (ties to the lower key), or else the nearest cell of a frame at most 1,000 m away (engine/SPEC.md §5). A point farther away is outside Gabon (404)."
+      operationId: "spot"
+      parameters:
+        - name: "lat"
+          in: "query"
+          required: true
+          description: "Latitude, WGS 84 degrees."
+          schema:
+            type: "number"
+        - name: "lng"
+          in: "query"
+          required: true
+          description: "Longitude, WGS 84 degrees."
+          schema:
+            type: "number"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Spot"
+              example:
+                spot: "GA-1LV E0794 N0757"
+                zone:
+                  key: "1LV"
+                  name: "Libreville"
+                  region: "GA-1"
+                  index: 3
+                cellM: 10
+                centre:
+                  lat: 0.4085062
+                  lng: 9.431373
+        "400":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "bad_lat"
+                  message: "lat is a number."
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "outside"
+                  message: "The point is outside Gabon."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/spot/decode":
+    get:
+      summary: "The centre of a spot cell and the compound there"
+      operationId: "spotDecode"
+      parameters:
+        - name: "code"
+          in: "query"
+          required: true
+          description: "A spot code."
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/SpotDecode"
+              example:
+                spot: "GA-1LV E0794 N0757"
+                zone:
+                  key: "1LV"
+                  name: "Libreville"
+                  region: "GA-1"
+                  index: 3
+                centre:
+                  lat: 0.4085062
+                  lng: 9.431373
+                cellM: 10
+                code:
+                  machine: "GA-1LV-070-1201-1"
+                  home: "Louis 1201"
+                  written: "Louis 12 01"
+                  status: "provisional"
+                  area: "1LV-070"
+                  entrance:
+                    lat: 0.4085002
+                    lng: 9.4314043
+                  officialAddress: "Avenue Joseph Deemin, Libreville"
+                  distanceM: 3.5
+        "400":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "bad_spot"
+                  message: "A spot code is GA-<zone> E<east> N<north>, e.g. GA-1LV E0794 N0757."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/zones":
+    get:
+      summary: "The 49 départements"
+      operationId: "zones"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Zones"
+              example:
+                zones:
+                  - key: "1KG"
+                    index: 0
+                    name: "Komo"
+                    region: "GA-1"
+                    codes: 8527
+                    areas: 205
+                  - key: "1KM"
+                    index: 1
+                    name: "Komo-Mondah"
+                    region: "GA-1"
+                    codes: 123489
+                    areas: 109
+                  - key: "1KO"
+                    index: 2
+                    name: "Komo-Ocèan"
+                    region: "GA-1"
+                    codes: 1452
+                    areas: 51
+                total: 49
+        "404":
+          description: "Not an endpoint"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "not_found"
+                  message: "There is no endpoint /v1/codez; see /v1/info and docs/api.md."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/zones/{key}":
+    get:
+      summary: "A département and its areas"
+      operationId: "zone"
+      parameters:
+        - name: "key"
+          in: "path"
+          required: true
+          description: "Zone key, e.g. 1LV."
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/ZoneDetail"
+              example:
+                key: "2BB"
+                name: "Bayi Brikolo"
+                region: "GA-2"
+                index: 6
+                frame:
+                  lon0: 13.81
+                  lat0: -0.83
+                  latc: -0.59
+                  digitsE: 4
+                  digitsN: 4
+                codes: 944
+                areas:
+                  - key: "2BB-001"
+                    id: 604
+                    plateName: "Aboto"
+                    officialName: "Aboto"
+                    provisionalName: false
+                    zone: "2BB"
+                    zoneName: "Bayi Brikolo"
+                    codes: 9
+                    blocks:
+                      - [100, 119]
+                  - key: "2BB-002"
+                    id: 605
+                    plateName: "Aboumi"
+                    officialName: "Aboumi"
+                    provisionalName: false
+                    zone: "2BB"
+                    zoneName: "Bayi Brikolo"
+                    codes: 674
+                    blocks:
+                      - [1000, 2349]
+                  - key: "2BB-003"
+                    id: 606
+                    plateName: "Ambinda"
+                    officialName: "Ambinda"
+                    provisionalName: false
+                    zone: "2BB"
+                    zoneName: "Bayi Brikolo"
+                    codes: 5
+                    blocks:
+                      - [100, 119]
+                  - key: "2BB-004"
+                    id: 607
+                    plateName: "Lekadouba"
+                    officialName: "Lekadouba"
+                    provisionalName: false
+                    zone: "2BB"
+                    zoneName: "Bayi Brikolo"
+                    codes: 2
+                    blocks:
+                      - [100, 119]
+                  - key: "2BB-005"
+                    id: 608
+                    plateName: "Obéli"
+                    officialName: "Obéli"
+                    provisionalName: false
+                    zone: "2BB"
+                    zoneName: "Bayi Brikolo"
+                    codes: 96
+                    blocks:
+                      - [100, 299]
+                  - key: "2BB-006"
+                    id: 609
+                    plateName: "Olongo II"
+                    officialName: "Olongo II"
+                    provisionalName: false
+                    zone: "2BB"
+                    zoneName: "Bayi Brikolo"
+                    codes: 0
+                    blocks: []
+                  - key: "2BB-007"
+                    id: 610
+                    plateName: "Omboye"
+                    officialName: "Omboye Frontière"
+                    provisionalName: false
+                    zone: "2BB"
+                    zoneName: "Bayi Brikolo"
+                    codes: 158
+                    blocks:
+                      - [100, 419]
+                  - key: "2BB-008"
+                    id: 611
+                    plateName: "Oyabi"
+                    officialName: "Oyabi"
+                    provisionalName: false
+                    zone: "2BB"
+                    zoneName: "Bayi Brikolo"
+                    codes: 0
+                    blocks: []
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "unknown_zone"
+                  message: "There is no zone “9XX”; see /v1/zones."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/zones/{key}/codes":
+    get:
+      summary: "A département's codes, paged in machine order"
+      operationId: "zoneCodes"
+      parameters:
+        - name: "key"
+          in: "path"
+          required: true
+          description: "Zone key."
+          schema:
+            type: "string"
+        - name: "after"
+          in: "query"
+          required: false
+          description: "Cursor: the `next` of the previous page."
+          schema:
+            type: "string"
+        - name: "limit"
+          in: "query"
+          required: false
+          description: "1-1000 (default 100)."
+          schema:
+            type: "integer"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Page"
+              examples:
+                page:
+                  value:
+                    zone: "1LV"
+                    codes:
+                      - machine: "GA-1LV-001-1000-0"
+                        home: "Acaé 1000"
+                        written: "Acaé 10 00"
+                        status: "provisional"
+                        area: "1LV-001"
+                        entrance:
+                          lat: 0.3426974
+                          lng: 9.4730837
+                      - machine: "GA-1LV-001-1001-3"
+                        home: "Acaé 1001"
+                        written: "Acaé 10 01"
+                        status: "provisional"
+                        area: "1LV-001"
+                        entrance:
+                          lat: 0.3428021
+                          lng: 9.4730869
+                    count: 2
+                    next: "GA-1LV-001-1001-3"
+                page2:
+                  value:
+                    zone: "1LV"
+                    codes:
+                      - machine: "GA-1LV-001-1002-1"
+                        home: "Acaé 1002"
+                        written: "Acaé 10 02"
+                        status: "provisional"
+                        area: "1LV-001"
+                        entrance:
+                          lat: 0.3428133
+                          lng: 9.4730065
+                      - machine: "GA-1LV-001-1003-7"
+                        home: "Acaé 1003"
+                        written: "Acaé 10 03"
+                        status: "provisional"
+                        area: "1LV-001"
+                        entrance:
+                          lat: 0.3429475
+                          lng: 9.4729481
+                    count: 2
+                    next: "GA-1LV-001-1003-7"
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "unknown_zone"
+                  message: "There is no zone “9XX”; see /v1/zones."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/areas/{id}":
+    get:
+      summary: "An area by key or numeric id"
+      operationId: "area"
+      parameters:
+        - name: "id"
+          in: "path"
+          required: true
+          description: "Area key (1LV-070) or id (435)."
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Area"
+              example:
+                key: "1LV-070"
+                id: 435
+                plateName: "Louis"
+                officialName: "Louis"
+                provisionalName: false
+                zone: "1LV"
+                zoneName: "Libreville"
+                index: "070"
+                nameKey: "LUIS"
+                nameId: 1801
+                digits: 4
+                blocks:
+                  - [1000, 2699]
+                codes: 848
+                compoundsAtFirstIssue: 848
+                place:
+                  lat: 0.410597
+                  lng: 9.432828
+                frame:
+                  [9.429597, 0.406494, 9.43769, 0.414309]
+                alertZone: false
+                nameRange:
+                  range:
+                    [1000, 9999]
+                  spareFrom: 2700
+                  areas:
+                    ["1LV-070"]
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "unknown_area"
+                  message: "There is no area “1LV-999”."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+  "/v1/areas":
+    get:
+      summary: "Areas of a name (plate or official, alias-aware)"
+      operationId: "areasNamed"
+      parameters:
+        - name: "name"
+          in: "query"
+          required: true
+          description: "A place name."
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/AreasNamed"
+              examples:
+                areas:
+                  value:
+                    name: "mandji"
+                    total: 18
+                    areas:
+                      - key: "3LB-102"
+                        id: 1156
+                        plateName: "Mandji"
+                        officialName: "Mandji"
+                        provisionalName: false
+                        zone: "3LB"
+                        zoneName: "Ogooue Et Lacs"
+                        codes: 24
+                        blocks:
+                          - [1000, 1049]
+                      - key: "4FG-058"
+                        id: 1460
+                        plateName: "Mandji"
+                        officialName: "Mandji"
+                        provisionalName: false
+                        zone: "4FG"
+                        zoneName: "Tsamba Magotsi"
+                        codes: 0
+                        blocks: []
+                      - key: "4FG-059"
+                        id: 1461
+                        plateName: "Mandji"
+                        officialName: "Mandji"
+                        provisionalName: false
+                        zone: "4FG"
+                        zoneName: "Tsamba Magotsi"
+                        codes: 31
+                        blocks:
+                          - [1050, 1119]
+                areas_alias:
+                  value:
+                    name: "Baie des Rois"
+                    total: 1
+                    areas:
+                      - key: "1LV-029"
+                        id: 394
+                        plateName: "Rois"
+                        officialName: "Baie des Rois"
+                        provisionalName: false
+                        zone: "1LV"
+                        zoneName: "Libreville"
+                        codes: 251
+                        blocks:
+                          - [100, 609]
+        "404":
+          description: "Error"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "unknown_name"
+                  message: "No area of Gabon is called “Atlantide”."
+        "405":
+          description: "Method not allowed"
+          content:
+            application/json:
+              schema:
+                "$ref": "#/components/schemas/Error"
+              example:
+                error:
+                  code: "method_not_allowed"
+                  message: "DELETE is not allowed here; use GET."
+      security: []
+components:
+  schemas:
+    Error:
+      type: "object"
+      properties:
+        error:
+          type: "object"
+          properties:
+            code:
+              type: "string"
+              description: "Stable machine-readable code (see each endpoint)."
+            message:
+              type: "string"
+              description: "A sentence for people."
+          required:
+            ["code", "message"]
+        existing:
+          "$ref": "#/components/schemas/Card"
+        point:
+          type: "object"
+          properties:
+            lat:
+              type: "number"
+            lng:
+              type: "number"
+          required:
+            ["lat", "lng"]
+      required:
+        ["error"]
+      description: "Every error. Some carry more fields: `existing` (the card of the code already there) on 409 exists, `point` on a spot with no compound."
+    Zone:
+      type: "object"
+      properties:
+        key:
+          type: "string"
+          example: "1LV"
+        name:
+          type: "string"
+          example: "Libreville"
+        region:
+          type: "string"
+          example: "GA-1"
+        index:
+          type: "integer"
+          description: "Frozen index under the check digit, 0-48."
+    AreaBrief:
+      type: "object"
+      properties:
+        key:
+          type: "string"
+          example: "1LV-070"
+        id:
+          type: "integer"
+        plateName:
+          type: "string"
+        officialName:
+          type: "string"
+        provisionalName:
+          type: "boolean"
+        zone:
+          type: "string"
+        zoneName:
+          type: "string"
+    Record:
+      type: "object"
+      properties:
+        machine:
+          type: "string"
+        home:
+          type: "string"
+        written:
+          type: "string"
+        zone:
+          type: "string"
+        official_name:
+          type: "string"
+        number:
+          type: "string"
+        check:
+          type: "string"
+        status:
+          type: "string"
+        issued:
+          type: "string"
+        issued_at:
+          type: "string"
+        entrance_lat:
+          type: "string"
+        entrance_lng:
+          type: "string"
+        entrance_kind:
+          type: "string"
+        spot_code:
+          type: "string"
+        official_address:
+          type: "string"
+        class:
+          type: "string"
+        use:
+          type: "string"
+        kind:
+          type: "string"
+        structures:
+          type: "string"
+        floor_area_m2:
+          type: "string"
+        rule:
+          type: "string"
+        estate:
+          type: "string"
+      description: "The registry row exactly as published (registry/<zone>.csv.gz), every column as text."
+    Card:
+      type: "object"
+      properties:
+        country:
+          type: "string"
+          const: "GA"
+        machine:
+          type: "string"
+          description: "Machine form, with its check digit."
+          example: "GA-1LV-070-1201-1"
+        home:
+          type: "string"
+          example: "Louis 1201"
+        written:
+          type: "string"
+          description: "The remembered form as written on a plate."
+          example: "Louis 12 01"
+        spoken:
+          type: "string"
+          example: "Louis, 12 01"
+        number:
+          type: "integer"
+        check:
+          type: "integer"
+          minimum: 0
+          maximum: 9
+        status:
+          type: "string"
+          enum:
+            ["provisional", "confirmed", "retired"]
+        issued:
+          type: "string"
+          enum:
+            ["bulk", "on-demand"]
+        issuedAt:
+          type: "string"
+          format: "date-time"
+        area:
+          "$ref": "#/components/schemas/AreaBrief"
+        zone:
+          "$ref": "#/components/schemas/Zone"
+        officialAddress:
+          type:
+            ["string", "null"]
+        entrance:
+          type: "object"
+          properties:
+            lat:
+              type: "number"
+            lng:
+              type: "number"
+            kind:
+              type: "string"
+              enum:
+                ["centre", "gate", "door"]
+        spotCode:
+          type: "string"
+          example: "GA-1LV E0794 N0757"
+        plusCode:
+          type: "string"
+          example: "6FGFCC5J+CH2"
+        profile:
+          type: "object"
+          properties:
+            class:
+              type: "string"
+            use:
+              type: "string"
+            kind:
+              type: "string"
+            structures:
+              type: "integer"
+            floorAreaM2:
+              type: "number"
+            rule:
+              type:
+                ["string", "null"]
+            estate:
+              type:
+                ["string", "null"]
+        record:
+          "$ref": "#/components/schemas/Record"
+        credit:
+          type: "string"
+        newBlocks:
+          type: "array"
+          items:
+            type: "array"
+            items:
+              type: "integer"
+            minItems: 2
+            maxItems: 2
+          description: "POST only: blocks of the name range this issue opened."
+      required:
+        ["machine", "home", "written", "status", "record"]
+    Brief:
+      type: "object"
+      properties:
+        machine:
+          type: "string"
+        home:
+          type: "string"
+        written:
+          type: "string"
+        status:
+          type: "string"
+        area:
+          type: "string"
+        entrance:
+          type: "object"
+          properties:
+            lat:
+              type: "number"
+            lng:
+              type: "number"
+          required:
+            ["lat", "lng"]
+        officialAddress:
+          type: "string"
+        distanceM:
+          type: "number"
+    Health:
+      type: "object"
+      properties:
+        status:
+          type: "string"
+          const: "ok"
+        country:
+          type: "string"
+        codes:
+          type: "integer"
+        registryExported:
+          type: "string"
+          format: "date-time"
+        issuing:
+          type: "boolean"
+    Info:
+      type: "object"
+      properties:
+        country:
+          type: "string"
+        name:
+          type: "string"
+        codes:
+          type: "integer"
+        byStatus:
+          type: "object"
+          properties: {}
+          additionalProperties:
+            type: "integer"
+        byIssue:
+          type: "object"
+          properties: {}
+          additionalProperties:
+            type: "integer"
+        zones:
+          type: "array"
+          items:
+            type: "object"
+            properties:
+              key:
+                type: "string"
+              name:
+                type: "string"
+              region:
+                type: "string"
+              codes:
+                type: "integer"
+              areas:
+                type: "integer"
+        areas:
+          type: "integer"
+        areasWithCodes:
+          type: "integer"
+        names:
+          type: "integer"
+        registryExported:
+          type: "string"
+        importedAt:
+          type: "string"
+        engine:
+          type: "string"
+        spec:
+          type: "string"
+        licences:
+          type: "object"
+          properties: {}
+          additionalProperties:
+            type: "string"
+        credit:
+          type: "string"
+        creditUrl:
+          type: "string"
+        issuing:
+          type: "boolean"
+        issuePerDay:
+          type:
+            ["integer", "null"]
+        example:
+          type: "object"
+          properties: {}
+          additionalProperties:
+            type: "string"
+    Find:
+      type: "object"
+      properties:
+        query:
+          type: "string"
+        kind:
+          type: "string"
+          enum:
+            ["remembered", "machine", "officialAddress", "spot"]
+        checked:
+          type: "boolean"
+        matches:
+          type: "array"
+          items:
+            "$ref": "#/components/schemas/Card"
+        total:
+          type: "integer"
+    At:
+      type: "object"
+      properties:
+        status:
+          type: "string"
+          enum:
+            ["found", "none"]
+        code:
+          "$ref": "#/components/schemas/Card"
+        distanceM:
+          type: "number"
+        canIssue:
+          type: "boolean"
+        area:
+          "$ref": "#/components/schemas/AreaBrief"
+        nearest:
+          "$ref": "#/components/schemas/Brief"
+    Near:
+      type: "object"
+      properties:
+        point:
+          type: "object"
+          properties:
+            lat:
+              type: "number"
+            lng:
+              type: "number"
+          required:
+            ["lat", "lng"]
+        radiusM:
+          type: "number"
+        total:
+          type: "integer"
+        codes:
+          type: "array"
+          items:
+            "$ref": "#/components/schemas/Brief"
+    Verify:
+      type: "object"
+      properties:
+        code:
+          type: "string"
+        syntax:
+          type: "boolean"
+        checkDigit:
+          type:
+            ["string", "null"]
+          enum:
+            ["ok", "wrong", "absent", null]
+        inBlocks:
+          type:
+            ["boolean", "null"]
+        valid:
+          type: "boolean"
+        issued:
+          type: "boolean"
+        area:
+          type: "string"
+        status:
+          type: "string"
+        machine:
+          type: "string"
+        home:
+          type: "string"
+        reason:
+          type: "string"
+    Spot:
+      type: "object"
+      properties:
+        spot:
+          type: "string"
+        zone:
+          "$ref": "#/components/schemas/Zone"
+        cellM:
+          type: "integer"
+        centre:
+          type: "object"
+          properties:
+            lat:
+              type: "number"
+            lng:
+              type: "number"
+          required:
+            ["lat", "lng"]
+    SpotDecode:
+      type: "object"
+      properties:
+        spot:
+          type: "string"
+        zone:
+          "$ref": "#/components/schemas/Zone"
+        centre:
+          type: "object"
+          properties:
+            lat:
+              type: "number"
+            lng:
+              type: "number"
+          required:
+            ["lat", "lng"]
+        cellM:
+          type: "integer"
+        code:
+          oneOf:
+            - "$ref": "#/components/schemas/Brief"
+            - type: "null"
+    Zones:
+      type: "object"
+      properties:
+        zones:
+          type: "array"
+          items:
+            type: "object"
+            properties:
+              key:
+                type: "string"
+              index:
+                type: "integer"
+              name:
+                type: "string"
+              region:
+                type: "string"
+              codes:
+                type: "integer"
+              areas:
+                type: "integer"
+        total:
+          type: "integer"
+    ZoneDetail:
+      type: "object"
+      properties:
+        key:
+          type: "string"
+        name:
+          type: "string"
+        region:
+          type: "string"
+        index:
+          type: "integer"
+        frame:
+          type: "object"
+          properties:
+            lon0:
+              type: "number"
+            lat0:
+              type: "number"
+            latc:
+              type: "number"
+            digitsE:
+              type: "integer"
+            digitsN:
+              type: "integer"
+        codes:
+          type: "integer"
+        areas:
+          type: "array"
+          items:
+            allOf:
+              - "$ref": "#/components/schemas/AreaBrief"
+              - type: "object"
+                properties:
+                  codes:
+                    type: "integer"
+                  blocks:
+                    type: "array"
+                    items:
+                      type: "array"
+                      items:
+                        type: "integer"
+    Page:
+      type: "object"
+      properties:
+        zone:
+          type: "string"
+        codes:
+          type: "array"
+          items:
+            "$ref": "#/components/schemas/Brief"
+        count:
+          type: "integer"
+        next:
+          type:
+            ["string", "null"]
+    Area:
+      allOf:
+        - "$ref": "#/components/schemas/AreaBrief"
+        - type: "object"
+          properties:
+            index:
+              type: "string"
+            nameKey:
+              type: "string"
+            nameId:
+              type: "integer"
+            digits:
+              type: "integer"
+            blocks:
+              type: "array"
+              items:
+                type: "array"
+                items:
+                  type: "integer"
+            codes:
+              type: "integer"
+            compoundsAtFirstIssue:
+              type: "integer"
+            place:
+              oneOf:
+                - type: "object"
+                  properties:
+                    lat:
+                      type: "number"
+                    lng:
+                      type: "number"
+                  required:
+                    ["lat", "lng"]
+                - type: "null"
+            frame:
+              type: "array"
+              items:
+                type: "number"
+            alertZone:
+              type: "boolean"
+            nameRange:
+              type: "object"
+              properties:
+                range:
+                  type: "array"
+                  items:
+                    type: "integer"
+                spareFrom:
+                  type: "integer"
+                areas:
+                  type: "array"
+                  items:
+                    type: "string"
+    AreasNamed:
+      type: "object"
+      properties:
+        name:
+          type: "string"
+        total:
+          type: "integer"
+        areas:
+          type: "array"
+          items:
+            allOf:
+              - "$ref": "#/components/schemas/AreaBrief"
+              - type: "object"
+                properties:
+                  codes:
+                    type: "integer"
+                  blocks:
+                    type: "array"
+                    items:
+                      type: "array"
+                      items:
+                        type: "integer"
+    IssueRequest:
+      type: "object"
+      properties:
+        lat:
+          type: "number"
+        lng:
+          type: "number"
+        outline:
+          type: "array"
+          items:
+            type: "array"
+            items:
+              type: "number"
+            minItems: 2
+            maxItems: 2
+          minItems: 3
+          maxItems: 500
+          description: "The building outline, [lng, lat] points; its area must be 6 m² to 2 ha."
+        of:
+          type: "string"
+          description: "Machine code of the compound this is another door of (within 80 m of its entrance)."
+      required:
+        ["lat", "lng"]
+    ChangeRequest:
+      type: "object"
+      properties:
+        status:
+          type: "string"
+          enum:
+            ["provisional", "confirmed", "retired"]
+        entrance:
+          type: "object"
+          properties:
+            lat:
+              type: "number"
+            lng:
+              type: "number"
+            kind:
+              type: "string"
+              enum:
+                ["gate", "door"]
+              default: "gate"
+          required:
+            ["lat", "lng"]
+          description: "The new entrance, at most 80 m from the old one, and never more than 300 m outside Gabon's national border (422 outside)."
+  securitySchemes:
+    issuingKey:
+      type: "http"
+      scheme: "bearer"
+      description: "One of the keys in ISSUE_KEYS. Only a deployment designated as Gabon's issuer sets them."

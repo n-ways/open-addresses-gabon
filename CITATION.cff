@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use these codes, the registry, the engine, the server or the paper, please cite them as below."
+title: "N-Ways Addressing for Gabon: a national addressing model, its registry and its reference engine"
+type: software
+authors:
+  - name: "The N-Ways Addressing Group"
+    affiliation: "N-WAYS LIMITED"
+    email: "hello@nways.ng"
+    website: "https://nways.ng"
+repository-code: "https://github.com/n-ways/open-addresses-gabon"
+url: "https://github.com/n-ways/open-addresses-gabon"
+license: Apache-2.0
+date-released: "2026-10-21"
+keywords:
+  - addressing
+  - Gabon
+  - postal addresses
+  - geocoding
+  - Hilbert curve
+  - Damm check digit
+  - open data
+abstract: >-
+  Every compound in Gabon has an N-Ways code: the name of a quarter or village people already
+  say and a number of three to five digits, unique in the country on its own. This repository
+  holds the specification, the reference engine, the complete registry of 665,089 codes, a
+  ready-made server and API, the tools that built the data, and the research paper in English
+  and French. Data under ODbL 1.0, documents under CC BY 4.0, code under Apache 2.0.
+preferred-citation:
+  type: report
+  title: "A code for every compound: a national addressing model for Gabon"
+  authors:
+    - name: "The N-Ways Addressing Group"
+  institution:
+    name: "N-WAYS LIMITED"
+  year: 2026
+  month: 10
+  url: "https://github.com/n-ways/open-addresses-gabon/blob/main/docs/n-ways-addressing-gabon-en.pdf"
+  languages:
+    - en
+    - fr

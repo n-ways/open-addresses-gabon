@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets and local settings
+.env
+.env.*
+*.pem
+*.key
+
+# Databases and server data (a deployment's database never belongs in the repository)
+/data/
+server/data/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.duckdb
+*.duckdb.wal
+*.importing
+*.importing-*
+
+# Build and editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+docs/paper/build/
+*.aux
+*.log
+*.out
+*.toc
+
+# Figure PDFs are compiled from docs/figures/*.tex by docs/paper/build.sh; the SVGs are kept for the web
+docs/figures/*.pdf

@@ -1,0 +1,4540 @@
+{
+ "about": "Issue parity cases on the fixture registry (server/testdata/registry, the département of Ogooué-Létili, 2OL). Each expected value was computed by the N-Ways issuer (internal/addressing/ga) from the same register and the same issued codes; the server must reproduce every one. issue: points posted in order to POST /v1/codes; insert: one new compound in a given area; places: zone, code area, nearest numbered area, spot code (also for points in no outline, SPEC 5; none where the point is refused) and Plus Code of random points.",
+ "issue": [
+  {
+   "input": {
+    "lat": -2.2212527,
+    "lng": 13.6194545,
+    "note": "near GA-2OL-006-194-4"
+   },
+   "expected": {
+    "area": "2OL-006",
+    "home": "Boumango 320",
+    "machine": "GA-2OL-006-320-5",
+    "number": 320,
+    "written": "Boumango 320"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.1735118,
+    "lng": 13.6407851,
+    "note": "near GA-2OL-015-118-4"
+   },
+   "expected": {
+    "area": "2OL-015",
+    "home": "Maloundou 206",
+    "machine": "GA-2OL-015-206-5",
+    "number": 206,
+    "written": "Maloundou 206"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2310665,
+    "lng": 13.6080891,
+    "note": "near GA-2OL-022-202-2"
+   },
+   "expected": {
+    "area": "2OL-022",
+    "home": "Mossété 260",
+    "machine": "GA-2OL-022-260-7",
+    "number": 260,
+    "written": "Mossété 260"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2319884,
+    "lng": 13.6072591,
+    "note": "near GA-2OL-022-212-0"
+   },
+   "expected": {
+    "area": "2OL-022",
+    "home": "Mossété 261",
+    "machine": "GA-2OL-022-261-0",
+    "number": 261,
+    "written": "Mossété 261"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.298642,
+    "lng": 13.4486605,
+    "note": "near GA-2OL-027-228-5"
+   },
+   "expected": {
+    "area": "2OL-027",
+    "home": "Mvoumou 300",
+    "machine": "GA-2OL-027-300-1",
+    "number": 300,
+    "written": "Mvoumou 300"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2226495,
+    "lng": 13.6184783,
+    "note": "near GA-2OL-006-178-2"
+   },
+   "expected": {
+    "area": "2OL-006",
+    "home": "Boumango 321",
+    "machine": "GA-2OL-006-321-8",
+    "number": 321,
+    "written": "Boumango 321"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.241023,
+    "lng": 13.5813375,
+    "note": "near GA-2OL-009-119-1"
+   },
+   "expected": {
+    "area": "2OL-009",
+    "home": "Doumay 146",
+    "machine": "GA-2OL-009-146-5",
+    "number": 146,
+    "written": "Doumay 146"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2959753,
+    "lng": 13.4483451,
+    "note": "near GA-2OL-027-181-5"
+   },
+   "expected": {
+    "area": "2OL-027",
+    "home": "Mvoumou 301",
+    "machine": "GA-2OL-027-301-7",
+    "number": 301,
+    "written": "Mvoumou 301"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.29538,
+    "lng": 13.4493975,
+    "note": "near GA-2OL-027-202-6"
+   },
+   "expected": {
+    "area": "2OL-027",
+    "home": "Mvoumou 302",
+    "machine": "GA-2OL-027-302-5",
+    "number": 302,
+    "written": "Mvoumou 302"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2390576,
+    "lng": 13.4796666,
+    "note": "near GA-2OL-027-135-5"
+   },
+   "expected": {
+    "area": "2OL-027",
+    "home": "Mvoumou 303",
+    "machine": "GA-2OL-027-303-0",
+    "number": 303,
+    "written": "Mvoumou 303"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.1536807,
+    "lng": 13.6395976,
+    "note": "near GA-2OL-018-111-4"
+   },
+   "expected": {
+    "area": "2OL-018",
+    "home": "Mboua 120",
+    "machine": "GA-2OL-018-120-5",
+    "number": 120,
+    "written": "Mboua 120"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2428324,
+    "lng": 13.4759477,
+    "note": "near GA-2OL-027-152-5"
+   },
+   "expected": {
+    "area": "2OL-027",
+    "home": "Mvoumou 304",
+    "machine": "GA-2OL-027-304-9",
+    "number": 304,
+    "written": "Mvoumou 304"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2393978,
+    "lng": 13.4793788,
+    "note": "near GA-2OL-027-126-7"
+   },
+   "expected": {
+    "area": "2OL-027",
+    "home": "Mvoumou 305",
+    "machine": "GA-2OL-027-305-8",
+    "number": 305,
+    "written": "Mvoumou 305"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2319418,
+    "lng": 13.6100145,
+    "note": "near GA-2OL-022-190-1"
+   },
+   "expected": {
+    "error": "exists",
+    "existing": "GA-2OL-022-188-3"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2809426,
+    "lng": 13.459793,
+    "note": "near GA-2OL-027-166-0"
+   },
+   "expected": {
+    "area": "2OL-027",
+    "home": "Mvoumou 306",
+    "machine": "GA-2OL-027-306-3",
+    "number": 306,
+    "written": "Mvoumou 306"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2318093,
+    "lng": 13.606409,
+    "note": "near GA-2OL-022-139-9"
+   },
+   "expected": {
+    "area": "2OL-022",
+    "home": "Mossété 262",
+    "machine": "GA-2OL-022-262-9",
+    "number": 262,
+    "written": "Mossété 262"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.1659652,
+    "lng": 13.6363747,
+    "note": "near GA-2OL-013-102-8"
+   },
+   "expected": {
+    "area": "2OL-013",
+    "home": "Lendoundoungou 193",
+    "machine": "GA-2OL-013-193-4",
+    "number": 193,
+    "written": "Lendoundoungou 193"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2382897,
+    "lng": 13.5831601,
+    "note": "near GA-2OL-001-102-7"
+   },
+   "expected": {
+    "area": "2OL-001",
+    "home": "Bafoumou 113",
+    "machine": "GA-2OL-001-113-8",
+    "number": 113,
+    "written": "Bafoumou 113"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2962527,
+    "lng": 13.4500979,
+    "note": "near GA-2OL-027-194-5"
+   },
+   "expected": {
+    "area": "2OL-027",
+    "home": "Mvoumou 307",
+    "machine": "GA-2OL-027-307-4",
+    "number": 307,
+    "written": "Mvoumou 307"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2228802,
+    "lng": 13.6159375,
+    "note": "near GA-2OL-006-155-6"
+   },
+   "expected": {
+    "area": "2OL-006",
+    "home": "Boumango 322",
+    "machine": "GA-2OL-006-322-6",
+    "number": 322,
+    "written": "Boumango 322"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.221837,
+    "lng": 13.6194008,
+    "note": "near GA-2OL-006-186-9"
+   },
+   "expected": {
+    "area": "2OL-006",
+    "home": "Boumango 323",
+    "machine": "GA-2OL-006-323-9",
+    "number": 323,
+    "written": "Boumango 323"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.1681777,
+    "lng": 13.6373082,
+    "note": "near GA-2OL-013-151-0"
+   },
+   "expected": {
+    "area": "2OL-013",
+    "home": "Lendoundoungou 194",
+    "machine": "GA-2OL-013-194-2",
+    "number": 194,
+    "written": "Lendoundoungou 194"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2209708,
+    "lng": 13.618284,
+    "note": "near GA-2OL-006-173-0"
+   },
+   "expected": {
+    "area": "2OL-006",
+    "home": "Boumango 324",
+    "machine": "GA-2OL-006-324-7",
+    "number": 324,
+    "written": "Boumango 324"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2310369,
+    "lng": 13.6068686,
+    "note": "near GA-2OL-022-148-6"
+   },
+   "expected": {
+    "area": "2OL-022",
+    "home": "Mossété 263",
+    "machine": "GA-2OL-022-263-2",
+    "number": 263,
+    "written": "Mossété 263"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2407983,
+    "lng": 13.5780153,
+    "note": "near GA-2OL-003-102-5"
+   },
+   "expected": {
+    "area": "2OL-003",
+    "home": "Bafounou I 126",
+    "machine": "GA-2OL-003-126-2",
+    "number": 126,
+    "written": "Bafounou I 126"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.1727594,
+    "lng": 13.6396361,
+    "note": "near GA-2OL-015-112-1"
+   },
+   "expected": {
+    "area": "2OL-015",
+    "home": "Maloundou 207",
+    "machine": "GA-2OL-015-207-9",
+    "number": 207,
+    "written": "Maloundou 207"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2423191,
+    "lng": 13.5793614,
+    "note": "near GA-2OL-009-106-1"
+   },
+   "expected": {
+    "area": "2OL-009",
+    "home": "Doumay 147",
+    "machine": "GA-2OL-009-147-9",
+    "number": 147,
+    "written": "Doumay 147"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.1606651,
+    "lng": 13.6362939,
+    "note": "near GA-2OL-016-281-0"
+   },
+   "expected": {
+    "area": "2OL-016",
+    "home": "Maloundou 306",
+    "machine": "GA-2OL-016-306-0",
+    "number": 306,
+    "written": "Maloundou 306"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.163839,
+    "lng": 13.635292,
+    "note": "near GA-2OL-013-114-0"
+   },
+   "expected": {
+    "error": "exists",
+    "existing": "GA-2OL-013-116-5"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.1757035,
+    "lng": 13.6420075,
+    "note": "near GA-2OL-015-147-8"
+   },
+   "expected": {
+    "area": "2OL-015",
+    "home": "Maloundou 208",
+    "machine": "GA-2OL-015-208-7",
+    "number": 208,
+    "written": "Maloundou 208"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3246463,
+    "lng": 13.6240066,
+    "note": "Zangaville 1"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 113",
+    "machine": "GA-2OL-033-113-5",
+    "number": 113,
+    "written": "Zangaville 113"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3246486,
+    "lng": 13.6239585,
+    "note": "Zangaville 2"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 106",
+    "machine": "GA-2OL-033-106-4",
+    "number": 106,
+    "written": "Zangaville 106"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3245488,
+    "lng": 13.623908,
+    "note": "Zangaville 3"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 105",
+    "machine": "GA-2OL-033-105-5",
+    "number": 105,
+    "written": "Zangaville 105"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3246122,
+    "lng": 13.623869,
+    "note": "Zangaville 4"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 102",
+    "machine": "GA-2OL-033-102-9",
+    "number": 102,
+    "written": "Zangaville 102"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.324572,
+    "lng": 13.6238317,
+    "note": "Zangaville 5"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 103",
+    "machine": "GA-2OL-033-103-2",
+    "number": 103,
+    "written": "Zangaville 103"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3247062,
+    "lng": 13.6242684,
+    "note": "Zangaville 6"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 109",
+    "machine": "GA-2OL-033-109-3",
+    "number": 109,
+    "written": "Zangaville 109"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3242975,
+    "lng": 13.6240286,
+    "note": "Zangaville 7"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 114",
+    "machine": "GA-2OL-033-114-3",
+    "number": 114,
+    "written": "Zangaville 114"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3245568,
+    "lng": 13.6237247,
+    "note": "Zangaville 8"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 108",
+    "machine": "GA-2OL-033-108-6",
+    "number": 108,
+    "written": "Zangaville 108"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3246119,
+    "lng": 13.6236884,
+    "note": "Zangaville 9"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 104",
+    "machine": "GA-2OL-033-104-1",
+    "number": 104,
+    "written": "Zangaville 104"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3249395,
+    "lng": 13.6242288,
+    "note": "Zangaville 10"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 111",
+    "machine": "GA-2OL-033-111-9",
+    "number": 111,
+    "written": "Zangaville 111"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3249919,
+    "lng": 13.6242004,
+    "note": "Zangaville 11"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 112",
+    "machine": "GA-2OL-033-112-4",
+    "number": 112,
+    "written": "Zangaville 112"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3247535,
+    "lng": 13.6236102,
+    "note": "Zangaville 12"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 107",
+    "machine": "GA-2OL-033-107-8",
+    "number": 107,
+    "written": "Zangaville 107"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.324865,
+    "lng": 13.6244669,
+    "note": "Zangaville 13"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 115",
+    "machine": "GA-2OL-033-115-6",
+    "number": 115,
+    "written": "Zangaville 115"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3250595,
+    "lng": 13.6243106,
+    "note": "Zangaville 14"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 116",
+    "machine": "GA-2OL-033-116-2",
+    "number": 116,
+    "written": "Zangaville 116"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3240575,
+    "lng": 13.623813,
+    "note": "Zangaville 15"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 110",
+    "machine": "GA-2OL-033-110-8",
+    "number": 110,
+    "written": "Zangaville 110"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3248933,
+    "lng": 13.6245761,
+    "note": "Zangaville 16"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 117",
+    "machine": "GA-2OL-033-117-0",
+    "number": 117,
+    "written": "Zangaville 117"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.324209,
+    "lng": 13.6245739,
+    "note": "Zangaville 17"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 118",
+    "machine": "GA-2OL-033-118-1",
+    "number": 118,
+    "written": "Zangaville 118"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3252243,
+    "lng": 13.6237928,
+    "note": "Zangaville 18"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 101",
+    "machine": "GA-2OL-033-101-0",
+    "number": 101,
+    "written": "Zangaville 101"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3252923,
+    "lng": 13.6242039,
+    "note": "Zangaville 19"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 119",
+    "machine": "GA-2OL-033-119-7",
+    "number": 119,
+    "written": "Zangaville 119"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3246586,
+    "lng": 13.6232956,
+    "note": "Zangaville 20"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 120",
+    "machine": "GA-2OL-033-120-3",
+    "newBlocks": [
+     [
+      120,
+      169
+     ]
+    ],
+    "number": 120,
+    "written": "Zangaville 120"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3243543,
+    "lng": 13.6232906,
+    "note": "Zangaville 21"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 121",
+    "machine": "GA-2OL-033-121-6",
+    "number": 121,
+    "written": "Zangaville 121"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3247664,
+    "lng": 13.6248536,
+    "note": "Zangaville 22"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 122",
+    "machine": "GA-2OL-033-122-7",
+    "number": 122,
+    "written": "Zangaville 122"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3247636,
+    "lng": 13.624891,
+    "note": "Zangaville 23"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 123",
+    "machine": "GA-2OL-033-123-4",
+    "number": 123,
+    "written": "Zangaville 123"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.3253424,
+    "lng": 13.6245397,
+    "note": "Zangaville 24"
+   },
+   "expected": {
+    "area": "2OL-033",
+    "home": "Zangaville 124",
+    "machine": "GA-2OL-033-124-2",
+    "number": 124,
+    "written": "Zangaville 124"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2357927,
+    "lng": 13.5849769,
+    "of": "GA-2OL-001-105-0",
+    "note": "door 15 m"
+   },
+   "expected": {
+    "area": "2OL-001",
+    "home": "Bafoumou 114",
+    "machine": "GA-2OL-001-114-6",
+    "number": 114,
+    "written": "Bafoumou 114"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2356682,
+    "lng": 13.5854409,
+    "of": "GA-2OL-001-105-0",
+    "note": "door 40 m"
+   },
+   "expected": {
+    "area": "2OL-001",
+    "home": "Bafoumou 115",
+    "machine": "GA-2OL-001-115-1",
+    "number": 115,
+    "written": "Bafoumou 115"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2351807,
+    "lng": 13.5850456,
+    "of": "GA-2OL-001-105-0",
+    "note": "door 70 m"
+   },
+   "expected": {
+    "area": "2OL-001",
+    "home": "Bafoumou 116",
+    "machine": "GA-2OL-001-116-7",
+    "number": 116,
+    "written": "Bafoumou 116"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2357996,
+    "lng": 13.5840326,
+    "of": "GA-2OL-001-105-0",
+    "note": "door too far"
+   },
+   "expected": {
+    "error": "too_far"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2406652,
+    "lng": 13.578033,
+    "note": "on an existing code"
+   },
+   "expected": {
+    "error": "exists",
+    "existing": "GA-2OL-003-100-1"
+   }
+  },
+  {
+   "input": {
+    "lat": 4.5,
+    "lng": 9.0,
+    "note": "outside Gabon"
+   },
+   "expected": {
+    "error": "outside"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.05,
+    "lng": 13.85,
+    "note": "far from every code"
+   },
+   "expected": {
+    "area": "2FV-132",
+    "home": "Ossélé 339",
+    "machine": "GA-2FV-132-339-8",
+    "number": 339,
+    "written": "Ossélé 339"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2,
+    "lng": 13.55,
+    "note": "far from every code"
+   },
+   "expected": {
+    "area": "2OL-003",
+    "home": "Bafounou I 127",
+    "machine": "GA-2OL-003-127-0",
+    "number": 127,
+    "written": "Bafounou I 127"
+   }
+  }
+ ],
+ "insert": [
+  {
+   "input": {
+    "area": "2OL-004",
+    "lat": -2.25,
+    "lng": 13.7
+   },
+   "expected": {
+    "area": "2OL-004",
+    "blocks": [
+     [
+      140,
+      159
+     ]
+    ],
+    "newBlocks": 1,
+    "number": 140,
+    "ok": true
+   }
+  },
+  {
+   "input": {
+    "area": "2OL-019",
+    "lat": -2.25,
+    "lng": 13.7
+   },
+   "expected": {
+    "area": "2OL-019",
+    "blocks": [
+     [
+      130,
+      149
+     ]
+    ],
+    "newBlocks": 1,
+    "number": 130,
+    "ok": true
+   }
+  },
+  {
+   "input": {
+    "area": "2OL-002",
+    "lat": -2.25,
+    "lng": 13.7
+   },
+   "expected": {
+    "area": "2OL-002",
+    "blocks": [
+     [
+      100,
+      119
+     ]
+    ],
+    "newBlocks": 1,
+    "number": 100,
+    "ok": true
+   }
+  },
+  {
+   "input": {
+    "area": "2OL-033",
+    "lat": -2.25,
+    "lng": 13.7
+   },
+   "expected": {
+    "area": "2OL-033",
+    "blocks": [
+     [
+      100,
+      119
+     ]
+    ],
+    "newBlocks": 0,
+    "number": 106,
+    "ok": true
+   }
+  },
+  {
+   "input": {
+    "area": "2OL-006",
+    "lat": -2.25,
+    "lng": 13.7
+   },
+   "expected": {
+    "area": "2OL-006",
+    "blocks": [
+     [
+      100,
+      429
+     ]
+    ],
+    "newBlocks": 0,
+    "number": 290,
+    "ok": true
+   }
+  }
+ ],
+ "places": [
+  {
+   "input": {
+    "lat": -3.300692,
+    "lng": 13.035798
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F8MM2XP+P8F"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.349873,
+    "lng": 11.30649
+   },
+   "expected": {
+    "area": "4MM-105",
+    "nearestArea": "4MM-052",
+    "plusCode": "6FCHM824+3H5",
+    "spot": "GA-4MM E2186 N08294",
+    "zone": "4MM"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.812998,
+    "lng": 8.701241
+   },
+   "expected": {
+    "nearestArea": "8GB-075",
+    "plusCode": "6F8C5PP2+RF5"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.300032,
+    "lng": 14.106634
+   },
+   "expected": {
+    "area": "2OK-051",
+    "nearestArea": "2BB-003",
+    "plusCode": "6FFPM4X4+XMJ",
+    "spot": "GA-2OK E09980 N09951",
+    "zone": "2OK"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.384993,
+    "lng": 13.30387
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F8MJ883+2G5"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.363407,
+    "lng": 12.302233
+   },
+   "expected": {
+    "area": "4ML-029",
+    "nearestArea": "4ML-050",
+    "plusCode": "6F9JJ8P2+JVQ",
+    "spot": "GA-4ML E4585 N1178",
+    "zone": "4ML"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.761501,
+    "lng": 14.246928
+   },
+   "expected": {
+    "area": "6ME-066",
+    "nearestArea": "6ME-066",
+    "plusCode": "6FGPQ66W+JQ3",
+    "spot": "GA-6ME E09538 N05434",
+    "zone": "6ME"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.244558,
+    "lng": 12.385369
+   },
+   "expected": {
+    "area": "6BO-077",
+    "nearestArea": "6BO-077",
+    "plusCode": "6FGJ69VP+R4H",
+    "spot": "GA-6BO E12750 N11218",
+    "zone": "6BO"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.940482,
+    "lng": 10.517968
+   },
+   "expected": {
+    "area": "5MY-006",
+    "nearestArea": "8GB-022",
+    "plusCode": "6F9G3G59+R54",
+    "spot": "GA-5MY E2978 N7624",
+    "zone": "5MY"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.284994,
+    "lng": 13.163261
+   },
+   "expected": {
+    "area": "7LT-226",
+    "nearestArea": "7LT-207",
+    "plusCode": "6FFMP587+282",
+    "spot": "GA-7LT E09831 N15646",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.9896,
+    "lng": 11.553536
+   },
+   "expected": {
+    "area": "9BT-138",
+    "nearestArea": "9BT-138",
+    "plusCode": "6FHHXHQ3+RCV",
+    "spot": "GA-9BT E2598 N1875",
+    "zone": "9BT"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.56693,
+    "lng": 9.482215
+   },
+   "expected": {
+    "area": "1KM-051",
+    "nearestArea": "1KM-051",
+    "plusCode": "6FGFHF8J+QVG",
+    "spot": "GA-1KM E2028 N4278",
+    "zone": "1KM"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.517848,
+    "lng": 12.11002
+   },
+   "expected": {
+    "nearestArea": "4ML-030",
+    "plusCode": "6F9JF4J6+V26"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.04132,
+    "lng": 13.780764
+   },
+   "expected": {
+    "nearestArea": "6ME-073",
+    "plusCode": "6FJM2QRJ+G8C"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.770727,
+    "lng": 9.189713
+   },
+   "expected": {
+    "area": "8PG-090",
+    "nearestArea": "8PG-090",
+    "plusCode": "6FFF65HQ+PV4",
+    "spot": "GA-8PG E05562 N06736",
+    "zone": "8PG"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.24504,
+    "lng": 14.123324
+   },
+   "expected": {
+    "nearestArea": "6ME-065",
+    "plusCode": "6FGP64WF+288"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.957315,
+    "lng": 14.007094
+   },
+   "expected": {
+    "area": "6ME-077",
+    "nearestArea": "6ME-077",
+    "plusCode": "6FGPX244+WRH",
+    "spot": "GA-6ME E06868 N07599",
+    "zone": "6ME"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.002773,
+    "lng": 11.089827
+   },
+   "expected": {
+    "area": "4MU-006",
+    "nearestArea": "4MU-006",
+    "plusCode": "6F9HX3WQ+VWW",
+    "spot": "GA-4MU E3781 N1075",
+    "zone": "4MU"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.109569,
+    "lng": 11.716179
+   },
+   "expected": {
+    "area": "9OY-001",
+    "nearestArea": "9OY-001",
+    "plusCode": "6FHH4P58+RFF",
+    "spot": "GA-9OY E04631 N02538",
+    "zone": "9OY"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.680478,
+    "lng": 8.781965
+   },
+   "expected": {
+    "nearestArea": "8OM-041",
+    "plusCode": "6F9C8Q9J+RQ4"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.24197,
+    "lng": 13.84907
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F8MQR5X+6J8"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.581473,
+    "lng": 10.712703
+   },
+   "expected": {
+    "nearestArea": "5MY-025",
+    "plusCode": "6F8GCP97+C38",
+    "spot": "GA-5MY E5142 N0536"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.708903,
+    "lng": 13.163296
+   },
+   "expected": {
+    "area": "2MD-015",
+    "nearestArea": "2BK-013",
+    "plusCode": "6FCM75R7+C8M",
+    "spot": "GA-2MD E4154 N1007",
+    "zone": "2MD"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.740101,
+    "lng": 11.660249
+   },
+   "expected": {
+    "area": "5MG-011",
+    "nearestArea": "5MG-011",
+    "plusCode": "6F8H7M56+X35",
+    "spot": "GA-5MG E09449 N0109",
+    "zone": "5MG"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.867888,
+    "lng": 10.461296
+   },
+   "expected": {
+    "area": "4MJ-074",
+    "nearestArea": "4MJ-074",
+    "plusCode": "6FCG4FJ6+RGV",
+    "spot": "GA-4MJ E6802 N02677",
+    "zone": "4MJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.878535,
+    "lng": 9.403963
+   },
+   "expected": {
+    "area": "8OM-151",
+    "nearestArea": "8OM-151",
+    "plusCode": "6FCF4CC3+HHP",
+    "spot": "GA-8OM E06164 N04218",
+    "zone": "8OM"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.982449,
+    "lng": 12.015386
+   },
+   "expected": {
+    "area": "9MV-139",
+    "nearestArea": "9MV-046",
+    "plusCode": "6FHJX2J8+X5C",
+    "spot": "GA-9MV E03509 N08320",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.090619,
+    "lng": 9.592565
+   },
+   "expected": {
+    "nearestArea": "1NY-032",
+    "plusCode": "6FHF3HRV+62W",
+    "spot": "GA-1NY E00473 N6973"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.678395,
+    "lng": 11.214924
+   },
+   "expected": {
+    "area": "4MM-090",
+    "nearestArea": "4MM-090",
+    "plusCode": "6FFH86C7+JXV",
+    "spot": "GA-4MM E1167 N15719",
+    "zone": "4MM"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.814203,
+    "lng": 12.169674
+   },
+   "expected": {
+    "area": "4MB-058",
+    "nearestArea": "7KL-114",
+    "plusCode": "6FCJ55P9+8V7",
+    "spot": "GA-4MB E7449 N08246",
+    "zone": "4MB"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.306689,
+    "lng": 9.103149
+   },
+   "expected": {
+    "nearestArea": "1KO-051",
+    "plusCode": "6FGF8443+M7C"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.425226,
+    "lng": 9.833865
+   },
+   "expected": {
+    "area": "8OM-034",
+    "nearestArea": "4MJ-002",
+    "plusCode": "6FCFHRFM+WG5",
+    "spot": "GA-8OM E10947 N09230",
+    "zone": "8OM"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.813024,
+    "lng": 8.962372
+   },
+   "expected": {
+    "nearestArea": "1NY-034",
+    "plusCode": "6FHCRX76+6W5"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.522448,
+    "lng": 13.566086
+   },
+   "expected": {
+    "area": "2OK-034",
+    "nearestArea": "2OK-047",
+    "plusCode": "6FFMFHH8+2CG",
+    "spot": "GA-2OK E03963 N07491",
+    "zone": "2OK"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.098711,
+    "lng": 13.077316
+   },
+   "expected": {
+    "area": "7LT-001",
+    "nearestArea": "7LT-026",
+    "plusCode": "6FCMW32G+GW8",
+    "spot": "GA-7LT E08875 N06648",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.731118,
+    "lng": 12.823484
+   },
+   "expected": {
+    "nearestArea": "2BK-006",
+    "plusCode": "6F9J7R9F+H95"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.542465,
+    "lng": 9.449011
+   },
+   "expected": {
+    "nearestArea": "1NY-033",
+    "plusCode": "6FHFGCRX+XJJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.614393,
+    "lng": 13.255372
+   },
+   "expected": {
+    "area": "7LT-036",
+    "nearestArea": "7LT-179",
+    "plusCode": "6FFM97P4+64X",
+    "spot": "GA-7LT E10857 N12003",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.695514,
+    "lng": 14.248207
+   },
+   "expected": {
+    "area": "2DJ-007",
+    "nearestArea": "2DJ-007",
+    "plusCode": "6FFP863X+Q7W",
+    "spot": "GA-2DJ E2985 N4583",
+    "zone": "2DJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.905578,
+    "lng": 13.597373
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F9M3HVW+QW9"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.482177,
+    "lng": 11.167055
+   },
+   "expected": {
+    "area": "4MU-029",
+    "nearestArea": "4MM-149",
+    "plusCode": "6FCHG598+4RF",
+    "spot": "GA-4MU E4640 N6831",
+    "zone": "4MU"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.332662,
+    "lng": 9.156221
+   },
+   "expected": {
+    "area": "8OM-030",
+    "nearestArea": "8OM-030",
+    "plusCode": "6FCFM584+WFQ",
+    "spot": "GA-8OM E03407 N10253",
+    "zone": "8OM"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.009563,
+    "lng": 10.695583
+   },
+   "expected": {
+    "area": "4GT-003",
+    "nearestArea": "4GT-019",
+    "plusCode": "6F9GXMRW+56G",
+    "spot": "GA-4GT E2398 N3653",
+    "zone": "4GT"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.266649,
+    "lng": 11.586094
+   },
+   "expected": {
+    "area": "4LE-049",
+    "nearestArea": "4LE-049",
+    "plusCode": "6F9HPHMP+8CX",
+    "spot": "GA-4LE E2737 N1695",
+    "zone": "4LE"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.937538,
+    "lng": 11.111277
+   },
+   "expected": {
+    "area": "9MZ-084",
+    "nearestArea": "9MZ-084",
+    "plusCode": "6FGHW4Q6+2G6",
+    "spot": "GA-9MZ E03353 N08044",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.000258,
+    "lng": 10.589578
+   },
+   "expected": {
+    "area": "4FG-079",
+    "nearestArea": "4FG-050",
+    "plusCode": "6FCGXHXQ+VRW",
+    "spot": "GA-4FG E02777 N09727",
+    "zone": "4FG"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.911273,
+    "lng": 9.396613
+   },
+   "expected": {
+    "area": "8PG-061",
+    "nearestArea": "8PG-061",
+    "plusCode": "6FFF39QW+FJX",
+    "spot": "GA-8PG E07865 N05182",
+    "zone": "8PG"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.038935,
+    "lng": 13.32093
+   },
+   "expected": {
+    "area": "6MK-025",
+    "nearestArea": "6MK-025",
+    "plusCode": "6FHM28QC+H9F",
+    "spot": "GA-6MK E12922 N12704",
+    "zone": "6MK"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.160145,
+    "lng": 13.617646
+   },
+   "expected": {
+    "area": "6MK-030",
+    "nearestArea": "6ME-033",
+    "plusCode": "6FHM5J69+332",
+    "spot": "GA-6MK E16225 N14044",
+    "zone": "6MK"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.465724,
+    "lng": 14.231308
+   },
+   "expected": {
+    "nearestArea": "2PL-022",
+    "plusCode": "6F9PG6MJ+PG7",
+    "spot": "GA-2PL E4465 N00600"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.547449,
+    "lng": 12.444939
+   },
+   "expected": {
+    "area": "9OY-176",
+    "nearestArea": "6MK-011",
+    "plusCode": "6FHJGCWV+XXG",
+    "spot": "GA-9OY E12741 N07380",
+    "zone": "9OY"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.370385,
+    "lng": 13.24322
+   },
+   "expected": {
+    "area": "2MD-069",
+    "nearestArea": "2MD-069",
+    "plusCode": "6FCMJ6HV+R7X",
+    "spot": "GA-2MD E5043 N4750",
+    "zone": "2MD"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.366859,
+    "lng": 12.588314
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "6MK-011",
+    "plusCode": "6FHJ9H8Q+P8W",
+    "spot": "GA-9MV E09883 N01513",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.059431,
+    "lng": 10.741311
+   },
+   "expected": {
+    "nearestArea": "9BT-113",
+    "plusCode": "6FJG3P5R+QGF"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.928093,
+    "lng": 11.959615
+   },
+   "expected": {
+    "nearestArea": "5MA-037",
+    "plusCode": "6F9H3XC5+QR9"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.35154,
+    "lng": 11.822597
+   },
+   "expected": {
+    "area": "6BO-111",
+    "nearestArea": "6BO-111",
+    "plusCode": "6FFHJRXF+92Q",
+    "spot": "GA-6BO E06485 N04627",
+    "zone": "6BO"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.2199,
+    "lng": 12.852873
+   },
+   "expected": {
+    "nearestArea": "4ML-030",
+    "plusCode": "6F8JQVJ3+24X"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.454041,
+    "lng": 11.994641
+   },
+   "expected": {
+    "area": "6BO-106",
+    "nearestArea": "6BO-106",
+    "plusCode": "6FFHGXWV+9VJ",
+    "spot": "GA-6BO E08400 N03493",
+    "zone": "6BO"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.570503,
+    "lng": 10.409261
+   },
+   "expected": {
+    "area": "8GB-018",
+    "nearestArea": "8GB-018",
+    "plusCode": "6F9GCCH5+QPR",
+    "spot": "GA-8GB E09223 N04970",
+    "zone": "8GB"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.237776,
+    "lng": 11.923258
+   },
+   "expected": {
+    "area": "4ML-061",
+    "nearestArea": "4MB-172",
+    "plusCode": "6F9HQW6F+V8J",
+    "spot": "GA-4ML E0369 N2567",
+    "zone": "4ML"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.270974,
+    "lng": 10.229534
+   },
+   "expected": {
+    "nearestArea": "5MY-040",
+    "plusCode": "6F8GP6HH+JR7"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.020229,
+    "lng": 9.693396
+   },
+   "expected": {
+    "nearestArea": "1NY-033",
+    "plusCode": "6FJF2MCV+39R"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.344193,
+    "lng": 13.102854
+   },
+   "expected": {
+    "area": "6MK-043",
+    "nearestArea": "6MK-043",
+    "plusCode": "6FGM84V3+M4H",
+    "spot": "GA-6MK E10495 N05022",
+    "zone": "6MK"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.578622,
+    "lng": 9.775872
+   },
+   "expected": {
+    "area": "1KM-063",
+    "nearestArea": "1KM-061",
+    "plusCode": "6FGFHQHG+C8X",
+    "spot": "GA-1KM E5297 N4407",
+    "zone": "1KM"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.006537,
+    "lng": 11.638435
+   },
+   "expected": {
+    "area": "6BO-114",
+    "nearestArea": "6BO-114",
+    "plusCode": "6FGH2J4Q+J97",
+    "spot": "GA-6BO E04435 N08586",
+    "zone": "6BO"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.183926,
+    "lng": 13.556869
+   },
+   "expected": {
+    "area": "2OL-025",
+    "nearestArea": "2OL-001",
+    "plusCode": "6F9MRH84+CPH",
+    "spot": "GA-2OL E3191 N2831",
+    "zone": "2OL"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.095576,
+    "lng": 10.52469
+   },
+   "expected": {
+    "area": "4MJ-073",
+    "nearestArea": "4GT-027",
+    "plusCode": "6F9GWG3F+QV8",
+    "spot": "GA-4MJ E7507 N00159",
+    "zone": "4MJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.282679,
+    "lng": 9.064699
+   },
+   "expected": {
+    "nearestArea": "8OM-041",
+    "plusCode": "6F9FP387+WVG"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.347818,
+    "lng": 13.908714
+   },
+   "expected": {
+    "area": "2BG-009",
+    "nearestArea": "2BG-009",
+    "plusCode": "6FCMMW25+VFG",
+    "spot": "GA-2BG E1877 N4889",
+    "zone": "2BG"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.916032,
+    "lng": 11.104264
+   },
+   "expected": {
+    "area": "9MZ-192",
+    "nearestArea": "9MZ-022",
+    "plusCode": "6FGHW483+CP6",
+    "spot": "GA-9MZ E03275 N07806",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.804334,
+    "lng": 9.259409
+   },
+   "expected": {
+    "nearestArea": "8GB-083",
+    "plusCode": "6F8F57W5+7Q7"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.757538,
+    "lng": 9.413518
+   },
+   "expected": {
+    "nearestArea": "8GB-083",
+    "plusCode": "6F8F6CR7+XCJ"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.352124,
+    "lng": 12.04359
+   },
+   "expected": {
+    "area": "6OV-021",
+    "nearestArea": "6OV-021",
+    "plusCode": "6FGJ922V+RCW",
+    "spot": "GA-6OV E2154 N4004",
+    "zone": "6OV"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.903889,
+    "lng": 10.73178
+   },
+   "expected": {
+    "nearestArea": "9BT-113",
+    "plusCode": "6FHGWP3J+HP2"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.934492,
+    "lng": 12.222079
+   },
+   "expected": {
+    "area": "9MZ-080",
+    "nearestArea": "9MZ-030",
+    "plusCode": "6FGJW6MC+QRW",
+    "spot": "GA-9MZ E15717 N08010",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.159246,
+    "lng": 12.26784
+   },
+   "expected": {
+    "area": "6OV-025",
+    "nearestArea": "6BO-077",
+    "plusCode": "6FGJ5759+M4W",
+    "spot": "GA-6OV E4651 N1871",
+    "zone": "6OV"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.833413,
+    "lng": 10.53317
+   },
+   "expected": {
+    "nearestArea": "9BT-113",
+    "plusCode": "6FHGRGMM+977"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.563055,
+    "lng": 11.383485
+   },
+   "expected": {
+    "area": "4ND-055",
+    "nearestArea": "4ND-055",
+    "plusCode": "6F9HC9PM+Q9H",
+    "spot": "GA-4ND E4487 N1845",
+    "zone": "4ND"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.170495,
+    "lng": 13.794739
+   },
+   "expected": {
+    "nearestArea": "6ME-073",
+    "plusCode": "6FJM5QCV+5VX"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.356073,
+    "lng": 13.695544
+   },
+   "expected": {
+    "area": "6MK-072",
+    "nearestArea": "6MK-072",
+    "plusCode": "6FGM9M4W+C6F",
+    "spot": "GA-6MK E17092 N05153",
+    "zone": "6MK"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.324703,
+    "lng": 14.057646
+   },
+   "expected": {
+    "nearestArea": "6ME-078",
+    "plusCode": "6FGP83F5+V3J",
+    "spot": "GA-6ME E07431 N00604"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.487907,
+    "lng": 14.192969
+   },
+   "expected": {
+    "area": "2BG-011",
+    "nearestArea": "2BG-011",
+    "plusCode": "6FCPG56V+R5Q",
+    "spot": "GA-2BG E5040 N3340",
+    "zone": "2BG"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.690829,
+    "lng": 12.965244
+   },
+   "expected": {
+    "area": "2BK-004",
+    "nearestArea": "2BK-004",
+    "plusCode": "6FCJ8X58+M39",
+    "spot": "GA-2BK E2394 N7620",
+    "zone": "2BK"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.192204,
+    "lng": 8.837247
+   },
+   "expected": {
+    "nearestArea": "8PG-081",
+    "plusCode": "6FCCRR5P+4V9",
+    "spot": "GA-8PG E01638 N02076"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.410864,
+    "lng": 10.379423
+   },
+   "expected": {
+    "area": "1KG-035",
+    "nearestArea": "1KG-135",
+    "plusCode": "6FGGC96H+8QV",
+    "spot": "GA-1KG E07006 N09297",
+    "zone": "1KG"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.041362,
+    "lng": 13.33909
+   },
+   "expected": {
+    "nearestArea": "9MV-110",
+    "plusCode": "6FJM28RQ+GJW",
+    "spot": "GA-9MV E18237 N08971"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.141646,
+    "lng": 13.153782
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F8MV553+8GV"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.922928,
+    "lng": 13.937171
+   },
+   "expected": {
+    "area": "2PL-012",
+    "nearestArea": "2PL-012",
+    "plusCode": "6FCM3WGP+RVF",
+    "spot": "GA-2PL E1192 N06602",
+    "zone": "2PL"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.538628,
+    "lng": 10.686406
+   },
+   "expected": {
+    "area": "3LB-096",
+    "nearestArea": "3LB-096",
+    "plusCode": "6FFGFM6P+GHR",
+    "spot": "GA-3LB E12649 N08087",
+    "zone": "3LB"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.42265,
+    "lng": 12.885734
+   },
+   "expected": {
+    "area": "7LT-130",
+    "nearestArea": "7LT-130",
+    "plusCode": "6FFJHVGP+W7X",
+    "spot": "GA-7LT E06742 N14124",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.201895,
+    "lng": 12.290028
+   },
+   "expected": {
+    "nearestArea": "5MG-024",
+    "plusCode": "6F8JQ7XR+62R"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.166646,
+    "lng": 9.428955
+   },
+   "expected": {
+    "nearestArea": "8GB-063",
+    "plusCode": "6F8FRCMH+8HW"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.704948,
+    "lng": 12.457782
+   },
+   "expected": {
+    "area": "7KL-035",
+    "nearestArea": "7PN-032",
+    "plusCode": "6FCJ7FW5+24F",
+    "spot": "GA-7KL E06764 N02377",
+    "zone": "7KL"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.165959,
+    "lng": 8.867006
+   },
+   "expected": {
+    "nearestArea": "1KO-051",
+    "plusCode": "6FGC5V88+9RJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.315612,
+    "lng": 10.764634
+   },
+   "expected": {
+    "area": "3NJ-102",
+    "nearestArea": "3NJ-102",
+    "plusCode": "6FFGMQM7+QV2",
+    "spot": "GA-3NJ E04504 N05024",
+    "zone": "3NJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.518543,
+    "lng": 10.087975
+   },
+   "expected": {
+    "area": "4MJ-078",
+    "nearestArea": "4MJ-078",
+    "plusCode": "6FCGF3JQ+H5Q",
+    "spot": "GA-4MJ E2648 N06539",
+    "zone": "4MJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.28989,
+    "lng": 9.973479
+   },
+   "expected": {
+    "area": "8OM-034",
+    "nearestArea": "8OM-034",
+    "plusCode": "6FCFPX6F+29X",
+    "spot": "GA-8OM E12501 N10726",
+    "zone": "8OM"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.12371,
+    "lng": 11.848977
+   },
+   "expected": {
+    "nearestArea": "5MG-024",
+    "plusCode": "6F8HVRGX+GH9",
+    "spot": "GA-5MA E7993 N0732"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.201689,
+    "lng": 14.12106
+   },
+   "expected": {
+    "nearestArea": "2OK-068",
+    "plusCode": "6FGP642C+MCF"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.339263,
+    "lng": 11.001779
+   },
+   "expected": {
+    "area": "9MZ-100",
+    "nearestArea": "3NJ-002",
+    "plusCode": "6FGH82Q2+PP2",
+    "spot": "GA-9MZ E02134 N01429",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.319159,
+    "lng": 9.556564
+   },
+   "expected": {
+    "nearestArea": "8OM-095",
+    "plusCode": "6F9FMHJ4+8JP"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.755156,
+    "lng": 10.305623
+   },
+   "expected": {
+    "nearestArea": "5MY-029",
+    "plusCode": "6F8G68V4+W6Q"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.931172,
+    "lng": 10.230133
+   },
+   "expected": {
+    "area": "3LB-122",
+    "nearestArea": "3LB-122",
+    "plusCode": "6FFG369J+G3J",
+    "spot": "GA-3LB E07570 N03746",
+    "zone": "3LB"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.948583,
+    "lng": 14.176521
+   },
+   "expected": {
+    "area": "2PL-022",
+    "nearestArea": "2PL-022",
+    "plusCode": "6FCP352G+HJ6",
+    "spot": "GA-2PL E3855 N06318",
+    "zone": "2PL"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.219367,
+    "lng": 13.569409
+   },
+   "expected": {
+    "area": "2OK-025",
+    "nearestArea": "2OK-026",
+    "plusCode": "6FFMQHJ9+7Q3",
+    "spot": "GA-2OK E04000 N10843",
+    "zone": "2OK"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.471511,
+    "lng": 12.471237
+   },
+   "expected": {
+    "area": "7LT-234",
+    "nearestArea": "6BO-098",
+    "plusCode": "6FFJGFHC+9FX",
+    "spot": "GA-7LT E02128 N13583",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.060094,
+    "lng": 11.681471
+   },
+   "expected": {
+    "area": "9BT-172",
+    "nearestArea": "9BT-089",
+    "plusCode": "6FJH3M6J+2HQ",
+    "spot": "GA-9BT E4021 N2654",
+    "zone": "9BT"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.255619,
+    "lng": 12.371438
+   },
+   "expected": {
+    "area": "4ML-028",
+    "nearestArea": "4ML-050",
+    "plusCode": "6F9JP9VC+QH4",
+    "spot": "GA-4ML E5355 N2370",
+    "zone": "4ML"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.778098,
+    "lng": 10.541488
+   },
+   "expected": {
+    "area": "9MN-009",
+    "nearestArea": "9MN-009",
+    "plusCode": "6FGGQGHR+6HQ",
+    "spot": "GA-9MN E3133 N2190",
+    "zone": "9MN"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.17878,
+    "lng": 8.766174
+   },
+   "expected": {
+    "nearestArea": "1KO-051",
+    "plusCode": "6FGC5QH8+GF7"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.164398,
+    "lng": 11.429161
+   },
+   "expected": {
+    "area": "9BT-129",
+    "nearestArea": "9BT-129",
+    "plusCode": "6FJH5C7H+QM3",
+    "spot": "GA-9BT E1214 N3808",
+    "zone": "9BT"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.1152,
+    "lng": 12.639031
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "9MV-110",
+    "plusCode": "6FJJ4J8Q+3JJ",
+    "spot": "GA-9MV E10448 N09788",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.445064,
+    "lng": 14.077932
+   },
+   "expected": {
+    "nearestArea": "6ME-073",
+    "plusCode": "6FHPC3WH+25F",
+    "spot": "GA-6ME E07657 N12993"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.71748,
+    "lng": 11.014631
+   },
+   "expected": {
+    "nearestArea": "9OY-084",
+    "plusCode": "6FHHP287+XVR"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.152261,
+    "lng": 14.215799
+   },
+   "expected": {
+    "nearestArea": "6ME-073",
+    "plusCode": "6FJP5628+W83"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.458421,
+    "lng": 13.508503
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F9MGGR5+JCJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.769135,
+    "lng": 9.865681
+   },
+   "expected": {
+    "area": "8OM-081",
+    "nearestArea": "8OM-081",
+    "plusCode": "6FCF6VJ8+87V",
+    "spot": "GA-8OM E11301 N05427",
+    "zone": "8OM"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.673525,
+    "lng": 12.394666
+   },
+   "expected": {
+    "area": "7KL-112",
+    "nearestArea": "7KL-136",
+    "plusCode": "6FCJ89GV+HVV",
+    "spot": "GA-7KL E06061 N02725",
+    "zone": "7KL"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.497468,
+    "lng": 11.449563
+   },
+   "expected": {
+    "area": "6BO-007",
+    "nearestArea": "6BO-062",
+    "plusCode": "6FFHGC3X+2R8",
+    "spot": "GA-6BO E02332 N03013",
+    "zone": "6BO"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.9895,
+    "lng": 12.067362
+   },
+   "expected": {
+    "area": "9MZ-003",
+    "nearestArea": "9MZ-030",
+    "plusCode": "6FGJX3Q8+RW5",
+    "spot": "GA-9MZ E13995 N08619",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.735006,
+    "lng": 12.342496
+   },
+   "expected": {
+    "nearestArea": "4ML-030",
+    "plusCode": "6F9J787R+XXX"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.946566,
+    "lng": 13.884027
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F9M3V3M+9JC"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.992743,
+    "lng": 13.419774
+   },
+   "expected": {
+    "nearestArea": "9MV-110",
+    "plusCode": "6FHMXCV9+3WR",
+    "spot": "GA-9MV E19135 N08433"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.277372,
+    "lng": 12.773622
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "6MK-037",
+    "plusCode": "6FHJ7QGF+WCX",
+    "spot": "GA-9MV E11945 N00523",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.031271,
+    "lng": 12.406875
+   },
+   "expected": {
+    "area": "6MK-121",
+    "nearestArea": "6MK-011",
+    "plusCode": "6FHJ2CJ4+GQ2",
+    "spot": "GA-6MK E02748 N12619",
+    "zone": "6MK"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.377915,
+    "lng": 10.862204
+   },
+   "expected": {
+    "area": "5MY-014",
+    "nearestArea": "5MY-014",
+    "plusCode": "6F8GJVC6+RVP",
+    "spot": "GA-5MY E6804 N2787",
+    "zone": "5MY"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.632251,
+    "lng": 9.500171
+   },
+   "expected": {
+    "area": "1KM-068",
+    "nearestArea": "1KM-068",
+    "plusCode": "6FGFJGJ2+W33",
+    "spot": "GA-1KM E2228 N5000",
+    "zone": "1KM"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.685024,
+    "lng": 14.493106
+   },
+   "expected": {
+    "nearestArea": "6ME-094",
+    "plusCode": "6FGPMFPV+265",
+    "spot": "GA-6ME E12278 N04589"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.786215,
+    "lng": 9.959311
+   },
+   "expected": {
+    "nearestArea": "5MY-029",
+    "plusCode": "6F8F6X75+GP7"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.362013,
+    "lng": 12.077852
+   },
+   "expected": {
+    "area": "9OY-130",
+    "nearestArea": "9OY-264",
+    "plusCode": "6FHJ936H+R45",
+    "spot": "GA-9OY E08656 N05329",
+    "zone": "9OY"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.349698,
+    "lng": 14.242148
+   },
+   "expected": {
+    "nearestArea": "2BB-005",
+    "plusCode": "6FFPM62R+4VC",
+    "spot": "GA-2OK E11489 N09402"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.540392,
+    "lng": 14.286231
+   },
+   "expected": {
+    "area": "2BG-001",
+    "nearestArea": "2PL-018",
+    "plusCode": "6FCPF75P+RFX",
+    "spot": "GA-2BG E6078 N2760",
+    "zone": "2BG"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.697105,
+    "lng": 12.435471
+   },
+   "expected": {
+    "area": "7KL-142",
+    "nearestArea": "7LT-028",
+    "plusCode": "6FFJ8C3P+555",
+    "spot": "GA-7KL E06516 N13522",
+    "zone": "7KL"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.920128,
+    "lng": 11.650817
+   },
+   "expected": {
+    "area": "5MA-037",
+    "nearestArea": "5MA-037",
+    "plusCode": "6F9H3MH2+W8W",
+    "spot": "GA-5MA E5790 N2984",
+    "zone": "5MA"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.369672,
+    "lng": 12.94894
+   },
+   "expected": {
+    "nearestArea": "5MG-047",
+    "plusCode": "6F8JJWJX+4HP"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.831618,
+    "lng": 10.216376
+   },
+   "expected": {
+    "area": "4MJ-005",
+    "nearestArea": "4MJ-005",
+    "plusCode": "6FCG5698+9H2",
+    "spot": "GA-4MJ E4076 N03078",
+    "zone": "4MJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.642151,
+    "lng": 12.137787
+   },
+   "expected": {
+    "nearestArea": "5MG-047",
+    "plusCode": "6F8J945Q+44M"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.980912,
+    "lng": 9.640822
+   },
+   "expected": {
+    "area": "1NY-098",
+    "nearestArea": "1NY-064",
+    "plusCode": "6FGFXJJR+988",
+    "spot": "GA-1NY E01010 N5759",
+    "zone": "1NY"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.083939,
+    "lng": 11.838759
+   },
+   "expected": {
+    "area": "4MB-062",
+    "nearestArea": "4MB-061",
+    "plusCode": "6F9HWR8Q+CGC",
+    "spot": "GA-4MB E3768 N05263",
+    "zone": "4MB"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.685215,
+    "lng": 14.341974
+   },
+   "expected": {
+    "area": "2PL-010",
+    "nearestArea": "2PL-010",
+    "plusCode": "6FCP887R+WQ9",
+    "spot": "GA-2PL E5696 N09230",
+    "zone": "2PL"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.730078,
+    "lng": 13.032616
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F9M729M+X29"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.841417,
+    "lng": 12.214517
+   },
+   "expected": {
+    "nearestArea": "5MG-011",
+    "plusCode": "6F8J5657+CRJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.923925,
+    "lng": 11.151387
+   },
+   "expected": {
+    "area": "4MM-090",
+    "nearestArea": "4FG-021",
+    "plusCode": "6FFH35G2+CHJ",
+    "spot": "GA-4MM E0460 N13004",
+    "zone": "4MM"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.135196,
+    "lng": 13.932338
+   },
+   "expected": {
+    "area": "6ME-035",
+    "nearestArea": "6ME-035",
+    "plusCode": "6FHM4WPJ+3WG",
+    "spot": "GA-6ME E06036 N09566",
+    "zone": "6ME"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.169942,
+    "lng": 14.481499
+   },
+   "expected": {
+    "nearestArea": "6ME-073",
+    "plusCode": "6FJP5F9J+XHH"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.840512,
+    "lng": 11.693904
+   },
+   "expected": {
+    "nearestArea": "5MA-037",
+    "plusCode": "6F9H5M5V+QHR",
+    "spot": "GA-5MA E6269 N3864"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.786337,
+    "lng": 11.826759
+   },
+   "expected": {
+    "nearestArea": "5MA-037",
+    "plusCode": "6F9H6R7G+FP6"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.883584,
+    "lng": 13.845716
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F9M4R8W+H78"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.707048,
+    "lng": 13.81748
+   },
+   "expected": {
+    "area": "2OK-001",
+    "nearestArea": "2OK-008",
+    "plusCode": "6FFM7RV8+5XQ",
+    "spot": "GA-2OK E06762 N05450",
+    "zone": "2OK"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.08911,
+    "lng": 8.711558
+   },
+   "expected": {
+    "nearestArea": "1KO-038",
+    "plusCode": "6FGC3PQ6+JJV"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.577744,
+    "lng": 10.83438
+   },
+   "expected": {
+    "area": "4FG-016",
+    "nearestArea": "4FG-015",
+    "plusCode": "6FCGCRCM+WQ2",
+    "spot": "GA-4FG E05502 N03342",
+    "zone": "4FG"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.559614,
+    "lng": 9.594511
+   },
+   "expected": {
+    "nearestArea": "8GB-075",
+    "plusCode": "6F9FCHRV+5R2",
+    "spot": "GA-8GB E00161 N05090"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.117885,
+    "lng": 9.433842
+   },
+   "expected": {
+    "area": "1KO-014",
+    "nearestArea": "1KO-014",
+    "plusCode": "6FFFVCJM+RGW",
+    "spot": "GA-1KO E1489 N05109",
+    "zone": "1KO"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.207206,
+    "lng": 11.510476
+   },
+   "expected": {
+    "area": "9BT-096",
+    "nearestArea": "9BT-011",
+    "plusCode": "6FJH6G46+V5Q",
+    "spot": "GA-9BT E2118 N4281",
+    "zone": "9BT"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.51866,
+    "lng": 12.91442
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "9MV-110",
+    "plusCode": "6FHJGW97+FQ7",
+    "spot": "GA-9MV E13512 N03191",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.536569,
+    "lng": 12.278337
+   },
+   "expected": {
+    "area": "7KL-064",
+    "nearestArea": "7KL-136",
+    "plusCode": "6FCJF77H+98G",
+    "spot": "GA-7KL E04767 N04239",
+    "zone": "7KL"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.114783,
+    "lng": 10.717235
+   },
+   "expected": {
+    "area": "3NJ-051",
+    "nearestArea": "3NJ-072",
+    "plusCode": "6FGG4P78+WV9",
+    "spot": "GA-3NJ E03976 N09783",
+    "zone": "3NJ"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.738897,
+    "lng": 9.401444
+   },
+   "expected": {
+    "nearestArea": "1NY-033",
+    "plusCode": "6FHFPCQ2+HH4"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.682533,
+    "lng": 13.50613
+   },
+   "expected": {
+    "area": "7LT-160",
+    "nearestArea": "2OK-028",
+    "plusCode": "6FFM8G84+XFJ",
+    "spot": "GA-7LT E13648 N11250",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.337911,
+    "lng": 11.344416
+   },
+   "expected": {
+    "area": "9MZ-060",
+    "nearestArea": "9MZ-060",
+    "plusCode": "6FGH88QV+5Q7",
+    "spot": "GA-9MZ E05948 N01414",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.271046,
+    "lng": 9.178787
+   },
+   "expected": {
+    "nearestArea": "8PG-024",
+    "plusCode": "6FFFP5HH+HGM",
+    "spot": "GA-8PG E05440 N12262"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.930086,
+    "lng": 9.209628
+   },
+   "expected": {
+    "nearestArea": "1KM-103",
+    "plusCode": "6FGFW6J5+2VJ"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.832161,
+    "lng": 10.509752
+   },
+   "expected": {
+    "area": "3LB-048",
+    "nearestArea": "3LB-048",
+    "plusCode": "6FFG5G95+4WJ",
+    "spot": "GA-3LB E10683 N04841",
+    "zone": "3LB"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.770412,
+    "lng": 10.011078
+   },
+   "expected": {
+    "area": "1NY-045",
+    "nearestArea": "1NY-096",
+    "plusCode": "6FGGQ2C6+5C8",
+    "spot": "GA-1NY E05132 N3432",
+    "zone": "1NY"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.884987,
+    "lng": 11.636378
+   },
+   "expected": {
+    "area": "4MB-033",
+    "nearestArea": "4MB-042",
+    "plusCode": "6FCH4J8P+2H2",
+    "spot": "GA-4MB E1517 N07463",
+    "zone": "4MB"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.843382,
+    "lng": 13.961212
+   },
+   "expected": {
+    "area": "2PL-008",
+    "nearestArea": "2PL-024",
+    "plusCode": "6FCM5X46+JFW",
+    "spot": "GA-2PL E1459 N07481",
+    "zone": "2PL"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.587861,
+    "lng": 13.672058
+   },
+   "expected": {
+    "area": "6ME-046",
+    "nearestArea": "6ME-076",
+    "plusCode": "6FGMHMQC+4RV",
+    "spot": "GA-6ME E03139 N03514",
+    "zone": "6ME"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.40097,
+    "lng": 9.725111
+   },
+   "expected": {
+    "area": "8OM-034",
+    "nearestArea": "8OM-034",
+    "plusCode": "6FCFHPXG+J29",
+    "spot": "GA-8OM E09737 N09498",
+    "zone": "8OM"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.099542,
+    "lng": 9.97699
+   },
+   "expected": {
+    "nearestArea": "1NY-038",
+    "plusCode": "6FHF3XXG+RQ9",
+    "spot": "GA-1NY E04752 N7071"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.372799,
+    "lng": 10.72157
+   },
+   "expected": {
+    "area": "1KG-100",
+    "nearestArea": "9MZ-100",
+    "plusCode": "6FGG9PFC+4J8",
+    "spot": "GA-1KG E10815 N08876",
+    "zone": "1KG"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.980541,
+    "lng": 11.07626
+   },
+   "expected": {
+    "area": "9MZ-188",
+    "nearestArea": "9MZ-078",
+    "plusCode": "6FGHX3JG+6G6",
+    "spot": "GA-9MZ E02963 N08520",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.080086,
+    "lng": 10.91344
+   },
+   "expected": {
+    "nearestArea": "9MN-014",
+    "plusCode": "6FHG3WJ7+29P",
+    "spot": "GA-9MN E7273 N5529"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.942853,
+    "lng": 13.00957
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F9M3245+VR4"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.172416,
+    "lng": 9.439987
+   },
+   "expected": {
+    "area": "1KO-008",
+    "nearestArea": "1KO-008",
+    "plusCode": "6FGF5CCQ+XX9",
+    "spot": "GA-1KO E1558 N08319",
+    "zone": "1KO"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.2407,
+    "lng": 13.546747
+   },
+   "expected": {
+    "area": "2OL-025",
+    "nearestArea": "2OL-008",
+    "plusCode": "6F9MQG5W+PMH",
+    "spot": "GA-2OL E3078 N2203",
+    "zone": "2OL"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.915786,
+    "lng": 13.578845
+   },
+   "expected": {
+    "area": "2FV-100",
+    "nearestArea": "2FV-114",
+    "plusCode": "6FCM3HMH+MGQ",
+    "spot": "GA-2FV E3436 N05907",
+    "zone": "2FV"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.144415,
+    "lng": 9.543101
+   },
+   "expected": {
+    "area": "8PG-046",
+    "nearestArea": "8PG-046",
+    "plusCode": "6FCFVG4V+66Q",
+    "spot": "GA-8PG E09495 N02604",
+    "zone": "8PG"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.013364,
+    "lng": 10.058899
+   },
+   "expected": {
+    "area": "1KG-010",
+    "nearestArea": "1KG-010",
+    "plusCode": "6FFGX3P5+MH2",
+    "spot": "GA-1KG E03438 N04606",
+    "zone": "1KG"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.127947,
+    "lng": 11.95554
+   },
+   "expected": {
+    "area": "9MV-034",
+    "nearestArea": "9MV-020",
+    "plusCode": "6FJH4XH4+56F",
+    "spot": "GA-9MV E02843 N09928",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.135936,
+    "lng": 10.402123
+   },
+   "expected": {
+    "nearestArea": "5MY-040",
+    "plusCode": "6F8GVC72+JRH",
+    "spot": "GA-5MY E1690 N5463"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.060003,
+    "lng": 11.02722
+   },
+   "expected": {
+    "area": "4FG-037",
+    "nearestArea": "4FG-037",
+    "plusCode": "6FCHW2QG+XVX",
+    "spot": "GA-4FG E07648 N09067",
+    "zone": "4FG"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.765331,
+    "lng": 12.855481
+   },
+   "expected": {
+    "nearestArea": "5MG-047",
+    "plusCode": "6F8J6VM4+V59"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.279525,
+    "lng": 10.653655
+   },
+   "expected": {
+    "area": "1KG-063",
+    "nearestArea": "1KG-135",
+    "plusCode": "6FGG7MH3+RF6",
+    "spot": "GA-1KG E10059 N07845",
+    "zone": "1KG"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.310885,
+    "lng": 14.052786
+   },
+   "expected": {
+    "nearestArea": "6ME-078",
+    "plusCode": "6FGP8363+943",
+    "spot": "GA-6ME E07377 N00452"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.732959,
+    "lng": 13.614667
+   },
+   "expected": {
+    "nearestArea": "6ME-055",
+    "plusCode": "6FHMPJM7+5VM"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.006911,
+    "lng": 12.572244
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "9MV-110",
+    "plusCode": "6FJJ2H4C+QV9",
+    "spot": "GA-9MV E09705 N08590",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.51225,
+    "lng": 9.917497
+   },
+   "expected": {
+    "area": "3LB-077",
+    "nearestArea": "3LB-077",
+    "plusCode": "6FFFFWQ8+4X5",
+    "spot": "GA-3LB E04090 N08378",
+    "zone": "3LB"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.716605,
+    "lng": 10.616584
+   },
+   "expected": {
+    "area": "4FG-088",
+    "nearestArea": "4FG-063",
+    "plusCode": "6FCG7JM8+9J4",
+    "spot": "GA-4FG E03078 N01806",
+    "zone": "4FG"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.821923,
+    "lng": 12.901729
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "9MV-110",
+    "plusCode": "6FHJRWC2+QM9",
+    "spot": "GA-9MV E13371 N06545",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.834804,
+    "lng": 11.941744
+   },
+   "expected": {
+    "nearestArea": "5MG-011",
+    "plusCode": "6F8H5W8R+3MH"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.336521,
+    "lng": 10.637279
+   },
+   "expected": {
+    "area": "5MO-064",
+    "nearestArea": "4GT-009",
+    "plusCode": "6F9GMJ7P+9WR",
+    "spot": "GA-5MO E0970 N4572",
+    "zone": "5MO"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.095074,
+    "lng": 11.10481
+   },
+   "expected": {
+    "area": "3NJ-056",
+    "nearestArea": "3NJ-056",
+    "plusCode": "6FGH34W3+2WF",
+    "spot": "GA-3NJ E08291 N09565",
+    "zone": "3NJ"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.924848,
+    "lng": 11.460468
+   },
+   "expected": {
+    "area": "9OY-169",
+    "nearestArea": "9OY-160",
+    "plusCode": "6FGHWFF6+W5P",
+    "spot": "GA-9OY E01785 N00495",
+    "zone": "9OY"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.612946,
+    "lng": 10.66473
+   },
+   "expected": {
+    "nearestArea": "9MN-025",
+    "plusCode": "6FHGJM77+5VH"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.667527,
+    "lng": 9.975252
+   },
+   "expected": {
+    "nearestArea": "5MY-011",
+    "plusCode": "6F8F8XJG+X4J"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.150791,
+    "lng": 13.640975
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F8MRJXR+M9Q"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.234406,
+    "lng": 8.803171
+   },
+   "expected": {
+    "nearestArea": "8OM-134",
+    "plusCode": "6F9CQR83+67M"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.60281,
+    "lng": 11.351392
+   },
+   "expected": {
+    "area": "5MA-040",
+    "nearestArea": "5MA-011",
+    "plusCode": "6F9H99W2+VHC",
+    "spot": "GA-5MA E2461 N6492",
+    "zone": "5MA"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.183161,
+    "lng": 12.354985
+   },
+   "expected": {
+    "area": "4ML-028",
+    "nearestArea": "4ML-021",
+    "plusCode": "6F9JR983+PXQ",
+    "spot": "GA-4ML E5172 N3171",
+    "zone": "4ML"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.410275,
+    "lng": 12.716117
+   },
+   "expected": {
+    "nearestArea": "5MG-047",
+    "plusCode": "6F8JHPQ8+VCX"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.55844,
+    "lng": 8.76608
+   },
+   "expected": {
+    "nearestArea": "8PG-085",
+    "plusCode": "6FFCCQR8+JCG",
+    "spot": "GA-8PG E00846 N09084"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.307326,
+    "lng": 10.613904
+   },
+   "expected": {
+    "nearestArea": "5MY-005",
+    "plusCode": "6F8GMJV7+3H6",
+    "spot": "GA-5MY E4044 N3567"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.539693,
+    "lng": 11.388091
+   },
+   "expected": {
+    "area": "4ND-003",
+    "nearestArea": "4ND-031",
+    "plusCode": "6F9HF96Q+46G",
+    "spot": "GA-4ND E4539 N2104",
+    "zone": "4ND"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.142291,
+    "lng": 9.69051
+   },
+   "expected": {
+    "area": "1KO-020",
+    "nearestArea": "1KO-020",
+    "plusCode": "6FFFVM5R+36J",
+    "spot": "GA-1KO E4347 N04839",
+    "zone": "1KO"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.981422,
+    "lng": 11.992228
+   },
+   "expected": {
+    "area": "4MB-098",
+    "nearestArea": "4MB-098",
+    "plusCode": "6FCH2X9R+CVQ",
+    "spot": "GA-4MB E5475 N06397",
+    "zone": "4MB"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.513339,
+    "lng": 12.650614
+   },
+   "expected": {
+    "area": "6MK-051",
+    "nearestArea": "6MK-051",
+    "plusCode": "6FGJGM72+86Q",
+    "spot": "GA-6MK E05461 N06892",
+    "zone": "6MK"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.433224,
+    "lng": 9.326724
+   },
+   "expected": {
+    "area": "8PG-009",
+    "nearestArea": "8PG-009",
+    "plusCode": "6FFFH88G+PM9",
+    "spot": "GA-8PG E07087 N10468",
+    "zone": "8PG"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.220577,
+    "lng": 11.133307
+   },
+   "expected": {
+    "area": "4ND-066",
+    "nearestArea": "4ND-067",
+    "plusCode": "6F9HQ4HM+Q87",
+    "spot": "GA-4ND E1705 N5632",
+    "zone": "4ND"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.751399,
+    "lng": 12.958654
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F9J6XX5+CFR"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.228705,
+    "lng": 14.432714
+   },
+   "expected": {
+    "nearestArea": "6ME-073",
+    "plusCode": "6FJP6CHM+F3P"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.744858,
+    "lng": 12.515733
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "9MV-110",
+    "plusCode": "6FHJPGV8+W7X",
+    "spot": "GA-9MV E09076 N05692",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.78415,
+    "lng": 10.714993
+   },
+   "expected": {
+    "area": "4FG-043",
+    "nearestArea": "4FG-043",
+    "plusCode": "6FCG6P87+8XX",
+    "spot": "GA-4FG E04173 N01059",
+    "zone": "4FG"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.139041,
+    "lng": 10.181028
+   },
+   "expected": {
+    "area": "1KG-078",
+    "nearestArea": "1KG-078",
+    "plusCode": "6FFGV56J+9CJ",
+    "spot": "GA-1KG E04798 N03217",
+    "zone": "1KG"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.576214,
+    "lng": 13.565972
+   },
+   "expected": {
+    "nearestArea": "6MK-113",
+    "plusCode": "6FHMHHG8+F9Q"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.672364,
+    "lng": 11.542028
+   },
+   "expected": {
+    "nearestArea": "5MG-011",
+    "plusCode": "6F8H8GHR+3R2",
+    "spot": "GA-5MG E08135 N0858"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.765,
+    "lng": 13.391916
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F8M69PR+2Q3"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.326113,
+    "lng": 13.078784
+   },
+   "expected": {
+    "area": "2BK-006",
+    "nearestArea": "2BK-006",
+    "plusCode": "6F9MM3FH+HG3",
+    "spot": "GA-2BK E3657 N0595",
+    "zone": "2BK"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.667849,
+    "lng": 10.287082
+   },
+   "expected": {
+    "area": "8GB-011",
+    "nearestArea": "8GB-011",
+    "plusCode": "6F9G87JP+VR8",
+    "spot": "GA-8GB E07864 N03893",
+    "zone": "8GB"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.321932,
+    "lng": 11.019571
+   },
+   "expected": {
+    "nearestArea": "9MN-014",
+    "plusCode": "6FHH82C9+QRG"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.546576,
+    "lng": 9.014288
+   },
+   "expected": {
+    "nearestArea": "8OM-041",
+    "plusCode": "6F9FF237+9P7"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.352676,
+    "lng": 9.074415
+   },
+   "expected": {
+    "area": "8OM-120",
+    "nearestArea": "8OM-120",
+    "plusCode": "6FCFJ3WF+WQF",
+    "spot": "GA-8OM E02497 N10032",
+    "zone": "8OM"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.576796,
+    "lng": 12.534726
+   },
+   "expected": {
+    "area": "6MK-038",
+    "nearestArea": "6MK-015",
+    "plusCode": "6FGJHGGM+PV9",
+    "spot": "GA-6MK E04171 N07594",
+    "zone": "6MK"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.32875,
+    "lng": 13.141915
+   },
+   "expected": {
+    "area": "6MK-058",
+    "nearestArea": "6MK-058",
+    "plusCode": "6FGM84HR+GQ3",
+    "spot": "GA-6MK E10930 N04851",
+    "zone": "6MK"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.048644,
+    "lng": 11.499064
+   },
+   "expected": {
+    "area": "4LE-006",
+    "nearestArea": "4LE-006",
+    "plusCode": "6F9HXF2X+GJW",
+    "spot": "GA-4LE E1769 N4106",
+    "zone": "4LE"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.337547,
+    "lng": 11.655878
+   },
+   "expected": {
+    "area": "5MG-041",
+    "nearestArea": "5MG-027",
+    "plusCode": "6F8HMM64+X9J",
+    "spot": "GA-5MG E09400 N4560",
+    "zone": "5MG"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.660854,
+    "lng": 10.585565
+   },
+   "expected": {
+    "area": "3LB-047",
+    "nearestArea": "3LB-047",
+    "plusCode": "6FFG8HQP+M64",
+    "spot": "GA-3LB E11526 N06735",
+    "zone": "3LB"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.9288,
+    "lng": 10.669734
+   },
+   "expected": {
+    "area": "4GT-006",
+    "nearestArea": "4GT-025",
+    "plusCode": "6FCG3MC9+FVQ",
+    "spot": "GA-4GT E2110 N4546",
+    "zone": "4GT"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.776803,
+    "lng": 14.435366
+   },
+   "expected": {
+    "nearestArea": "2PL-022",
+    "plusCode": "6F9P6CFP+74H"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.453697,
+    "lng": 9.711216
+   },
+   "expected": {
+    "nearestArea": "1NY-033",
+    "plusCode": "6FHFFP36+FFG"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.303561,
+    "lng": 14.195342
+   },
+   "expected": {
+    "area": "2PL-022",
+    "nearestArea": "2PL-022",
+    "plusCode": "6F9PM5WW+H4G",
+    "spot": "GA-2PL E4065 N02393",
+    "zone": "2PL"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.503499,
+    "lng": 11.719145
+   },
+   "expected": {
+    "area": "9OY-254",
+    "nearestArea": "9OY-254",
+    "plusCode": "6FHHGP39+9MR",
+    "spot": "GA-9OY E04664 N06894",
+    "zone": "9OY"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.526463,
+    "lng": 9.316913
+   },
+   "expected": {
+    "area": "8OM-059",
+    "nearestArea": "8OM-059",
+    "plusCode": "6FCFF8F8+CQ7",
+    "spot": "GA-8OM E05195 N08111",
+    "zone": "8OM"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.121999,
+    "lng": 9.946093
+   },
+   "expected": {
+    "area": "1KG-199",
+    "nearestArea": "1KG-199",
+    "plusCode": "6FFFVWHW+6C4",
+    "spot": "GA-1KG E02182 N03405",
+    "zone": "1KG"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.024382,
+    "lng": 9.916087
+   },
+   "expected": {
+    "area": "8PG-080",
+    "nearestArea": "3LB-064",
+    "plusCode": "6FCFXWG8+6CW",
+    "spot": "GA-8PG E13647 N03932",
+    "zone": "8PG"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.750187,
+    "lng": 11.754145
+   },
+   "expected": {
+    "area": "7IB-044",
+    "nearestArea": "7IB-044",
+    "plusCode": "6FFH6QX3+WMC",
+    "spot": "GA-7IB E2939 N09949",
+    "zone": "7IB"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.715175,
+    "lng": 13.291752
+   },
+   "expected": {
+    "area": "7LT-118",
+    "nearestArea": "7LT-179",
+    "plusCode": "6FFM77MR+WPJ",
+    "spot": "GA-7LT E11262 N10889",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.221766,
+    "lng": 13.768085
+   },
+   "expected": {
+    "nearestArea": "2OL-015",
+    "plusCode": "6F9MQQH9+76W",
+    "spot": "GA-2OL E5540 N2413"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.870782,
+    "lng": 11.941547
+   },
+   "expected": {
+    "area": "7IB-023",
+    "nearestArea": "7IB-023",
+    "plusCode": "6FFH4WHR+MJM",
+    "spot": "GA-7IB E5025 N08616",
+    "zone": "7IB"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.311622,
+    "lng": 10.589411
+   },
+   "expected": {
+    "nearestArea": "9MN-025",
+    "plusCode": "6FHG8H6Q+JQV"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.282588,
+    "lng": 10.973612
+   },
+   "expected": {
+    "nearestArea": "9BT-029",
+    "plusCode": "6FJG7XMF+2CQ"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.085533,
+    "lng": 11.826744
+   },
+   "expected": {
+    "area": "6BO-073",
+    "nearestArea": "6BO-073",
+    "plusCode": "6FFHWR7G+QMQ",
+    "spot": "GA-6BO E06531 N07568",
+    "zone": "6BO"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.957645,
+    "lng": 11.897591
+   },
+   "expected": {
+    "nearestArea": "5MA-045",
+    "plusCode": "6F9H2VRX+W2W",
+    "spot": "GA-5MA E8534 N2569"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.174452,
+    "lng": 12.926704
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "9MV-110",
+    "plusCode": "6FJJ5WFG+QMP",
+    "spot": "GA-9MV E13649 N10443",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.086209,
+    "lng": 13.432153
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F8MWC7J+GV6"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.173288,
+    "lng": 9.054252
+   },
+   "expected": {
+    "nearestArea": "1KO-051",
+    "plusCode": "6FGF53F3+8P6"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.23319,
+    "lng": 8.900238
+   },
+   "expected": {
+    "nearestArea": "1KO-051",
+    "plusCode": "6FGC6WM2+73H"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.99497,
+    "lng": 14.157641
+   },
+   "expected": {
+    "area": "6ME-088",
+    "nearestArea": "6ME-088",
+    "plusCode": "6FGPX5V5+X3J",
+    "spot": "GA-6ME E08544 N08016",
+    "zone": "6ME"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.790285,
+    "lng": 10.25184
+   },
+   "expected": {
+    "area": "8GB-009",
+    "nearestArea": "8GB-044",
+    "plusCode": "6F9G6752+VPP",
+    "spot": "GA-8GB E07472 N02540",
+    "zone": "8GB"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.550021,
+    "lng": 10.768575
+   },
+   "expected": {
+    "area": "4FG-053",
+    "nearestArea": "3LB-096",
+    "plusCode": "6FFGCQX9+XCW",
+    "spot": "GA-4FG E04769 N14706",
+    "zone": "4FG"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.064776,
+    "lng": 9.782118
+   },
+   "expected": {
+    "area": "8PG-102",
+    "nearestArea": "8PG-102",
+    "plusCode": "6FCFWQPJ+3RQ",
+    "spot": "GA-8PG E12156 N03485",
+    "zone": "8PG"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.567415,
+    "lng": 9.776678
+   },
+   "expected": {
+    "nearestArea": "8GB-062",
+    "plusCode": "6F8FCQMG+2MM"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.94583,
+    "lng": 12.419106
+   },
+   "expected": {
+    "nearestArea": "4ML-030",
+    "plusCode": "6F9J3C39+MJ9"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.863598,
+    "lng": 11.867208
+   },
+   "expected": {
+    "area": "7IB-018",
+    "nearestArea": "7IB-018",
+    "plusCode": "6FFH4VP8+HV8",
+    "spot": "GA-7IB E4198 N08695",
+    "zone": "7IB"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.72014,
+    "lng": 9.981432
+   },
+   "expected": {
+    "nearestArea": "5MY-029",
+    "plusCode": "6F8F7XHJ+WHV"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.642228,
+    "lng": 11.847926
+   },
+   "expected": {
+    "area": "4MM-021",
+    "nearestArea": "4MM-029",
+    "plusCode": "6FCH9R5X+453",
+    "spot": "GA-4MM E8212 N05061",
+    "zone": "4MM"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.013033,
+    "lng": 13.033454
+   },
+   "expected": {
+    "area": "7LT-039",
+    "nearestArea": "7LT-117",
+    "plusCode": "6FCMX2PM+Q9P",
+    "spot": "GA-7LT E08386 N07596",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.938889,
+    "lng": 10.582119
+   },
+   "expected": {
+    "area": "5MY-028",
+    "nearestArea": "5MY-007",
+    "plusCode": "6F9G3H6J+CRX",
+    "spot": "GA-5MY E3691 N7641",
+    "zone": "5MY"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.531865,
+    "lng": 8.933583
+   },
+   "expected": {
+    "nearestArea": "1KM-017",
+    "plusCode": "6FGCGWJM+PCW"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.853099,
+    "lng": 9.249005
+   },
+   "expected": {
+    "nearestArea": "8GB-083",
+    "plusCode": "6F8F46WX+QJ6"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.266738,
+    "lng": 12.786925
+   },
+   "expected": {
+    "area": "7LT-192",
+    "nearestArea": "7LT-083",
+    "plusCode": "6FFJPQMP+8Q3",
+    "spot": "GA-7LT E05642 N15848",
+    "zone": "7LT"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.143427,
+    "lng": 10.191921
+   },
+   "expected": {
+    "nearestArea": "1NY-018",
+    "plusCode": "6FHG45VR+9QF",
+    "spot": "GA-1NY E07145 N7556"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.791894,
+    "lng": 9.6501
+   },
+   "expected": {
+    "area": "1NY-019",
+    "nearestArea": "1NY-019",
+    "plusCode": "6FGFQMR2+Q25",
+    "spot": "GA-1NY E01114 N3669",
+    "zone": "1NY"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.713773,
+    "lng": 13.435436
+   },
+   "expected": {
+    "nearestArea": "2OL-027",
+    "plusCode": "6F9M7CPP+F5V"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.278391,
+    "lng": 11.212166
+   },
+   "expected": {
+    "area": "4FG-097",
+    "nearestArea": "4FG-024",
+    "plusCode": "6FCHP6C6+JVV",
+    "spot": "GA-4FG E09707 N06652",
+    "zone": "4FG"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.265252,
+    "lng": 9.689881
+   },
+   "expected": {
+    "nearestArea": "1NY-033",
+    "plusCode": "6FHF7M8Q+4X2"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.507151,
+    "lng": 14.313977
+   },
+   "expected": {
+    "nearestArea": "2PL-022",
+    "plusCode": "6F9PF8V7+4HQ",
+    "spot": "GA-2PL E5385 N00142"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.581175,
+    "lng": 9.619376
+   },
+   "expected": {
+    "nearestArea": "8GB-075",
+    "plusCode": "6F9FCJ99+GQJ",
+    "spot": "GA-8GB E00437 N04852"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.249554,
+    "lng": 11.147444
+   },
+   "expected": {
+    "nearestArea": "9BT-029",
+    "plusCode": "6FJH64XW+RXG"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.276299,
+    "lng": 13.665773
+   },
+   "expected": {
+    "area": "2LW-006",
+    "nearestArea": "2LW-008",
+    "plusCode": "6FCMPMF8+F8J",
+    "spot": "GA-2LW E0954 N3579",
+    "zone": "2LW"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.471263,
+    "lng": 14.316897
+   },
+   "expected": {
+    "nearestArea": "6ME-094",
+    "plusCode": "6FGPF8C8+GQ2",
+    "spot": "GA-6ME E10317 N02225"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.001947,
+    "lng": 11.254765
+   },
+   "expected": {
+    "area": "3NJ-018",
+    "nearestArea": "3NJ-018",
+    "plusCode": "6FGH2723+QWC",
+    "spot": "GA-3NJ E09960 N08535",
+    "zone": "3NJ"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.97716,
+    "lng": 12.218331
+   },
+   "expected": {
+    "area": "9MV-054",
+    "nearestArea": "9MV-054",
+    "plusCode": "6FHJX6G9+V88",
+    "spot": "GA-9MV E05767 N08261",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.331066,
+    "lng": 13.902216
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F8MMW92+HVG"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.682127,
+    "lng": 9.371947
+   },
+   "expected": {
+    "nearestArea": "1KM-103",
+    "plusCode": "6FGFM9JC+VQ4",
+    "spot": "GA-1KM E0800 N5552"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.411324,
+    "lng": 12.845877
+   },
+   "expected": {
+    "nearestArea": "5MG-047",
+    "plusCode": "6F8JHRQW+F9C"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.042451,
+    "lng": 9.616786
+   },
+   "expected": {
+    "area": "1KO-021",
+    "nearestArea": "1KO-034",
+    "plusCode": "6FFFXJ58+2P7",
+    "spot": "GA-1KO E3526 N05943",
+    "zone": "1KO"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.832845,
+    "lng": 12.418411
+   },
+   "expected": {
+    "nearestArea": "4ML-030",
+    "plusCode": "6F9J5C89+V97"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.726345,
+    "lng": 14.198417
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F9P75FX+F97"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.194835,
+    "lng": 8.876911
+   },
+   "expected": {
+    "nearestArea": "1NY-033",
+    "plusCode": "6FJC5VVG+WQM"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.120161,
+    "lng": 12.459518
+   },
+   "expected": {
+    "area": "9MV-054",
+    "nearestArea": "9MV-054",
+    "plusCode": "6FJJ4FC5+3R6",
+    "spot": "GA-9MV E08450 N09842",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.764754,
+    "lng": 13.278814
+   },
+   "expected": {
+    "nearestArea": "9MV-110",
+    "plusCode": "6FHMQ77H+WG4",
+    "spot": "GA-9MV E17566 N05912"
+   }
+  },
+  {
+   "input": {
+    "lat": -2.119877,
+    "lng": 10.818317
+   },
+   "expected": {
+    "area": "4GT-049",
+    "nearestArea": "4GT-048",
+    "plusCode": "6F9GVRJ9+28W",
+    "spot": "GA-4GT E3763 N2433",
+    "zone": "4GT"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.840966,
+    "lng": 11.721901
+   },
+   "expected": {
+    "nearestArea": "5MG-011",
+    "plusCode": "6F8H5P5C+JQ6"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.597768,
+    "lng": 13.574719
+   },
+   "expected": {
+    "nearestArea": "6MK-113",
+    "plusCode": "6FHMHHXF+4V5"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.873337,
+    "lng": 9.500095
+   },
+   "expected": {
+    "area": "8PG-004",
+    "nearestArea": "8PG-004",
+    "plusCode": "6FFF4GG2+M29",
+    "spot": "GA-8PG E09017 N05602",
+    "zone": "8PG"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.018656,
+    "lng": 11.945951
+   },
+   "expected": {
+    "area": "9MZ-070",
+    "nearestArea": "9MZ-193",
+    "plusCode": "6FHH2W9W+F98",
+    "spot": "GA-9MZ E12644 N08941",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": 2.111962,
+    "lng": 11.344898
+   },
+   "expected": {
+    "area": "9BT-231",
+    "nearestArea": "9BT-231",
+    "plusCode": "6FJH486V+QXJ",
+    "spot": "GA-9BT E0276 N3228",
+    "zone": "9BT"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.127045,
+    "lng": 12.13962
+   },
+   "expected": {
+    "area": "6BO-043",
+    "nearestArea": "6BO-068",
+    "plusCode": "6FFJV4FQ+5RQ",
+    "spot": "GA-6BO E10014 N07109",
+    "zone": "6BO"
+   }
+  },
+  {
+   "input": {
+    "lat": 1.870521,
+    "lng": 12.586123
+   },
+   "expected": {
+    "area": "9MV-110",
+    "nearestArea": "9MV-110",
+    "plusCode": "6FHJVHCP+6C5",
+    "spot": "GA-9MV E09859 N07082",
+    "zone": "9MV"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.87724,
+    "lng": 10.178168
+   },
+   "expected": {
+    "area": "4MJ-005",
+    "nearestArea": "4MJ-005",
+    "plusCode": "6FCG45FH+473",
+    "spot": "GA-4MJ E3651 N02573",
+    "zone": "4MJ"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.328581,
+    "lng": 11.373731
+   },
+   "expected": {
+    "area": "9MZ-060",
+    "nearestArea": "9MZ-060",
+    "plusCode": "6FGH89HF+CFQ",
+    "spot": "GA-9MZ E06274 N01311",
+    "zone": "9MZ"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.755159,
+    "lng": 13.490526
+   },
+   "expected": {
+    "area": "2FV-096",
+    "nearestArea": "2FV-096",
+    "plusCode": "6FCM6FVR+W6J",
+    "spot": "GA-2FV E2453 N07683",
+    "zone": "2FV"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.642537,
+    "lng": 11.775805
+   },
+   "expected": {
+    "area": "6BO-094",
+    "nearestArea": "7IB-044",
+    "plusCode": "6FFH9Q4G+X8M",
+    "spot": "GA-6BO E05964 N01409",
+    "zone": "6BO"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.290469,
+    "lng": 10.301474
+   },
+   "expected": {
+    "nearestArea": "5MY-011",
+    "plusCode": "6F8GP852+RH9"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.669172,
+    "lng": 12.123209
+   },
+   "expected": {
+    "nearestArea": "5MG-011",
+    "plusCode": "6F8J84JF+87P"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.464448,
+    "lng": 14.050856
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F8PG3P2+68H"
+   }
+  },
+  {
+   "input": {
+    "lat": -0.400857,
+    "lng": 10.940158
+   },
+   "expected": {
+    "area": "3NJ-047",
+    "nearestArea": "3NJ-102",
+    "plusCode": "6FFGHWXR+M33",
+    "spot": "GA-3NJ E06458 N04081",
+    "zone": "3NJ"
+   }
+  },
+  {
+   "input": {
+    "lat": 0.101908,
+    "lng": 12.034864
+   },
+   "expected": {
+    "area": "6OV-009",
+    "nearestArea": "6OV-009",
+    "plusCode": "6FGJ422M+QW9",
+    "spot": "GA-6OV E2057 N1237",
+    "zone": "6OV"
+   }
+  },
+  {
+   "input": {
+    "lat": -1.066823,
+    "lng": 11.476058
+   },
+   "expected": {
+    "area": "4MM-140",
+    "nearestArea": "4MM-136",
+    "plusCode": "6FCHWFMG+7CF",
+    "spot": "GA-4MM E4073 N11424",
+    "zone": "4MM"
+   }
+  },
+  {
+   "input": {
+    "lat": -3.763809,
+    "lng": 13.909414
+   },
+   "expected": {
+    "nearestArea": "2OL-033",
+    "plusCode": "6F8M6WP5+FQF"
+   }
+  }
+ ]
+}

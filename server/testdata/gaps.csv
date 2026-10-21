@@ -1,0 +1,9 @@
+machine,home,written,zone,official_name,number,check,status,issued,issued_at,entrance_lat,entrance_lng,entrance_kind,spot_code,official_address,class,use,kind,structures,floor_area_m2,rule,estate
+GA-1KM-060-101-2,Mayaya 101,Mayaya 101,1KM-060,Mayaya,101,2,provisional,bulk,2026-10-21T07:32:10Z,0.2627442,9.5583519,centre,GA-1KM E2875 N0914,,residential,residential,building,1,149.8,single,
+GA-1KM-068-108-8,Moka 108,Moka 108,1KM-068,Moka,108,8,provisional,bulk,2026-10-21T07:32:10Z,0.8106291,9.3799461,centre,GA-1KM E0889 N6973,,residential,residential,building,1,107.9,single,nways:w1149774813
+GA-1KO-037-239-6,Ntchogo 239,Ntchogo 239,1KO-037,Ntchogo,239,6,provisional,bulk,2026-10-21T07:32:13Z,0.2331177,9.3883711,centre,GA-1KO E0983 N08990,,residential,residential,building,1,73.9,single,
+GA-1LV-104-1013-4,Smag 1013,Smag 10 13,1LV-104,Smag,1013,4,provisional,bulk,2026-10-21T07:32:26Z,0.3545417,9.4708533,centre,GA-1LV E1233 N0160,,residential,residential,building,1,73.3,single,
+GA-2BB-007-256-5,Omboye 256,Omboye 256,2BB-007,Omboye Frontière,256,5,provisional,bulk,2026-10-21T07:32:29Z,-0.4622514,14.3740034,centre,GA-2DJ E4385 N7162,,residential,residential,building,1,64.7,single,
+GA-2BK-006-108-0,Lékoko-Frontière 108,Lékoko-Frontière 108,2BK-006,Lékoko-Frontière,108,0,provisional,bulk,2026-10-21T07:32:29Z,-2.1019518,12.8840128,centre,GA-2BK E1490 N3074,,residential,residential,building,1,104.7,single,
+GA-8GB-077-120-6,Sounga 120,Sounga 120,8GB-077,Sounga,120,6,provisional,bulk,2026-10-21T07:32:45Z,-2.4205460,9.6479278,centre,GA-8GB E00755 N06628,,residential,residential,building,1,126.6,single,
+GA-8PG-034-446-8,Erogoué 446,Erogoué 446,8PG-034,Erogoué,446,8,provisional,bulk,2026-10-21T07:32:46Z,-0.6306514,8.7173808,centre,GA-8PG E00304 N08285,,residential,residential,building,1,46.8,single,

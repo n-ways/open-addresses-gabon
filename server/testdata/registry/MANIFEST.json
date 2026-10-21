@@ -1,0 +1,15 @@
+{
+  "byUnit": {
+    "2OL": 685
+  },
+  "codes": 685,
+  "country": "GA",
+  "credit": "N-Ways Addressing for Gabon, © N-WAYS LIMITED (nways.ng)",
+  "engine": "internal/addressing/ga (SPEC v1.0)",
+  "exported": "2026-10-21T07:46:20Z",
+  "licence": "ODbL 1.0 (LICENSE-DATA)",
+  "sha256": {
+    "2OL.csv": "b2b1af558b6d8d70427cd171e0336d6b19ef18d2ba50be4e963bc27c7538d5e1",
+    "areas.csv": "16939bc9867cfb4418b146c89b9b7f1df52189ac2c9b9dd2dbaa4377cc2f1af5"
+  }
+}

@@ -1,0 +1,254 @@
+{
+ "classMix": [
+  {
+   "cls": "RES",
+   "n": 752377,
+   "pct": 94.96
+  },
+  {
+   "cls": "ANX",
+   "n": 34295,
+   "pct": 4.33
+  },
+  {
+   "cls": "COM",
+   "n": 2370,
+   "pct": 0.3
+  },
+  {
+   "cls": "GOV",
+   "n": 1327,
+   "pct": 0.17
+  },
+  {
+   "cls": "EDU",
+   "n": 609,
+   "pct": 0.08
+  },
+  {
+   "cls": "HEA",
+   "n": 277,
+   "pct": 0.03
+  },
+  {
+   "cls": "HOS",
+   "n": 272,
+   "pct": 0.03
+  },
+  {
+   "cls": "REL",
+   "n": 201,
+   "pct": 0.03
+  },
+  {
+   "cls": "IND",
+   "n": 193,
+   "pct": 0.02
+  },
+  {
+   "cls": "RUI",
+   "n": 171,
+   "pct": 0.02
+  },
+  {
+   "cls": "CON",
+   "n": 142,
+   "pct": 0.02
+  },
+  {
+   "cls": "TRA",
+   "n": 76,
+   "pct": 0.01
+  },
+  {
+   "cls": "AGR",
+   "n": 4,
+   "pct": 0.0
+  }
+ ],
+ "classSource": [
+  {
+   "cls_src": "default",
+   "n": 746408,
+   "pct": 94.21
+  },
+  {
+   "cls_src": "shape",
+   "n": 35014,
+   "pct": 4.42
+  },
+  {
+   "cls_src": "osm:building",
+   "n": 7932,
+   "pct": 1.0
+  },
+  {
+   "cls_src": "n-ways:place",
+   "n": 1378,
+   "pct": 0.17
+  },
+  {
+   "cls_src": "n-ways:compound",
+   "n": 1120,
+   "pct": 0.14
+  },
+  {
+   "cls_src": "osm:tags",
+   "n": 462,
+   "pct": 0.06
+  }
+ ],
+ "heightSource": [
+  {
+   "h_src": "none",
+   "n": 432746,
+   "pct": 54.62
+  },
+  {
+   "h_src": "ml:h",
+   "n": 359076,
+   "pct": 45.32
+  },
+  {
+   "h_src": "osm:building:levels",
+   "n": 456,
+   "pct": 0.06
+  },
+  {
+   "h_src": "osm:height",
+   "n": 36,
+   "pct": 0.0
+  }
+ ],
+ "size": [
+  {
+   "n": 792314,
+   "a_p10": 16.7,
+   "a_p50": 63.7,
+   "a_p90": 191.8,
+   "a_p99": 499.0,
+   "h_p50": 5.2,
+   "h_p90": 6.7,
+   "floor_area_km2": 89.55
+  }
+ ],
+ "roundHouses": [
+  {
+   "n": 74
+  }
+ ],
+ "byRegion": [
+  {
+   "code": "GA-1",
+   "n": 378130,
+   "round_pct": 0.0,
+   "a_p50": 72.5
+  },
+  {
+   "code": "GA-2",
+   "n": 79040,
+   "round_pct": 0.0,
+   "a_p50": 67.5
+  },
+  {
+   "code": "GA-3",
+   "n": 31351,
+   "round_pct": 0.0,
+   "a_p50": 55.7
+  },
+  {
+   "code": "GA-4",
+   "n": 45535,
+   "round_pct": 0.0,
+   "a_p50": 56.9
+  },
+  {
+   "code": "GA-5",
+   "n": 28169,
+   "round_pct": 0.0,
+   "a_p50": 48.8
+  },
+  {
+   "code": "GA-6",
+   "n": 27750,
+   "round_pct": 0.0,
+   "a_p50": 60.6
+  },
+  {
+   "code": "GA-7",
+   "n": 21426,
+   "round_pct": 0.0,
+   "a_p50": 66.3
+  },
+  {
+   "code": "GA-8",
+   "n": 102729,
+   "round_pct": 0.0,
+   "a_p50": 45.3
+  },
+  {
+   "code": "GA-9",
+   "n": 69755,
+   "round_pct": 0.0,
+   "a_p50": 65.1
+  }
+ ],
+ "enclosures": [
+  {
+   "kind": "enclosure:fence",
+   "n": 618
+  },
+  {
+   "kind": "enclosure:wall",
+   "n": 116
+  },
+  {
+   "kind": "gate",
+   "n": 654
+  },
+  {
+   "kind": "landuse:residential",
+   "n": 4105
+  }
+ ],
+ "nwCompounds": [
+  {
+   "kind": "estate",
+   "n": 1
+  },
+  {
+   "kind": "government",
+   "n": 113
+  },
+  {
+   "kind": "military",
+   "n": 21
+  },
+  {
+   "kind": "police",
+   "n": 29
+  },
+  {
+   "kind": "site",
+   "n": 615
+  }
+ ],
+ "nwGates": [
+  {
+   "kind": "entry",
+   "n": 18
+  },
+  {
+   "kind": "gate",
+   "n": 539
+  },
+  {
+   "kind": "lift_gate",
+   "n": 21
+  },
+  {
+   "kind": "yes",
+   "n": 1
+  }
+ ]
+}

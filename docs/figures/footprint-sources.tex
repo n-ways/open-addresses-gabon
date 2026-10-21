@@ -1,0 +1,30 @@
+% Building footprints per province by source: OpenStreetMap, and the Google Open Buildings and
+% Microsoft footprints that no OpenStreetMap building overlaps (model/stats/building-stats.json).
+% Data: sources.dat, written by tools/paper-figures.py.
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{LibertinusSans}[Extension=.otf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic]
+\usepackage{unicode-math}
+\setmathfont{LibertinusMath-Regular.otf}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+% English by default; the French paper compiles <name>-fr.tex, which sets \fr to 1 and inputs this file.
+\providecommand{\fr}{0}
+\newcommand{\T}[2]{\ifnum\fr=1 #2\else #1\fi}
+\ifnum\fr=1 \pgfkeys{/pgf/number format/.cd, use comma, 1000 sep={\,}}\fi
+\definecolor{ink}{HTML}{1F5FA8}\definecolor{flaggreen}{HTML}{009E60}\definecolor{yellow}{HTML}{FCD116}
+\definecolor{flagblue}{HTML}{3A75C4}\definecolor{amber}{HTML}{D9A400}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[xbar stacked, bar width=9pt, width=12cm, height=7cm, xmin=0, xmax=400000,
+  ytick=data, yticklabels from table={sources.dat}{province}, y tick label style={font=\footnotesize},
+  x tick label style={font=\footnotesize, /pgf/number format/1000 sep={\T{,}{\,}}}, scaled x ticks=false, xtick={0,50000,...,400000}, xticklabel style={/pgf/number format/fixed},
+  xlabel={\T{Building footprints}{Emprises de bâtiments}}, label style={font=\small}, axis line style={gray},
+  xmajorgrids, grid style={gray!20}, enlarge y limits=0.08,
+  legend style={at={(0.98,0.04)}, anchor=south east, font=\footnotesize, draw=gray!50}, legend cell align=left]
+\addplot[fill=flaggreen, draw=none] table[y expr=\coordindex, x=osm] {sources.dat};
+\addplot[fill=flagblue, draw=none] table[y expr=\coordindex, x=ml] {sources.dat};
+\legend{{OpenStreetMap (\T{429,148}{429\,148})}, {\T{Google Open Buildings and Microsoft (354,707)}{Google Open Buildings et Microsoft (354\,707)}}}
+\end{axis}
+\end{tikzpicture}
+\end{document}

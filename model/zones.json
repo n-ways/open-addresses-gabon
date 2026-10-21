@@ -1,0 +1,1331 @@
+{
+ "country": "GA",
+ "version": "1.0",
+ "frozen": true,
+ "note": "Zone index, key, frame and cell are frozen at first issue: a published zone never changes.",
+ "zones": [
+  {
+   "index": 0,
+   "key": "1KG",
+   "province": "GA-1",
+   "departement": "Komo",
+   "chefLieu": "Kango",
+   "osm": "r2804107",
+   "areaKm2": 9809.6,
+   "box": [
+    9.757,
+    -0.425,
+    10.974,
+    0.82
+   ],
+   "grid": {
+    "west": 9.757,
+    "south": -0.425,
+    "refLat": 0.197,
+    "orient": "portrait",
+    "cellMetres": 4.25
+   },
+   "structures2026": 9901,
+   "compoundLength": 4,
+   "name": "Komo",
+   "region": "GA-1",
+   "language": "fr"
+  },
+  {
+   "index": 1,
+   "key": "1KM",
+   "province": "GA-1",
+   "departement": "Komo-Mondah",
+   "chefLieu": "Ntoum",
+   "osm": "r2804109",
+   "areaKm2": 1766.7,
+   "box": [
+    9.307,
+    0.18,
+    9.861,
+    0.669
+   ],
+   "grid": {
+    "west": 9.307,
+    "south": 0.18,
+    "refLat": 0.424,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 142971,
+   "compoundLength": 5,
+   "name": "Komo-Mondah",
+   "region": "GA-1",
+   "language": "fr"
+  },
+  {
+   "index": 2,
+   "key": "1KO",
+   "province": "GA-1",
+   "departement": "Komo-Ocèan",
+   "chefLieu": "Ndzomoe",
+   "osm": "r2804108",
+   "areaKm2": 3686.2,
+   "box": [
+    9.301,
+    -0.572,
+    9.906,
+    0.351
+   ],
+   "grid": {
+    "west": 9.301,
+    "south": -0.572,
+    "refLat": -0.11,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 1623,
+   "compoundLength": 4,
+   "name": "Komo-Ocèan",
+   "region": "GA-1",
+   "language": "fr"
+  },
+  {
+   "index": 3,
+   "key": "1LV",
+   "province": "GA-1",
+   "departement": "Libreville",
+   "chefLieu": "Libreville",
+   "osm": "r20256699",
+   "areaKm2": 163.7,
+   "box": [
+    9.367,
+    0.341,
+    9.528,
+    0.564
+   ],
+   "grid": {
+    "west": 9.367,
+    "south": 0.341,
+    "refLat": 0.453,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 219617,
+   "compoundLength": 5,
+   "name": "Libreville",
+   "region": "GA-1",
+   "language": "fr"
+  },
+  {
+   "index": 4,
+   "key": "1NY",
+   "province": "GA-1",
+   "departement": "Noya",
+   "chefLieu": "Cocobeach",
+   "osm": "r2804110",
+   "areaKm2": 4135.1,
+   "box": [
+    9.551,
+    0.464,
+    10.466,
+    1.07
+   ],
+   "grid": {
+    "west": 9.551,
+    "south": 0.464,
+    "refLat": 0.767,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 3968,
+   "compoundLength": 4,
+   "name": "Noya",
+   "region": "GA-1",
+   "language": "fr"
+  },
+  {
+   "index": 5,
+   "key": "2AK",
+   "province": "GA-2",
+   "departement": "Lekoni Lekori",
+   "chefLieu": "Akiéni",
+   "osm": "r20253615",
+   "areaKm2": 1322.7,
+   "box": [
+    13.632,
+    -1.268,
+    14.128,
+    -0.891
+   ],
+   "grid": {
+    "west": 13.632,
+    "south": -1.268,
+    "refLat": -1.079,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 3144,
+   "compoundLength": 4,
+   "name": "Lekoni Lekori",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 6,
+   "key": "2BB",
+   "province": "GA-2",
+   "departement": "Bayi Brikolo",
+   "chefLieu": "Aboumi",
+   "osm": "r20253458",
+   "areaKm2": 1558.8,
+   "box": [
+    13.816,
+    -0.825,
+    14.365,
+    -0.357
+   ],
+   "grid": {
+    "west": 13.816,
+    "south": -0.825,
+    "refLat": -0.591,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 1273,
+   "compoundLength": 4,
+   "name": "Bayi Brikolo",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 7,
+   "key": "2BG",
+   "province": "GA-2",
+   "departement": "Djouori Agnili",
+   "chefLieu": "Bongoville",
+   "osm": "r20253490",
+   "areaKm2": 2170.9,
+   "box": [
+    13.748,
+    -1.788,
+    14.306,
+    -1.185
+   ],
+   "grid": {
+    "west": 13.748,
+    "south": -1.788,
+    "refLat": -1.486,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 1832,
+   "compoundLength": 4,
+   "name": "Djouori Agnili",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 8,
+   "key": "2BK",
+   "province": "GA-2",
+   "departement": "Lekoko",
+   "chefLieu": "Bakoumba",
+   "osm": "r20253585",
+   "areaKm2": 3946.7,
+   "box": [
+    12.75,
+    -2.379,
+    13.475,
+    -1.65
+   ],
+   "grid": {
+    "west": 12.75,
+    "south": -2.379,
+    "refLat": -2.014,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 2190,
+   "compoundLength": 4,
+   "name": "Lekoko",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 9,
+   "key": "2DJ",
+   "province": "GA-2",
+   "departement": "Djoue",
+   "chefLieu": "Onga",
+   "osm": "r20253474",
+   "areaKm2": 2226.5,
+   "box": [
+    13.982,
+    -1.106,
+    14.53,
+    -0.46
+   ],
+   "grid": {
+    "west": 13.982,
+    "south": -1.106,
+    "refLat": -0.783,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 1539,
+   "compoundLength": 4,
+   "name": "Djoue",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 10,
+   "key": "2FV",
+   "province": "GA-2",
+   "departement": "Mpassa",
+   "chefLieu": "Franceville",
+   "osm": "r20253668",
+   "areaKm2": 4905.8,
+   "box": [
+    13.276,
+    -2.445,
+    14.074,
+    -1.151
+   ],
+   "grid": {
+    "west": 13.276,
+    "south": -2.445,
+    "refLat": -1.798,
+    "orient": "portrait",
+    "cellMetres": 3.75
+   },
+   "structures2026": 34281,
+   "compoundLength": 4,
+   "name": "Mpassa",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 11,
+   "key": "2LW",
+   "province": "GA-2",
+   "departement": "Lekabi Lewolo",
+   "chefLieu": "Ngouoni",
+   "osm": "r20253543",
+   "areaKm2": 1111.1,
+   "box": [
+    13.583,
+    -1.591,
+    13.867,
+    -1.112
+   ],
+   "grid": {
+    "west": 13.583,
+    "south": -1.591,
+    "refLat": -1.352,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 2571,
+   "compoundLength": 4,
+   "name": "Lekabi Lewolo",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 12,
+   "key": "2MD",
+   "province": "GA-2",
+   "departement": "Lebombi Leyou",
+   "chefLieu": "Moanda",
+   "osm": "r20253533",
+   "areaKm2": 2599.7,
+   "box": [
+    12.797,
+    -1.795,
+    13.409,
+    -1.119
+   ],
+   "grid": {
+    "west": 12.797,
+    "south": -1.795,
+    "refLat": -1.457,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 19508,
+   "compoundLength": 4,
+   "name": "Lebombi Leyou",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 13,
+   "key": "2OK",
+   "province": "GA-2",
+   "departement": "Sebe Brikolo",
+   "chefLieu": "Okondja",
+   "osm": "r20253782",
+   "areaKm2": 7408.9,
+   "box": [
+    13.219,
+    -1.194,
+    14.18,
+    0.05
+   ],
+   "grid": {
+    "west": 13.219,
+    "south": -1.194,
+    "refLat": -0.572,
+    "orient": "portrait",
+    "cellMetres": 3.5
+   },
+   "structures2026": 7394,
+   "compoundLength": 4,
+   "name": "Sebe Brikolo",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 14,
+   "key": "2OL",
+   "province": "GA-2",
+   "departement": "Ogooué-Létili",
+   "chefLieu": "Boumango",
+   "osm": "r20253705",
+   "areaKm2": 1586.2,
+   "box": [
+    13.273,
+    -2.436,
+    13.763,
+    -1.934
+   ],
+   "grid": {
+    "west": 13.273,
+    "south": -2.436,
+    "refLat": -2.185,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 748,
+   "compoundLength": 4,
+   "name": "Ogooué-Létili",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 15,
+   "key": "2PL",
+   "province": "GA-2",
+   "departement": "Plateaux",
+   "chefLieu": "Lékoni",
+   "osm": "r20253748",
+   "areaKm2": 5435.2,
+   "box": [
+    13.832,
+    -2.512,
+    14.523,
+    -1.009
+   ],
+   "grid": {
+    "west": 13.832,
+    "south": -2.512,
+    "refLat": -1.76,
+    "orient": "portrait",
+    "cellMetres": 4.25
+   },
+   "structures2026": 4560,
+   "compoundLength": 4,
+   "name": "Plateaux",
+   "region": "GA-2",
+   "language": "fr"
+  },
+  {
+   "index": 16,
+   "key": "3LB",
+   "province": "GA-3",
+   "departement": "Ogooue Et Lacs",
+   "chefLieu": "Lambaréné",
+   "osm": "r20253785",
+   "areaKm2": 8954.1,
+   "box": [
+    9.553,
+    -1.264,
+    10.922,
+    -0.198
+   ],
+   "grid": {
+    "west": 9.553,
+    "south": -1.264,
+    "refLat": -0.731,
+    "orient": "landscape",
+    "cellMetres": 4.0
+   },
+   "structures2026": 25553,
+   "compoundLength": 4,
+   "name": "Ogooue Et Lacs",
+   "region": "GA-3",
+   "language": "fr"
+  },
+  {
+   "index": 17,
+   "key": "3NJ",
+   "province": "GA-3",
+   "departement": "Abanga Bigne",
+   "chefLieu": "Ndjolé",
+   "osm": "r20253795",
+   "areaKm2": 8022.4,
+   "box": [
+    10.366,
+    -0.762,
+    11.588,
+    0.269
+   ],
+   "grid": {
+    "west": 10.366,
+    "south": -0.762,
+    "refLat": -0.246,
+    "orient": "landscape",
+    "cellMetres": 3.75
+   },
+   "structures2026": 5798,
+   "compoundLength": 4,
+   "name": "Abanga Bigne",
+   "region": "GA-3",
+   "language": "fr"
+  },
+  {
+   "index": 18,
+   "key": "4FG",
+   "province": "GA-4",
+   "departement": "Tsamba Magotsi",
+   "chefLieu": "Fougamou",
+   "osm": "r20253843",
+   "areaKm2": 10027.9,
+   "box": [
+    10.348,
+    -1.879,
+    11.245,
+    -0.383
+   ],
+   "grid": {
+    "west": 10.348,
+    "south": -1.879,
+    "refLat": -1.131,
+    "orient": "portrait",
+    "cellMetres": 4.25
+   },
+   "structures2026": 7713,
+   "compoundLength": 4,
+   "name": "Tsamba Magotsi",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 19,
+   "key": "4GT",
+   "province": "GA-4",
+   "departement": "Mougalaba",
+   "chefLieu": "Guiétsou",
+   "osm": "r20253740",
+   "areaKm2": 2553.5,
+   "box": [
+    10.489,
+    -2.337,
+    11.058,
+    -1.766
+   ],
+   "grid": {
+    "west": 10.489,
+    "south": -2.337,
+    "refLat": -2.051,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 771,
+   "compoundLength": 4,
+   "name": "Mougalaba",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 20,
+   "key": "4LE",
+   "province": "GA-4",
+   "departement": "Louetsi Wano",
+   "chefLieu": "Lébamba",
+   "osm": "r20253711",
+   "areaKm2": 888.3,
+   "box": [
+    11.346,
+    -2.413,
+    11.695,
+    -1.952
+   ],
+   "grid": {
+    "west": 11.346,
+    "south": -2.413,
+    "refLat": -2.183,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 5287,
+   "compoundLength": 4,
+   "name": "Louetsi Wano",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 21,
+   "key": "4MB",
+   "province": "GA-4",
+   "departement": "Boumi Louetsi",
+   "chefLieu": "Mbigou",
+   "osm": "r20253502",
+   "areaKm2": 3902.5,
+   "box": [
+    11.505,
+    -2.551,
+    12.238,
+    -1.631
+   ],
+   "grid": {
+    "west": 11.505,
+    "south": -2.551,
+    "refLat": -2.091,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 3045,
+   "compoundLength": 4,
+   "name": "Boumi Louetsi",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 22,
+   "key": "4MJ",
+   "province": "GA-4",
+   "departement": "Ndolou",
+   "chefLieu": "Mandji",
+   "osm": "r20253771",
+   "areaKm2": 4750.7,
+   "box": [
+    9.859,
+    -2.108,
+    10.624,
+    -1.136
+   ],
+   "grid": {
+    "west": 9.859,
+    "south": -2.108,
+    "refLat": -1.622,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 3741,
+   "compoundLength": 4,
+   "name": "Ndolou",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 23,
+   "key": "4ML",
+   "province": "GA-4",
+   "departement": "Louetsi Bibaka",
+   "chefLieu": "Malinga",
+   "osm": "r20253667",
+   "areaKm2": 3507.8,
+   "box": [
+    11.893,
+    -2.466,
+    12.517,
+    -1.78
+   ],
+   "grid": {
+    "west": 11.893,
+    "south": -2.466,
+    "refLat": -2.123,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 648,
+   "compoundLength": 4,
+   "name": "Louetsi Bibaka",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 24,
+   "key": "4MM",
+   "province": "GA-4",
+   "departement": "Ogoulou",
+   "chefLieu": "Mimongo",
+   "osm": "r20253833",
+   "areaKm2": 8111.9,
+   "box": [
+    11.119,
+    -2.097,
+    11.974,
+    -0.611
+   ],
+   "grid": {
+    "west": 11.119,
+    "south": -2.097,
+    "refLat": -1.354,
+    "orient": "portrait",
+    "cellMetres": 4.25
+   },
+   "structures2026": 1188,
+   "compoundLength": 4,
+   "name": "Ogoulou",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 25,
+   "key": "4MU",
+   "province": "GA-4",
+   "departement": "Douya Onoye",
+   "chefLieu": "Mouila",
+   "osm": "r20253586",
+   "areaKm2": 2525.4,
+   "box": [
+    10.757,
+    -2.095,
+    11.326,
+    -1.212
+   ],
+   "grid": {
+    "west": 10.757,
+    "south": -2.095,
+    "refLat": -1.654,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 19124,
+   "compoundLength": 4,
+   "name": "Douya Onoye",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 26,
+   "key": "4ND",
+   "province": "GA-4",
+   "departement": "Dola",
+   "chefLieu": "Ndendé",
+   "osm": "r20253639",
+   "areaKm2": 2645.5,
+   "box": [
+    10.984,
+    -2.722,
+    11.606,
+    -2.003
+   ],
+   "grid": {
+    "west": 10.984,
+    "south": -2.722,
+    "refLat": -2.362,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 4018,
+   "compoundLength": 4,
+   "name": "Dola",
+   "region": "GA-4",
+   "language": "fr"
+  },
+  {
+   "index": 27,
+   "key": "5MA",
+   "province": "GA-5",
+   "departement": "Doutsila",
+   "chefLieu": "Mabanda",
+   "osm": "r20253536",
+   "areaKm2": 1524.6,
+   "box": [
+    11.133,
+    -3.189,
+    11.797,
+    -2.544
+   ],
+   "grid": {
+    "west": 11.133,
+    "south": -3.189,
+    "refLat": -2.867,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 1373,
+   "compoundLength": 4,
+   "name": "Doutsila",
+   "region": "GA-5",
+   "language": "fr"
+  },
+  {
+   "index": 28,
+   "key": "5MG",
+   "province": "GA-5",
+   "departement": "Mongo",
+   "chefLieu": "Moulengui-Binza",
+   "osm": "r20253485",
+   "areaKm2": 5972.7,
+   "box": [
+    10.81,
+    -3.747,
+    11.965,
+    -2.848
+   ],
+   "grid": {
+    "west": 10.81,
+    "south": -3.747,
+    "refLat": -3.297,
+    "orient": "landscape",
+    "cellMetres": 3.25
+   },
+   "structures2026": 2734,
+   "compoundLength": 4,
+   "name": "Mongo",
+   "region": "GA-5",
+   "language": "fr"
+  },
+  {
+   "index": 29,
+   "key": "5MO",
+   "province": "GA-5",
+   "departement": "Douigni",
+   "chefLieu": "Moabi",
+   "osm": "r20253621",
+   "areaKm2": 2298.4,
+   "box": [
+    10.556,
+    -2.749,
+    11.236,
+    -2.235
+   ],
+   "grid": {
+    "west": 10.556,
+    "south": -2.749,
+    "refLat": -2.492,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 2605,
+   "compoundLength": 4,
+   "name": "Douigni",
+   "region": "GA-5",
+   "language": "fr"
+  },
+  {
+   "index": 30,
+   "key": "5MY",
+   "province": "GA-5",
+   "departement": "Basse Banio",
+   "chefLieu": "Mayumba",
+   "osm": "r20253652",
+   "areaKm2": 3374.7,
+   "box": [
+    10.256,
+    -3.623,
+    11.136,
+    -2.825
+   ],
+   "grid": {
+    "west": 10.256,
+    "south": -3.623,
+    "refLat": -3.224,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 3487,
+   "compoundLength": 4,
+   "name": "Basse Banio",
+   "region": "GA-5",
+   "language": "fr"
+  },
+  {
+   "index": 31,
+   "key": "5NI",
+   "province": "GA-5",
+   "departement": "Haute Banio",
+   "chefLieu": "Ndindi",
+   "osm": "r20253604",
+   "areaKm2": 1577.6,
+   "box": [
+    10.876,
+    -3.961,
+    11.359,
+    -3.378
+   ],
+   "grid": {
+    "west": 10.876,
+    "south": -3.961,
+    "refLat": -3.67,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 918,
+   "compoundLength": 4,
+   "name": "Haute Banio",
+   "region": "GA-5",
+   "language": "fr"
+  },
+  {
+   "index": 32,
+   "key": "5TC",
+   "province": "GA-5",
+   "departement": "Mougoutsi",
+   "chefLieu": "Tchibanga",
+   "osm": "r20253467",
+   "areaKm2": 3110.0,
+   "box": [
+    10.545,
+    -3.115,
+    11.31,
+    -2.336
+   ],
+   "grid": {
+    "west": 10.545,
+    "south": -3.115,
+    "refLat": -2.726,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 17051,
+   "compoundLength": 4,
+   "name": "Mougoutsi",
+   "region": "GA-5",
+   "language": "fr"
+  },
+  {
+   "index": 33,
+   "key": "6BO",
+   "province": "GA-6",
+   "departement": "Lope",
+   "chefLieu": "Booué",
+   "osm": "r20253905",
+   "areaKm2": 11969.9,
+   "box": [
+    11.248,
+    -0.762,
+    12.607,
+    0.633
+   ],
+   "grid": {
+    "west": 11.248,
+    "south": -0.762,
+    "refLat": -0.065,
+    "orient": "portrait",
+    "cellMetres": 4.75
+   },
+   "structures2026": 5274,
+   "compoundLength": 4,
+   "name": "Lope",
+   "region": "GA-6",
+   "language": "fr"
+  },
+  {
+   "index": 34,
+   "key": "6ME",
+   "province": "GA-6",
+   "departement": "Zadie",
+   "chefLieu": "Mékambo",
+   "osm": "r20253841",
+   "areaKm2": 9390.7,
+   "box": [
+    13.39,
+    0.278,
+    14.497,
+    1.438
+   ],
+   "grid": {
+    "west": 13.39,
+    "south": 0.278,
+    "refLat": 0.858,
+    "orient": "portrait",
+    "cellMetres": 4.0
+   },
+   "structures2026": 5937,
+   "compoundLength": 4,
+   "name": "Zadie",
+   "region": "GA-6",
+   "language": "fr"
+  },
+  {
+   "index": 35,
+   "key": "6MK",
+   "province": "GA-6",
+   "departement": "Ivindo",
+   "chefLieu": "Makokou",
+   "osm": "r20253840",
+   "areaKm2": 18076.7,
+   "box": [
+    12.163,
+    -0.104,
+    13.947,
+    1.369
+   ],
+   "grid": {
+    "west": 12.163,
+    "south": -0.104,
+    "refLat": 0.632,
+    "orient": "landscape",
+    "cellMetres": 5.25
+   },
+   "structures2026": 15017,
+   "compoundLength": 4,
+   "name": "Ivindo",
+   "region": "GA-6",
+   "language": "fr"
+  },
+  {
+   "index": 36,
+   "key": "6OV",
+   "province": "GA-6",
+   "departement": "Mvoung",
+   "chefLieu": "Ovan",
+   "osm": "r20253918",
+   "areaKm2": 4238.3,
+   "box": [
+    11.851,
+    -0.001,
+    12.589,
+    0.852
+   ],
+   "grid": {
+    "west": 11.851,
+    "south": -0.001,
+    "refLat": 0.425,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 1522,
+   "compoundLength": 4,
+   "name": "Mvoung",
+   "region": "GA-6",
+   "language": "fr"
+  },
+  {
+   "index": 37,
+   "key": "7IB",
+   "province": "GA-7",
+   "departement": "Offoue Onoye",
+   "chefLieu": "Iboundji",
+   "osm": "r20253934",
+   "areaKm2": 4072.5,
+   "box": [
+    11.497,
+    -1.648,
+    12.201,
+    -0.658
+   ],
+   "grid": {
+    "west": 11.497,
+    "south": -1.648,
+    "refLat": -1.153,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 907,
+   "compoundLength": 4,
+   "name": "Offoue Onoye",
+   "region": "GA-7",
+   "language": "fr"
+  },
+  {
+   "index": 38,
+   "key": "7KL",
+   "province": "GA-7",
+   "departement": "Lolo Bouenguidi",
+   "chefLieu": "Koulamoutou",
+   "osm": "r20253828",
+   "areaKm2": 7817.4,
+   "box": [
+    11.859,
+    -1.915,
+    12.855,
+    -0.507
+   ],
+   "grid": {
+    "west": 11.859,
+    "south": -1.915,
+    "refLat": -1.211,
+    "orient": "portrait",
+    "cellMetres": 4.0
+   },
+   "structures2026": 9883,
+   "compoundLength": 4,
+   "name": "Lolo Bouenguidi",
+   "region": "GA-7",
+   "language": "fr"
+  },
+  {
+   "index": 39,
+   "key": "7LT",
+   "province": "GA-7",
+   "departement": "Mouloundou",
+   "chefLieu": "Lastoursville",
+   "osm": "r20253920",
+   "areaKm2": 15640.8,
+   "box": [
+    12.286,
+    -1.7,
+    13.566,
+    0.315
+   ],
+   "grid": {
+    "west": 12.286,
+    "south": -1.7,
+    "refLat": -0.693,
+    "orient": "portrait",
+    "cellMetres": 5.75
+   },
+   "structures2026": 9137,
+   "compoundLength": 4,
+   "name": "Mouloundou",
+   "region": "GA-7",
+   "language": "fr"
+  },
+  {
+   "index": 40,
+   "key": "7PN",
+   "province": "GA-7",
+   "departement": "Lombo-Bouenguidi (Pana)",
+   "chefLieu": "Pana",
+   "osm": "r20253842",
+   "areaKm2": 1688.1,
+   "box": [
+    12.431,
+    -1.927,
+    12.858,
+    -1.373
+   ],
+   "grid": {
+    "west": 12.431,
+    "south": -1.927,
+    "refLat": -1.65,
+    "orient": "portrait",
+    "cellMetres": 3.0
+   },
+   "structures2026": 1499,
+   "compoundLength": 4,
+   "name": "Lombo-Bouenguidi (Pana)",
+   "region": "GA-7",
+   "language": "fr"
+  },
+  {
+   "index": 41,
+   "key": "8GB",
+   "province": "GA-8",
+   "departement": "Ndougou",
+   "chefLieu": "Gamba",
+   "osm": "r20253669",
+   "areaKm2": 8758.0,
+   "box": [
+    9.585,
+    -3.013,
+    10.601,
+    -1.856
+   ],
+   "grid": {
+    "west": 9.585,
+    "south": -3.013,
+    "refLat": -2.434,
+    "orient": "portrait",
+    "cellMetres": 3.75
+   },
+   "structures2026": 8083,
+   "compoundLength": 4,
+   "name": "Ndougou",
+   "region": "GA-8",
+   "language": "fr"
+  },
+  {
+   "index": 42,
+   "key": "8OM",
+   "province": "GA-8",
+   "departement": "Etimboue",
+   "chefLieu": "Omboué",
+   "osm": "r20253707",
+   "areaKm2": 8603.7,
+   "box": [
+    8.854,
+    -2.252,
+    10.1,
+    -1.007
+   ],
+   "grid": {
+    "west": 8.854,
+    "south": -2.252,
+    "refLat": -1.629,
+    "orient": "landscape",
+    "cellMetres": 4.5
+   },
+   "structures2026": 7785,
+   "compoundLength": 4,
+   "name": "Etimboue",
+   "region": "GA-8",
+   "language": "fr"
+  },
+  {
+   "index": 43,
+   "key": "8PG",
+   "province": "GA-8",
+   "departement": "Bendje",
+   "chefLieu": "Port-Gentil",
+   "osm": "r20256291",
+   "areaKm2": 7603.4,
+   "box": [
+    8.698,
+    -1.374,
+    9.988,
+    -0.272
+   ],
+   "grid": {
+    "west": 8.698,
+    "south": -1.374,
+    "refLat": -0.823,
+    "orient": "landscape",
+    "cellMetres": 4.0
+   },
+   "structures2026": 86857,
+   "compoundLength": 5,
+   "name": "Bendje",
+   "region": "GA-8",
+   "language": "fr"
+  },
+  {
+   "index": 44,
+   "key": "9BT",
+   "province": "GA-9",
+   "departement": "Ntem",
+   "chefLieu": "Bitam",
+   "osm": "r3346176",
+   "areaKm2": 2801.4,
+   "box": [
+    11.32,
+    1.828,
+    11.917,
+    2.32
+   ],
+   "grid": {
+    "west": 11.32,
+    "south": 1.828,
+    "refLat": 2.074,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 16251,
+   "compoundLength": 4,
+   "name": "Ntem",
+   "region": "GA-9",
+   "language": "fr"
+  },
+  {
+   "index": 45,
+   "key": "9MN",
+   "province": "GA-9",
+   "departement": "Haut-Komo",
+   "chefLieu": "Médouneu",
+   "osm": "r3346174",
+   "areaKm2": 2137.5,
+   "box": [
+    10.26,
+    0.587,
+    10.973,
+    1.028
+   ],
+   "grid": {
+    "west": 10.26,
+    "south": 0.587,
+    "refLat": 0.807,
+    "orient": "landscape",
+    "cellMetres": 3.0
+   },
+   "structures2026": 2776,
+   "compoundLength": 4,
+   "name": "Haut-Komo",
+   "region": "GA-9",
+   "language": "fr"
+  },
+  {
+   "index": 46,
+   "key": "9MV",
+   "province": "GA-9",
+   "departement": "Haut-Ntem",
+   "chefLieu": "Minvoul",
+   "osm": "r3346175",
+   "areaKm2": 14540.0,
+   "box": [
+    11.701,
+    1.235,
+    13.306,
+    2.295
+   ],
+   "grid": {
+    "west": 11.701,
+    "south": 1.235,
+    "refLat": 1.765,
+    "orient": "landscape",
+    "cellMetres": 4.5
+   },
+   "structures2026": 6159,
+   "compoundLength": 4,
+   "name": "Haut-Ntem",
+   "region": "GA-9",
+   "language": "fr"
+  },
+  {
+   "index": 47,
+   "key": "9MZ",
+   "province": "GA-9",
+   "departement": "Okano",
+   "chefLieu": "Mitzic",
+   "osm": "r3346177",
+   "areaKm2": 9516.1,
+   "box": [
+    10.813,
+    0.219,
+    12.374,
+    1.248
+   ],
+   "grid": {
+    "west": 10.813,
+    "south": 0.219,
+    "refLat": 0.734,
+    "orient": "landscape",
+    "cellMetres": 4.5
+   },
+   "structures2026": 8530,
+   "compoundLength": 4,
+   "name": "Okano",
+   "region": "GA-9",
+   "language": "fr"
+  },
+  {
+   "index": 48,
+   "key": "9OY",
+   "province": "GA-9",
+   "departement": "Woleu",
+   "chefLieu": "Oyem",
+   "osm": "r3346178",
+   "areaKm2": 8622.4,
+   "box": [
+    11.306,
+    0.888,
+    12.505,
+    1.842
+   ],
+   "grid": {
+    "west": 11.306,
+    "south": 0.888,
+    "refLat": 1.365,
+    "orient": "landscape",
+    "cellMetres": 3.5
+   },
+   "structures2026": 36039,
+   "compoundLength": 4,
+   "name": "Woleu",
+   "region": "GA-9",
+   "language": "fr"
+  }
+ ]
+}

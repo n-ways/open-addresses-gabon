@@ -1,0 +1,394 @@
+{
+ "1KG": {
+  "lon0": 9.75,
+  "lat0": -0.43,
+  "latc": 0.2,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Komo"
+ },
+ "1KM": {
+  "lon0": 9.3,
+  "lat0": 0.18,
+  "latc": 0.42,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Komo-Mondah"
+ },
+ "1KO": {
+  "lon0": 9.3,
+  "lat0": -0.58,
+  "latc": -0.11,
+  "dx": 4,
+  "dy": 5,
+  "zone": "Komo-Ocèan"
+ },
+ "1LV": {
+  "lon0": 9.36,
+  "lat0": 0.34,
+  "latc": 0.45,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Libreville"
+ },
+ "1NY": {
+  "lon0": 9.55,
+  "lat0": 0.46,
+  "latc": 0.77,
+  "dx": 5,
+  "dy": 4,
+  "zone": "Noya"
+ },
+ "2AK": {
+  "lon0": 13.63,
+  "lat0": -1.27,
+  "latc": -1.08,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Lekoni Lekori"
+ },
+ "2BB": {
+  "lon0": 13.81,
+  "lat0": -0.83,
+  "latc": -0.59,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Bayi Brikolo"
+ },
+ "2BG": {
+  "lon0": 13.74,
+  "lat0": -1.79,
+  "latc": -1.49,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Djouori Agnili"
+ },
+ "2BK": {
+  "lon0": 12.75,
+  "lat0": -2.38,
+  "latc": -2.01,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Lekoko"
+ },
+ "2DJ": {
+  "lon0": 13.98,
+  "lat0": -1.11,
+  "latc": -0.78,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Djoue"
+ },
+ "2FV": {
+  "lon0": 13.27,
+  "lat0": -2.45,
+  "latc": -1.8,
+  "dx": 4,
+  "dy": 5,
+  "zone": "Mpassa"
+ },
+ "2LW": {
+  "lon0": 13.58,
+  "lat0": -1.6,
+  "latc": -1.35,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Lekabi Lewolo"
+ },
+ "2MD": {
+  "lon0": 12.79,
+  "lat0": -1.8,
+  "latc": -1.46,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Lebombi Leyou"
+ },
+ "2OK": {
+  "lon0": 13.21,
+  "lat0": -1.2,
+  "latc": -0.57,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Sebe Brikolo"
+ },
+ "2OL": {
+  "lon0": 13.27,
+  "lat0": -2.44,
+  "latc": -2.18,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Ogooué-Létili"
+ },
+ "2PL": {
+  "lon0": 13.83,
+  "lat0": -2.52,
+  "latc": -1.76,
+  "dx": 4,
+  "dy": 5,
+  "zone": "Plateaux"
+ },
+ "3LB": {
+  "lon0": 9.55,
+  "lat0": -1.27,
+  "latc": -0.73,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Ogooue Et Lacs"
+ },
+ "3NJ": {
+  "lon0": 10.36,
+  "lat0": -0.77,
+  "latc": -0.25,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Abanga Bigne"
+ },
+ "4FG": {
+  "lon0": 10.34,
+  "lat0": -1.88,
+  "latc": -1.13,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Tsamba Magotsi"
+ },
+ "4GT": {
+  "lon0": 10.48,
+  "lat0": -2.34,
+  "latc": -2.05,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Mougalaba"
+ },
+ "4LE": {
+  "lon0": 11.34,
+  "lat0": -2.42,
+  "latc": -2.18,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Louetsi Wano"
+ },
+ "4MB": {
+  "lon0": 11.5,
+  "lat0": -2.56,
+  "latc": -2.09,
+  "dx": 4,
+  "dy": 5,
+  "zone": "Boumi Louetsi"
+ },
+ "4MJ": {
+  "lon0": 9.85,
+  "lat0": -2.11,
+  "latc": -1.62,
+  "dx": 4,
+  "dy": 5,
+  "zone": "Ndolou"
+ },
+ "4ML": {
+  "lon0": 11.89,
+  "lat0": -2.47,
+  "latc": -2.12,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Louetsi Bibaka"
+ },
+ "4MM": {
+  "lon0": 11.11,
+  "lat0": -2.1,
+  "latc": -1.35,
+  "dx": 4,
+  "dy": 5,
+  "zone": "Ogoulou"
+ },
+ "4MU": {
+  "lon0": 10.75,
+  "lat0": -2.1,
+  "latc": -1.65,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Douya Onoye"
+ },
+ "4ND": {
+  "lon0": 10.98,
+  "lat0": -2.73,
+  "latc": -2.36,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Dola"
+ },
+ "5MA": {
+  "lon0": 11.13,
+  "lat0": -3.19,
+  "latc": -2.87,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Doutsila"
+ },
+ "5MG": {
+  "lon0": 10.81,
+  "lat0": -3.75,
+  "latc": -3.3,
+  "dx": 5,
+  "dy": 4,
+  "zone": "Mongo"
+ },
+ "5MO": {
+  "lon0": 10.55,
+  "lat0": -2.75,
+  "latc": -2.49,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Douigni"
+ },
+ "5MY": {
+  "lon0": 10.25,
+  "lat0": -3.63,
+  "latc": -3.22,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Basse Banio"
+ },
+ "5NI": {
+  "lon0": 10.87,
+  "lat0": -3.97,
+  "latc": -3.67,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Haute Banio"
+ },
+ "5TC": {
+  "lon0": 10.54,
+  "lat0": -3.12,
+  "latc": -2.73,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Mougoutsi"
+ },
+ "6BO": {
+  "lon0": 11.24,
+  "lat0": -0.77,
+  "latc": -0.06,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Lope"
+ },
+ "6ME": {
+  "lon0": 13.39,
+  "lat0": 0.27,
+  "latc": 0.86,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Zadie"
+ },
+ "6MK": {
+  "lon0": 12.16,
+  "lat0": -0.11,
+  "latc": 0.63,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Ivindo"
+ },
+ "6OV": {
+  "lon0": 11.85,
+  "lat0": -0.01,
+  "latc": 0.43,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Mvoung"
+ },
+ "7IB": {
+  "lon0": 11.49,
+  "lat0": -1.65,
+  "latc": -1.15,
+  "dx": 4,
+  "dy": 5,
+  "zone": "Offoue Onoye"
+ },
+ "7KL": {
+  "lon0": 11.85,
+  "lat0": -1.92,
+  "latc": -1.21,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Lolo Bouenguidi"
+ },
+ "7LT": {
+  "lon0": 12.28,
+  "lat0": -1.7,
+  "latc": -0.69,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Mouloundou"
+ },
+ "7PN": {
+  "lon0": 12.43,
+  "lat0": -1.93,
+  "latc": -1.65,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Lombo-Bouenguidi (Pana)"
+ },
+ "8GB": {
+  "lon0": 9.58,
+  "lat0": -3.02,
+  "latc": -2.43,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Ndougou"
+ },
+ "8OM": {
+  "lon0": 8.85,
+  "lat0": -2.26,
+  "latc": -1.63,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Etimboue"
+ },
+ "8PG": {
+  "lon0": 8.69,
+  "lat0": -1.38,
+  "latc": -0.82,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Bendje"
+ },
+ "9BT": {
+  "lon0": 11.32,
+  "lat0": 1.82,
+  "latc": 2.07,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Ntem"
+ },
+ "9MN": {
+  "lon0": 10.26,
+  "lat0": 0.58,
+  "latc": 0.81,
+  "dx": 4,
+  "dy": 4,
+  "zone": "Haut-Komo"
+ },
+ "9MV": {
+  "lon0": 11.7,
+  "lat0": 1.23,
+  "latc": 1.77,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Haut-Ntem"
+ },
+ "9MZ": {
+  "lon0": 10.81,
+  "lat0": 0.21,
+  "latc": 0.73,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Okano"
+ },
+ "9OY": {
+  "lon0": 11.3,
+  "lat0": 0.88,
+  "latc": 1.37,
+  "dx": 5,
+  "dy": 5,
+  "zone": "Woleu"
+ }
+}

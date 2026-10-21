@@ -1,0 +1,44 @@
+% (a) A Hilbert curve of order 3 and the index d of each cell (Eq. 8). (b) The 848 compounds of Louis
+% (1LV-070) in the area's frame, joined in number order and coloured by number (Eq. 9).
+% Data: hilbert-order3.dat, louis-points.dat, louis-frame.dat, written by tools/paper-figures.py.
+\documentclass[tikz,border=3pt]{standalone}
+\usepackage{fontspec}
+\setmainfont{LibertinusSans}[Extension=.otf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic]
+\usepackage{unicode-math}
+\setmathfont{LibertinusMath-Regular.otf}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+% English by default; the French paper compiles <name>-fr.tex, which sets \fr to 1 and inputs this file.
+\providecommand{\fr}{0}
+\newcommand{\T}[2]{\ifnum\fr=1 #2\else #1\fi}
+\ifnum\fr=1 \pgfkeys{/pgf/number format/.cd, use comma, 1000 sep={\,}}\fi
+\definecolor{ink}{HTML}{1F5FA8}\definecolor{flaggreen}{HTML}{009E60}\definecolor{yellow}{HTML}{FCD116}
+\definecolor{flagblue}{HTML}{3A75C4}\definecolor{amber}{HTML}{D9A400}
+\usepgfplotslibrary{groupplots,colormaps}
+\usepackage{pgfplotstable}
+\begin{document}
+\begin{tikzpicture}
+\pgfplotstableread{louis-frame.dat}\frametable
+\pgfplotstablegetelem{0}{w}\of\frametable \let\fw\pgfplotsretval
+\pgfplotstablegetelem{0}{h}\of\frametable \let\fh\pgfplotsretval
+\begin{groupplot}[group style={group size=2 by 1, horizontal sep=1.6cm},
+  tick label style={font=\footnotesize}, label style={font=\small}, axis line style={gray},
+  title style={font=\small}]
+\nextgroupplot[axis equal image, width=6.4cm, xmin=0, xmax=8, ymin=0, ymax=8, xtick={0,...,8}, ytick={0,...,8},
+  grid=major, grid style={gray!12}, xlabel={$g_x$}, ylabel={$g_y$}, title={\T{(a) order 3: $d$ from 0 to 63}{(a) ordre 3 : $d$ de 0 à 63}}]
+\addplot[ink, line width=1.2pt] table[x=x, y=y] {hilbert-order3.dat};
+\addplot[only marks, mark=*, mark size=0.8pt, ink] table[x=x, y=y] {hilbert-order3.dat};
+\addplot[only marks, mark=none, nodes near coords={\tiny\pgfplotspointmeta}, point meta=explicit symbolic,
+  nodes near coords style={anchor=south west, inner sep=0.5pt, text=black!70}] table[x=x, y=y, meta=d] {hilbert-order3.dat};
+\nextgroupplot[width=8.2cm, height=8.0cm, scale only axis=false, xmin=-20, xmax=921, ymin=-20, ymax=885, xlabel={\T{metres east of the frame's corner}{mètres à l'est du coin du cadre}},
+  ylabel={\T{metres north}{mètres au nord}}, title={\T{(b) Louis: 848 compounds, numbers 1000 to 1847}{(b) Louis : 848 concessions, numéros 1000 à 1847}},
+  colormap name=viridis, colorbar, colorbar style={width=0.25cm, ytick={1000,1200,...,1800},
+  yticklabel style={font=\scriptsize, /pgf/number format/1000 sep={}}}, point meta min=1000, point meta max=1847]
+\draw[gray] (axis cs:0,0) rectangle (axis cs:\fw,\fh);
+\addplot[gray!45, line width=0.3pt] table[x=x, y=y] {louis-points.dat};
+\addplot[scatter, only marks, mark=*, mark size=1.1pt, scatter src=explicit] table[x=x, y=y, meta=n] {louis-points.dat};
+\addplot[only marks, mark=o, mark size=4pt, red!80!black, thick] coordinates {(201.2,221.8)};
+\draw[red!80!black] (axis cs:195,212) -- (axis cs:120,90) node[below, font=\scriptsize, fill=white, inner sep=1pt, text=black] {Louis 12 01};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

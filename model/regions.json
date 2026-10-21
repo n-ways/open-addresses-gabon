@@ -1,0 +1,182 @@
+[
+  {
+    "key": "ES",
+    "iso": "GA-1",
+    "name": "Estuaire Province",
+    "nameFr": "Estuaire",
+    "nameLocal": "Estuaire",
+    "wikidata": "Q281109",
+    "areaKm2": 25254.1,
+    "box": [
+      8.80975,
+      -0.57199,
+      10.97392,
+      1.06986
+    ],
+    "buildings": {
+      "openstreetmap": 183198,
+      "ml": 194932,
+      "total": 378130
+    }
+  },
+  {
+    "key": "HA",
+    "iso": "GA-2",
+    "name": "Haut-Ogooué Province",
+    "nameFr": "Haut-Ogooué",
+    "nameLocal": "Haut-Ogooué",
+    "wikidata": "Q654438",
+    "areaKm2": 34272.6,
+    "box": [
+      12.75099,
+      -2.51161,
+      14.52902,
+      0.04991
+    ],
+    "buildings": {
+      "openstreetmap": 18381,
+      "ml": 60659,
+      "total": 79040
+    }
+  },
+  {
+    "key": "MO",
+    "iso": "GA-3",
+    "name": "Moyen-Ogooué Province",
+    "nameFr": "Moyen-Ogooué",
+    "nameLocal": "Moyen-Ogooué",
+    "wikidata": "Q590802",
+    "areaKm2": 16976.5,
+    "box": [
+      9.5534,
+      -1.26349,
+      11.58758,
+      0.26867
+    ],
+    "buildings": {
+      "openstreetmap": 22690,
+      "ml": 8661,
+      "total": 31351
+    }
+  },
+  {
+    "key": "NG",
+    "iso": "GA-4",
+    "name": "Ngounié Province",
+    "nameFr": "Ngounié",
+    "nameLocal": "Ngounié",
+    "wikidata": "Q823774",
+    "areaKm2": 38913.3,
+    "box": [
+      9.85966,
+      -2.72174,
+      12.51691,
+      -0.38349
+    ],
+    "buildings": {
+      "openstreetmap": 29701,
+      "ml": 15834,
+      "total": 45535
+    }
+  },
+  {
+    "key": "NY",
+    "iso": "GA-5",
+    "name": "Nyanga Province",
+    "nameFr": "Nyanga (Gabon)",
+    "nameLocal": "Nyanga",
+    "wikidata": "Q846017",
+    "areaKm2": 21346.9,
+    "box": [
+      10.10869,
+      -4.1108,
+      11.9644,
+      -2.23536
+    ],
+    "buildings": {
+      "openstreetmap": 20220,
+      "ml": 7949,
+      "total": 28169
+    }
+  },
+  {
+    "key": "OG",
+    "iso": "GA-6",
+    "name": "Ogooué-Ivindo",
+    "nameFr": "Ogooué-Ivindo",
+    "nameLocal": "Ogooué-Ivindo",
+    "wikidata": "Q823822",
+    "areaKm2": 43675.6,
+    "box": [
+      11.24863,
+      -0.76161,
+      14.49662,
+      1.43775
+    ],
+    "buildings": {
+      "openstreetmap": 21854,
+      "ml": 5896,
+      "total": 27750
+    }
+  },
+  {
+    "key": "OO",
+    "iso": "GA-7",
+    "name": "Ogooué-Lolo Province",
+    "nameFr": "Ogooué-Lolo",
+    "nameLocal": "Ogooué-Lolo",
+    "wikidata": "Q823762",
+    "areaKm2": 29218.8,
+    "box": [
+      11.49719,
+      -1.92602,
+      13.56554,
+      0.31436
+    ],
+    "buildings": {
+      "openstreetmap": 9569,
+      "ml": 11857,
+      "total": 21426
+    }
+  },
+  {
+    "key": "OU",
+    "iso": "GA-8",
+    "name": "Ogooué-Maritime Province",
+    "nameFr": "Ogooué-Maritime",
+    "nameLocal": "Ogooué-Maritime",
+    "wikidata": "Q823751",
+    "areaKm2": 36279.3,
+    "box": [
+      8.50022,
+      -3.10952,
+      10.60073,
+      -0.09464
+    ],
+    "buildings": {
+      "openstreetmap": 68833,
+      "ml": 33896,
+      "total": 102729
+    }
+  },
+  {
+    "key": "WO",
+    "iso": "GA-9",
+    "name": "Woleu-Ntem",
+    "nameFr": "Woleu-Ntem",
+    "nameLocal": "Woleu-Ntem",
+    "wikidata": "Q823800",
+    "areaKm2": 37617.3,
+    "box": [
+      10.26067,
+      0.21925,
+      13.3056,
+      2.31929
+    ],
+    "buildings": {
+      "openstreetmap": 54732,
+      "ml": 15023,
+      "total": 69755
+    }
+  }
+]
